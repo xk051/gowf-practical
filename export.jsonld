@@ -1,0 +1,6896 @@
+{
+  "@graph": [
+    {
+      "@id": "dash:APIStatus",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:Action",
+      "subClassOf": [
+        "dash:Script",
+        "sh:Parameterizable"
+      ]
+    },
+    {
+      "@id": "dash:ActionGroup",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:ActionTestCase",
+      "subClassOf": "dash:TestCase"
+    },
+    {
+      "@id": "dash:AllObjectsTarget",
+      "subClassOf": "sh:Target"
+    },
+    {
+      "@id": "dash:AllSubjectsTarget",
+      "subClassOf": "sh:Target"
+    },
+    {
+      "@id": "dash:ChangeScript",
+      "subClassOf": "dash:Script"
+    },
+    {
+      "@id": "dash:CommitScript",
+      "subClassOf": "dash:Script"
+    },
+    {
+      "@id": "dash:Constructor",
+      "subClassOf": [
+        "dash:Script",
+        "sh:Parameterizable"
+      ]
+    },
+    {
+      "@id": "dash:Editor",
+      "subClassOf": "dash:Widget"
+    },
+    {
+      "@id": "dash:ExecutionPlatform",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:ExploreAction",
+      "subClassOf": "dash:ResourceAction"
+    },
+    {
+      "@id": "dash:FailureResult",
+      "subClassOf": "sh:AbstractResult"
+    },
+    {
+      "@id": "dash:FailureTestCaseResult",
+      "subClassOf": "dash:TestCaseResult"
+    },
+    {
+      "@id": "dash:FunctionTestCase",
+      "subClassOf": "dash:TestCase"
+    },
+    {
+      "@id": "dash:GraphService",
+      "subClassOf": "dash:Service"
+    },
+    {
+      "@id": "dash:GraphStoreTestCase",
+      "subClassOf": "dash:TestCase"
+    },
+    {
+      "@id": "dash:GraphUpdate",
+      "subClassOf": "dash:Suggestion"
+    },
+    {
+      "@id": "dash:GraphValidationTestCase",
+      "subClassOf": "dash:ValidationTestCase"
+    },
+    {
+      "@id": "dash:HasValueTarget",
+      "subClassOf": "sh:Target"
+    },
+    {
+      "@id": "dash:IncludedScript",
+      "subClassOf": "dash:Script"
+    },
+    {
+      "@id": "dash:InferencingTestCase",
+      "subClassOf": "dash:TestCase"
+    },
+    {
+      "@id": "dash:JSTestCase",
+      "subClassOf": [
+        "sh:JSFunction",
+        "dash:TestCase"
+      ]
+    },
+    {
+      "@id": "dash:ModifyAction",
+      "subClassOf": "dash:ResourceAction"
+    },
+    {
+      "@id": "dash:MultiEditor",
+      "subClassOf": "dash:Editor"
+    },
+    {
+      "@id": "dash:MultiFunction",
+      "subClassOf": "sh:Parameterizable"
+    },
+    {
+      "@id": "dash:MultiViewer",
+      "subClassOf": "dash:Viewer"
+    },
+    {
+      "@id": "dash:PropertyRole",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:QueryTestCase",
+      "subClassOf": [
+        "sh:SPARQLSelectExecutable",
+        "dash:TestCase"
+      ]
+    },
+    {
+      "@id": "dash:ResourceAction",
+      "subClassOf": "dash:Action"
+    },
+    {
+      "@id": "dash:ResourceService",
+      "subClassOf": "dash:Service"
+    },
+    {
+      "@id": "dash:SPARQLConstructTemplate",
+      "subClassOf": [
+        "sh:SPARQLConstructExecutable",
+        "sh:Parameterizable"
+      ]
+    },
+    {
+      "@id": "dash:SPARQLMultiFunction",
+      "subClassOf": [
+        "dash:MultiFunction",
+        "sh:SPARQLSelectExecutable"
+      ]
+    },
+    {
+      "@id": "dash:SPARQLSelectTemplate",
+      "subClassOf": [
+        "sh:Parameterizable",
+        "sh:SPARQLSelectExecutable"
+      ]
+    },
+    {
+      "@id": "dash:SPARQLUpdateSuggestionGenerator",
+      "subClassOf": [
+        "sh:SPARQLSelectExecutable",
+        "sh:SPARQLUpdateExecutable",
+        "dash:SuggestionGenerator"
+      ]
+    },
+    {
+      "@id": "dash:Script",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:ScriptConstraint",
+      "subClassOf": "dash:Script"
+    },
+    {
+      "@id": "dash:ScriptFunction",
+      "subClassOf": [
+        "sh:Function",
+        "dash:Script"
+      ]
+    },
+    {
+      "@id": "dash:ScriptSuggestionGenerator",
+      "subClassOf": [
+        "dash:SuggestionGenerator",
+        "dash:Script"
+      ]
+    },
+    {
+      "@id": "dash:ScriptTestCase",
+      "subClassOf": [
+        "dash:TestCase",
+        "dash:Script"
+      ]
+    },
+    {
+      "@id": "dash:ScriptValidator",
+      "subClassOf": [
+        "dash:Script",
+        "sh:Validator"
+      ]
+    },
+    {
+      "@id": "dash:Service",
+      "subClassOf": [
+        "dash:Script",
+        "sh:Parameterizable"
+      ]
+    },
+    {
+      "@id": "dash:ShapeClass",
+      "subClassOf": [
+        "sh:NodeShape",
+        "rdfs:Class"
+      ]
+    },
+    {
+      "@id": "dash:ShapeScript",
+      "subClassOf": "dash:Script"
+    },
+    {
+      "@id": "dash:SingleEditor",
+      "subClassOf": "dash:Editor"
+    },
+    {
+      "@id": "dash:SingleViewer",
+      "subClassOf": "dash:Viewer"
+    },
+    {
+      "@id": "dash:SuccessResult",
+      "subClassOf": "sh:AbstractResult"
+    },
+    {
+      "@id": "dash:SuccessTestCaseResult",
+      "subClassOf": "dash:TestCaseResult"
+    },
+    {
+      "@id": "dash:Suggestion",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:SuggestionGenerator",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:SuggestionResult",
+      "subClassOf": "sh:AbstractResult"
+    },
+    {
+      "@id": "dash:TestCase",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:TestCaseResult",
+      "subClassOf": "sh:AbstractResult"
+    },
+    {
+      "@id": "dash:TestEnvironment",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:ValidationTestCase",
+      "subClassOf": "dash:TestCase"
+    },
+    {
+      "@id": "dash:Viewer",
+      "subClassOf": "dash:Widget"
+    },
+    {
+      "@id": "dash:Widget",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dash:abstract",
+      "domain": "rdfs:Class",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:actionGroup",
+      "domain": "dash:Action",
+      "range": "dash:ActionGroup"
+    },
+    {
+      "@id": "dash:actionIconClass",
+      "domain": "dash:Action",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dash:addedTriple",
+      "domain": "dash:GraphUpdate",
+      "range": "rdf:Statement"
+    },
+    {
+      "@id": "dash:apiStatus",
+      "range": "dash:APIStatus"
+    },
+    {
+      "@id": "dash:applicableToClass",
+      "domain": "sh:Shape",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "dash:cachable",
+      "domain": "sh:Function",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:coExistsWith",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "dash:composite",
+      "domain": "sh:PropertyShape",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:defaultLang",
+      "domain": "owl:Ontology",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dash:defaultViewForRole",
+      "domain": "sh:NodeShape"
+    },
+    {
+      "@id": "dash:deletedTriple",
+      "domain": "dash:GraphUpdate",
+      "range": "rdf:Statement"
+    },
+    {
+      "@id": "dash:dependencyPredicate",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "dash:editor",
+      "domain": "sh:PropertyShape",
+      "range": "dash:Editor"
+    },
+    {
+      "@id": "dash:expectedResult",
+      "domain": "dash:TestCase"
+    },
+    {
+      "@id": "dash:expectedResultIsJSON",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:expectedResultIsTTL",
+      "domain": "dash:TestCase",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:fixed",
+      "domain": "sh:ValidationResult",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:hasValueIn",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "dash:hasValueWithClass",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "dash:height",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "dash:hidden",
+      "domain": "sh:PropertyShape",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:includedExecutionPlatform",
+      "domain": "dash:ExecutionPlatform",
+      "range": "dash:ExecutionPlatform"
+    },
+    {
+      "@id": "dash:index",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "dash:indexed",
+      "domain": "sh:PropertyShape",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:js",
+      "domain": "dash:Script",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dash:localConstraint",
+      "domain": "sh:ConstraintComponent",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:mimeTypes",
+      "domain": "sh:PropertyShape",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dash:neverMaterialize",
+      "domain": "sh:PropertyShape",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:onAllValues",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:propertySuggestionGenerator",
+      "domain": "sh:ConstraintComponent",
+      "range": "dash:SuggestionGenerator"
+    },
+    {
+      "@id": "dash:readOnly",
+      "domain": "sh:PropertyShape"
+    },
+    {
+      "@id": "dash:reifiableBy",
+      "domain": "sh:PropertyShape",
+      "range": "sh:NodeShape"
+    },
+    {
+      "@id": "dash:requiredExecutionPlatform",
+      "domain": "sh:SPARQLExecutable",
+      "range": "dash:ExecutionPlatform"
+    },
+    {
+      "@id": "dash:resourceAction",
+      "domain": "rdfs:Class",
+      "range": "dash:ResourceAction"
+    },
+    {
+      "@id": "dash:shape",
+      "range": "sh:Shape"
+    },
+    {
+      "@id": "dash:shapeScript",
+      "domain": "sh:NodeShape"
+    },
+    {
+      "@id": "dash:singleLine",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:staticConstraint",
+      "domain": "sh:ConstraintComponent",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:stem",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dash:suggestion",
+      "domain": "sh:AbstractResult",
+      "range": "dash:Suggestion"
+    },
+    {
+      "@id": "dash:suggestionConfidence",
+      "domain": "dash:Suggestion",
+      "range": "xsd:decimal"
+    },
+    {
+      "@id": "dash:suggestionGenerator",
+      "range": "dash:SuggestionGenerator"
+    },
+    {
+      "@id": "dash:suggestionGroup",
+      "domain": "dash:Suggestion"
+    },
+    {
+      "@id": "dash:validateShapes",
+      "domain": "dash:GraphValidationTestCase",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dash:viewer",
+      "domain": "sh:PropertyShape",
+      "range": "dash:Viewer"
+    },
+    {
+      "@id": "dash:width",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "dash:x",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "dash:y",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "graphql:InputObjectType",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "graphql:InputType",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "graphql:InputValue",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "graphql:JSON2RDFTestCase",
+      "subClassOf": "dash:TestCase"
+    },
+    {
+      "@id": "graphql:ListType",
+      "subClassOf": "graphql:InputType"
+    },
+    {
+      "@id": "graphql:MutationTestCase",
+      "subClassOf": [
+        "graphql:Schema",
+        "dash:TestCase",
+        "graphql:Query"
+      ]
+    },
+    {
+      "@id": "graphql:NamedType",
+      "subClassOf": "graphql:InputType"
+    },
+    {
+      "@id": "graphql:NonNullType",
+      "subClassOf": "graphql:InputType"
+    },
+    {
+      "@id": "graphql:Query",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "graphql:QueryTestCase",
+      "subClassOf": [
+        "dash:TestCase",
+        "graphql:Schema",
+        "graphql:Query"
+      ]
+    },
+    {
+      "@id": "graphql:ScalarType",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "graphql:Schema",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "graphql:WriterTestCase",
+      "subClassOf": "dash:TestCase"
+    },
+    {
+      "@id": "graphql:isIDField",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "graphql:isInterface",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "graphql:name",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "graphql:queryShape",
+      "range": "sh:NodeShape"
+    },
+    {
+      "@id": "graphql:rootQueryFieldName",
+      "domain": "sh:NodeShape",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "graphql:sparqlTransform",
+      "domain": "sh:PropertyShape",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "graphql:uriTemplate",
+      "domain": "sh:NodeShape",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:ANSICdatatype",
+      "subClassOf": "edg:PhysicalDatatype"
+    },
+    {
+      "@id": "edg:API",
+      "subClassOf": "edg:TechnicalAsset"
+    },
+    {
+      "@id": "edg:AbInitioPipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:AccessControl",
+      "subClassOf": [
+        "edg:GovernanceViewpoint",
+        "edg:AncillaryAsset"
+      ]
+    },
+    {
+      "@id": "edg:AccessControlGroup",
+      "subClassOf": [
+        "edg:Narratable",
+        "edg:AncillaryAsset",
+        "edg:Identifiable",
+        "edg:ComplianceAspect",
+        "edg:GovernanceViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:AccessControlMethod",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:AccessControllable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:AccessRightRestriction",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:AccessSecurityAspect",
+      "subClassOf": "edg:Governance"
+    },
+    {
+      "@id": "edg:Agency",
+      "subClassOf": "edg:Enterprise"
+    },
+    {
+      "@id": "edg:AgreementDocument",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Document",
+        "edg:Governance"
+      ]
+    },
+    {
+      "@id": "edg:AmazonSageMakerPipeline",
+      "subClassOf": "edg:MLpipeline"
+    },
+    {
+      "@id": "edg:AmazonWebService",
+      "subClassOf": "edg:CloudComputingService"
+    },
+    {
+      "@id": "edg:AncillaryAsset",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "edg:Announcement",
+      "subClassOf": "edg:GovernanceViewpoint"
+    },
+    {
+      "@id": "edg:ApacheNifiPipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:ApacheSparkMLibPipeline",
+      "subClassOf": "edg:MLpipeline"
+    },
+    {
+      "@id": "edg:Approvable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:ApprovalStatus",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Aspect",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "edg:AspectClass",
+      "subClassOf": [
+        "rdfs:Class",
+        "sh:NodeShape",
+        "owl:Class"
+      ]
+    },
+    {
+      "@id": "edg:Asset",
+      "subClassOf": [
+        "edg:Identifiable",
+        "edg:Narratable",
+        "edg:StatusAspect",
+        "owl:Thing"
+      ]
+    },
+    {
+      "@id": "edg:AssetClass",
+      "subClassOf": [
+        "rdfs:Class",
+        "sh:NodeShape",
+        "edg:ConstructClass"
+      ]
+    },
+    {
+      "@id": "edg:AssetCollection",
+      "subClassOf": [
+        "owl:Ontology",
+        "graphql:Schema",
+        "edg:Stewardship",
+        "edg:StatusAspect"
+      ]
+    },
+    {
+      "@id": "edg:AssetManagementPlan",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Plan"
+      ]
+    },
+    {
+      "@id": "edg:AssetStatus",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Association",
+      "subClassOf": "edg:Enterprise"
+    },
+    {
+      "@id": "edg:AuthenticationMethod",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:AuthorizationMethod",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:AvroSchemaFile",
+      "subClassOf": [
+        "edg:FileAsset",
+        "edg:Schema"
+      ]
+    },
+    {
+      "@id": "edg:AzureDatabricksPipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:BigDataAssetsProject",
+      "subClassOf": "teamwork:Vocabulary"
+    },
+    {
+      "@id": "edg:BigDataPlatformType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:BigDataSourceType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Board",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "edg:Building",
+      "subClassOf": "edg:Place"
+    },
+    {
+      "@id": "edg:BuildingComplex",
+      "subClassOf": "edg:Place"
+    },
+    {
+      "@id": "edg:BuildingUnit",
+      "subClassOf": "edg:Place"
+    },
+    {
+      "@id": "edg:BusinessActivity",
+      "subClassOf": [
+        "edg:EnterpriseAsset",
+        "edg:ParticipationsAspect",
+        "edg:BusinessModelViewpoint",
+        "edg:Interoperable",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:BusinessApplication",
+      "subClassOf": [
+        "edg:Configurable",
+        "edg:Locatable",
+        "edg:Interoperable",
+        "edg:TechnicalAssetViewFromEnterpriseAssets",
+        "edg:SoftwareExecutable",
+        "edg:SemanticComplianceAspect",
+        "edg:AccessControllable",
+        "edg:ComplianceAspect",
+        "edg:EnterpriseSoftware",
+        "edg:EnterpriseEnabler"
+      ]
+    },
+    {
+      "@id": "edg:BusinessArea",
+      "subClassOf": "edg:SubjectArea"
+    },
+    {
+      "@id": "edg:BusinessCapability",
+      "subClassOf": [
+        "edg:Interoperable",
+        "edg:BusinessModelViewpoint",
+        "edg:ParticipationsAspect",
+        "edg:ComplianceAspect",
+        "edg:Governance",
+        "edg:EnterpriseAsset",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:BusinessEvent",
+      "subClassOf": [
+        "edg:Locatable",
+        "edg:ParticipationsAspect",
+        "edg:BusinessModelViewpoint",
+        "edg:EnterpriseAsset"
+      ]
+    },
+    {
+      "@id": "edg:BusinessFunction",
+      "subClassOf": [
+        "edg:BusinessModelViewpoint",
+        "edg:EnterpriseAsset",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:BusinessModel",
+      "subClassOf": "edg:Model"
+    },
+    {
+      "@id": "edg:BusinessModelViewpoint",
+      "subClassOf": "edg:EnterpriseViewpoint"
+    },
+    {
+      "@id": "edg:BusinessOutcome",
+      "subClassOf": [
+        "edg:EnterpriseAsset",
+        "edg:BusinessModelViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:BusinessPerformanceIndicator",
+      "subClassOf": "edg:Indicator"
+    },
+    {
+      "@id": "edg:BusinessPlan",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Plan"
+      ]
+    },
+    {
+      "@id": "edg:BusinessTerm",
+      "subClassOf": "edg:GlossaryTerm"
+    },
+    {
+      "@id": "edg:CMMIcapabilityMaturityLevel",
+      "subClassOf": "edg:OrdinalScale"
+    },
+    {
+      "@id": "edg:CSVdatatype",
+      "subClassOf": "edg:PhysicalDatatype"
+    },
+    {
+      "@id": "edg:CalculatedDataElement",
+      "subClassOf": "edg:DataElement"
+    },
+    {
+      "@id": "edg:Cardinality",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Category",
+      "subClassOf": "edg:Construct"
+    },
+    {
+      "@id": "edg:Certificate",
+      "subClassOf": [
+        "edg:Governance",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:Charter",
+      "subClassOf": [
+        "edg:InformationAssetViewpoint",
+        "edg:InformationAsset"
+      ]
+    },
+    {
+      "@id": "edg:ClassificationScheme",
+      "subClassOf": "edg:Schema"
+    },
+    {
+      "@id": "edg:CloudComputingService",
+      "subClassOf": "edg:SoftwareService"
+    },
+    {
+      "@id": "edg:Committee",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "edg:Company",
+      "subClassOf": "edg:Enterprise"
+    },
+    {
+      "@id": "edg:CompetencyQuesion",
+      "subClassOf": [
+        "edg:Narratable",
+        "edg:AncillaryAsset",
+        "edg:RequirementsViewpoint",
+        "edg:StatusAspect",
+        "edg:Traceable",
+        "edg:Identifiable"
+      ]
+    },
+    {
+      "@id": "edg:ComplianceAspect",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:ComplianceIndicator",
+      "subClassOf": "edg:Indicator"
+    },
+    {
+      "@id": "edg:ComplianceStatus",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:CompositeProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "edg:ConfidentialityLevel",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Configurable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:ConfigurationAsset",
+      "subClassOf": "edg:AncillaryAsset"
+    },
+    {
+      "@id": "edg:ConfigurationFile",
+      "subClassOf": "edg:FileAsset"
+    },
+    {
+      "@id": "edg:Consent",
+      "subClassOf": "edg:Event"
+    },
+    {
+      "@id": "edg:Construct",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "edg:ConstructClass",
+      "subClassOf": "owl:Class"
+    },
+    {
+      "@id": "edg:Controlflow",
+      "subClassOf": "edg:Flow"
+    },
+    {
+      "@id": "edg:Council",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "edg:CustomAssetClass",
+      "subClassOf": "edg:AssetClass"
+    },
+    {
+      "@id": "edg:CustomElement",
+      "subClassOf": [
+        "edg:DataQualityAspect",
+        "edg:DataElement",
+        "edg:DataProfileable"
+      ]
+    },
+    {
+      "@id": "edg:CustomEnumeratedValue",
+      "subClassOf": [
+        "edg:CustomEnumerationViewpoint",
+        "edg:EnumeratedValue"
+      ]
+    },
+    {
+      "@id": "edg:CustomEnumerationClass",
+      "subClassOf": [
+        "edg:EnumerationClass",
+        "edg:EnumerationViewpoint",
+        "edg:Provenance"
+      ]
+    },
+    {
+      "@id": "edg:CustomEnumerationViewpoint",
+      "subClassOf": [
+        "edg:Viewpoint",
+        "edg:EnumeratedValueViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:Dashboard",
+      "subClassOf": "edg:DashboardModelsViewpoint"
+    },
+    {
+      "@id": "edg:DashboardGadgetTab",
+      "subClassOf": "edg:DashboardModelsViewpoint"
+    },
+    {
+      "@id": "edg:DataAccessPolicy",
+      "subClassOf": "edg:DataPolicy"
+    },
+    {
+      "@id": "edg:DataAsset",
+      "subClassOf": [
+        "edg:DataAssetsViewpoint",
+        "prov:Entity",
+        "edg:DataAssetViewFromTechnicalAssets",
+        "edg:Asset"
+      ]
+    },
+    {
+      "@id": "edg:DataAssetViewFromEnterpriseAssets",
+      "subClassOf": "edg:EnterpriseViewpoint"
+    },
+    {
+      "@id": "edg:DataAssetViewFromTechnicalAssets",
+      "subClassOf": "edg:TechnicalViewpoint"
+    },
+    {
+      "@id": "edg:DataAssetsProject",
+      "subClassOf": "teamwork:Vocabulary"
+    },
+    {
+      "@id": "edg:DataAssetsViewpoint",
+      "subClassOf": "edg:Viewpoint"
+    },
+    {
+      "@id": "edg:DataContainer",
+      "subClassOf": [
+        "edg:ComplianceAspect",
+        "edg:Traceable",
+        "edg:Governance",
+        "edg:Provenance",
+        "edg:Locatable",
+        "edg:PhysicalDataAsset"
+      ]
+    },
+    {
+      "@id": "edg:DataContainerType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:DataElement",
+      "subClassOf": [
+        "edg:Protectable",
+        "edg:ComplianceAspect",
+        "edg:Traceable",
+        "edg:Processable",
+        "edg:PermissibleValuesAssignable",
+        "edg:PhysicalDataAsset"
+      ]
+    },
+    {
+      "@id": "edg:DataExchange",
+      "subClassOf": [
+        "edg:EnterpriseAsset",
+        "edg:BusinessModelViewpoint",
+        "edg:ComplianceAspect",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:DataExchangeFrequency",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:DataExchangeable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:DataGovernanceIndicator",
+      "subClassOf": "edg:Indicator"
+    },
+    {
+      "@id": "edg:DataGovernanceMaturityLevel",
+      "subClassOf": "edg:OrdinalScale"
+    },
+    {
+      "@id": "edg:DataKind",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:DataPackage",
+      "subClassOf": [
+        "edg:DataContainer",
+        "edg:PhysicalFlowPayloadable"
+      ]
+    },
+    {
+      "@id": "edg:DataPolicy",
+      "subClassOf": "edg:GovernancePolicy"
+    },
+    {
+      "@id": "edg:DataProfileViewpoint",
+      "subClassOf": "edg:Viewpoint"
+    },
+    {
+      "@id": "edg:DataProfileable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:DataQualityAspect",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:DataQualityIndicator",
+      "subClassOf": "edg:Indicator"
+    },
+    {
+      "@id": "edg:DataQualityIssueRecord",
+      "subClassOf": [
+        "edg:AncillaryAsset",
+        "edg:DataQualityViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:DataQualityPolicy",
+      "subClassOf": "edg:DataPolicy"
+    },
+    {
+      "@id": "edg:DataQualityRecord",
+      "subClassOf": [
+        "edg:AncillaryAsset",
+        "edg:DataQualityViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:DataQualityStatus",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:DataQualityVerificationMethod",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:DataQualityViewpoint",
+      "subClassOf": "edg:DataAssetsViewpoint"
+    },
+    {
+      "@id": "edg:DataRequirement",
+      "subClassOf": "edg:Requirement"
+    },
+    {
+      "@id": "edg:DataRequirementsSpecification",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Specification"
+      ]
+    },
+    {
+      "@id": "edg:DataRetentionPolicy",
+      "subClassOf": "edg:DataPolicy"
+    },
+    {
+      "@id": "edg:DataSecurityPolicy",
+      "subClassOf": "edg:DataPolicy"
+    },
+    {
+      "@id": "edg:DataSet",
+      "subClassOf": [
+        "edg:Sociable",
+        "edg:DataQualityAspect",
+        "edg:PhysicalDataAsset",
+        "edg:AccessControllable",
+        "edg:ComplianceAspect",
+        "edg:ProvenanceTimestamps",
+        "edg:SemanticComplianceAspect",
+        "edg:PhysicalFlowPayloadable",
+        "edg:DataExchangeable"
+      ]
+    },
+    {
+      "@id": "edg:DataSetCollection",
+      "subClassOf": [
+        "edg:PhysicalFlowPayloadable",
+        "edg:ProvenanceTimestamps",
+        "edg:ComplianceAspect",
+        "edg:AccessControllable",
+        "edg:PhysicalDataAsset",
+        "edg:DataExchangeable",
+        "edg:Sociable",
+        "edg:DataStructure"
+      ]
+    },
+    {
+      "@id": "edg:DataSetElement",
+      "subClassOf": [
+        "edg:DataProfileable",
+        "edg:AccessControllable",
+        "edg:DataElement",
+        "edg:DataQualityAspect"
+      ]
+    },
+    {
+      "@id": "edg:DataSetSchema",
+      "subClassOf": "edg:Schema"
+    },
+    {
+      "@id": "edg:DataSetsRegistryProject",
+      "subClassOf": "edg:AssetCollection"
+    },
+    {
+      "@id": "edg:DataStructure",
+      "subClassOf": [
+        "edg:Processable",
+        "edg:PhysicalDataAsset",
+        "edg:Traceable"
+      ]
+    },
+    {
+      "@id": "edg:DataSubjectArea",
+      "subClassOf": [
+        "edg:AncillaryAsset",
+        "edg:StatusAspect",
+        "edg:SubjectArea"
+      ]
+    },
+    {
+      "@id": "edg:DataValueRule",
+      "subClassOf": [
+        "edg:DataQualityViewpoint",
+        "edg:AncillaryAsset",
+        "sh:NodeShape"
+      ]
+    },
+    {
+      "@id": "edg:DataWarehouse",
+      "subClassOf": [
+        "edg:Database",
+        "edg:TechnicalAssetViewFromEnterpriseAssets"
+      ]
+    },
+    {
+      "@id": "edg:Database",
+      "subClassOf": [
+        "edg:SemanticComplianceAspect",
+        "edg:ReferenceDataSource",
+        "edg:MetadataSource",
+        "edg:DataQualityAspect",
+        "edg:ProvenanceTimestamps",
+        "edg:SoftwareExecutable",
+        "edg:Processable",
+        "edg:Governance",
+        "edg:Provenance",
+        "edg:PhysicalDataAsset",
+        "edg:Interoperable"
+      ]
+    },
+    {
+      "@id": "edg:DatabaseColumn",
+      "subClassOf": [
+        "edg:DataQualityAspect",
+        "edg:DataProfileable",
+        "edg:DataElement"
+      ]
+    },
+    {
+      "@id": "edg:DatabaseExtract",
+      "subClassOf": [
+        "edg:PhysicalFlowPayloadable",
+        "edg:PhysicalDataAsset",
+        "edg:ComplianceAspect"
+      ]
+    },
+    {
+      "@id": "edg:DatabaseSchema",
+      "subClassOf": "edg:Schema"
+    },
+    {
+      "@id": "edg:DatabaseSynonym",
+      "subClassOf": "edg:PhysicalDataAsset"
+    },
+    {
+      "@id": "edg:DatabaseSynonymable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:DatabaseTable",
+      "subClassOf": [
+        "edg:Table",
+        "edg:ComplianceAspect",
+        "edg:DatabaseSynonymable"
+      ]
+    },
+    {
+      "@id": "edg:DatabaseTableReference",
+      "subClassOf": "edg:Construct"
+    },
+    {
+      "@id": "edg:DatabaseView",
+      "subClassOf": [
+        "edg:View",
+        "edg:Table",
+        "edg:ComplianceAspect",
+        "edg:DatabaseSynonymable",
+        "edg:PhysicalFlowPayloadable"
+      ]
+    },
+    {
+      "@id": "edg:Dataflow",
+      "subClassOf": "edg:PhysicalFlow"
+    },
+    {
+      "@id": "edg:Datatype",
+      "subClassOf": [
+        "edg:DatatypeViewpoint",
+        "edg:Provenance",
+        "edg:Asset",
+        "edg:TypeConstruct"
+      ]
+    },
+    {
+      "@id": "edg:DatatypeFamilyType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:DatatypeViewpoint",
+      "subClassOf": [
+        "edg:Viewpoint",
+        "edg:DataAssetsViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:DatatypesProject",
+      "subClassOf": [
+        "teamwork:Vocabulary",
+        "edg:AssetCollection"
+      ]
+    },
+    {
+      "@id": "edg:Department",
+      "subClassOf": [
+        "edg:Narratable",
+        "edg:Construct"
+      ]
+    },
+    {
+      "@id": "edg:Device",
+      "subClassOf": [
+        "edg:Configurable",
+        "edg:Interoperable",
+        "edg:Locatable",
+        "edg:Asset"
+      ]
+    },
+    {
+      "@id": "edg:DirectMapping",
+      "subClassOf": "edg:SoftwareFunction"
+    },
+    {
+      "@id": "edg:DirectMappingsCollection",
+      "subClassOf": "edg:SoftwareFunction"
+    },
+    {
+      "@id": "edg:Division",
+      "subClassOf": "edg:Enterprise"
+    },
+    {
+      "@id": "edg:DockerAsset",
+      "subClassOf": "edg:ConfigurationAsset"
+    },
+    {
+      "@id": "edg:Document",
+      "subClassOf": [
+        "edg:DataExchangeable",
+        "edg:InformationAssetViewpoint",
+        "edg:GovernanceViewpoint",
+        "edg:InformationAsset"
+      ]
+    },
+    {
+      "@id": "edg:Dutiable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:EDGenumeratedValue",
+      "subClassOf": [
+        "edg:EnumeratedValue",
+        "edg:Identifiable",
+        "edg:EnumeratedValueViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:EDGenumerationClass",
+      "subClassOf": [
+        "edg:EnumerationClass",
+        "edg:Viewpoint",
+        "edg:Narratable",
+        "edg:Identifiable"
+      ]
+    },
+    {
+      "@id": "edg:EDGenumerationsProject",
+      "subClassOf": "teamwork:Vocabulary"
+    },
+    {
+      "@id": "edg:ETLpipeline",
+      "subClassOf": "edg:SoftwarePipeline"
+    },
+    {
+      "@id": "edg:EXCELdatatype",
+      "subClassOf": "edg:PhysicalDatatype"
+    },
+    {
+      "@id": "edg:EmptyAspect",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:Enterprise",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "edg:EnterpriseAsset",
+      "subClassOf": [
+        "edg:EnterpriseViewpoint",
+        "edg:Traceable",
+        "edg:Asset"
+      ]
+    },
+    {
+      "@id": "edg:EnterpriseEnabler",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:EnterpriseModelsProject",
+      "subClassOf": [
+        "edg:AssetCollection",
+        "teamwork:Vocabulary"
+      ]
+    },
+    {
+      "@id": "edg:EnterpriseSoftware",
+      "subClassOf": "edg:TechnicalAsset"
+    },
+    {
+      "@id": "edg:EnterpriseViewFromTechnicalAssets",
+      "subClassOf": [
+        "edg:TechnicalViewpoint",
+        "edg:Viewpoint"
+      ]
+    },
+    {
+      "@id": "edg:EnterpriseViewpoint",
+      "subClassOf": "edg:Viewpoint"
+    },
+    {
+      "@id": "edg:EnterpriseViewpointFromDataAssets",
+      "subClassOf": "edg:DataAssetsViewpoint"
+    },
+    {
+      "@id": "edg:EnumeratedValue",
+      "subClassOf": [
+        "edg:Construct",
+        "edg:StatusAspect",
+        "edg:Narratable"
+      ]
+    },
+    {
+      "@id": "edg:EnumeratedValueSelector",
+      "subClassOf": "edg:PermissibleValuesAsset"
+    },
+    {
+      "@id": "edg:EnumeratedValueViewpoint",
+      "subClassOf": [
+        "edg:DataAssetsViewpoint",
+        "edg:Viewpoint"
+      ]
+    },
+    {
+      "@id": "edg:EnumerationClass",
+      "subClassOf": [
+        "edg:AssetClass",
+        "prov:Entity",
+        "edg:Provenance",
+        "edg:StatusAspect"
+      ]
+    },
+    {
+      "@id": "edg:EnumerationOntology",
+      "subClassOf": [
+        "teamwork:Vocabulary",
+        "edg:AssetCollection",
+        "ontologyprojects:Ontology"
+      ]
+    },
+    {
+      "@id": "edg:EnumerationTypesOntology",
+      "subClassOf": [
+        "ontologyprojects:Ontology",
+        "edg:AssetCollection"
+      ]
+    },
+    {
+      "@id": "edg:EnumerationViewpoint",
+      "subClassOf": "edg:Viewpoint"
+    },
+    {
+      "@id": "edg:Environment",
+      "subClassOf": "edg:Asset"
+    },
+    {
+      "@id": "edg:EnvironmentType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:EnvironmentsModelType",
+      "subClassOf": [
+        "rdfs:Resource",
+        "teamwork:Vocabulary"
+      ]
+    },
+    {
+      "@id": "edg:Event",
+      "subClassOf": "edg:Construct"
+    },
+    {
+      "@id": "edg:ExchangeableEntity",
+      "subClassOf": "edg:Traceable"
+    },
+    {
+      "@id": "edg:ExternalDataSet",
+      "subClassOf": [
+        "edg:DataSet",
+        "layer:GeospatialDataLayerViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:ExternalSystem",
+      "subClassOf": "edg:System"
+    },
+    {
+      "@id": "edg:Feedline",
+      "subClassOf": "edg:PhysicalFlow"
+    },
+    {
+      "@id": "edg:FileAsset",
+      "subClassOf": [
+        "edg:Processable",
+        "edg:ProvenanceTimestamps",
+        "edg:PhysicalDataAsset",
+        "edg:DataQualityAspect",
+        "edg:Traceable",
+        "edg:Protectable",
+        "edg:AccessControllable",
+        "edg:ComplianceAspect"
+      ]
+    },
+    {
+      "@id": "edg:FileSystem",
+      "subClassOf": "edg:DataContainer"
+    },
+    {
+      "@id": "edg:FileTable",
+      "subClassOf": [
+        "edg:Table",
+        "edg:ComplianceAspect"
+      ]
+    },
+    {
+      "@id": "edg:FiveLevelRatingScale",
+      "subClassOf": "edg:OrdinalScale"
+    },
+    {
+      "@id": "edg:Flow",
+      "subClassOf": [
+        "edg:Protectable",
+        "edg:SoftwareAsset"
+      ]
+    },
+    {
+      "@id": "edg:FlowStatement",
+      "subClassOf": "rdf:Statement"
+    },
+    {
+      "@id": "edg:ForeignKey",
+      "subClassOf": "edg:PhysicalDataAsset"
+    },
+    {
+      "@id": "edg:Form",
+      "subClassOf": [
+        "edg:DataExchangeable",
+        "edg:InformationAsset",
+        "edg:Governance",
+        "edg:InformationAssetViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:FormItem",
+      "subClassOf": [
+        "edg:InformationAssetViewpoint",
+        "edg:DataElement",
+        "edg:PhysicalDataAsset",
+        "edg:DataAssetViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:FormSchedule",
+      "subClassOf": [
+        "edg:InformationAssetViewpoint",
+        "edg:InformationAsset"
+      ]
+    },
+    {
+      "@id": "edg:FormatType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Formula",
+      "subClassOf": [
+        "edg:Construct",
+        "edg:Narratable"
+      ]
+    },
+    {
+      "@id": "edg:FormulaClass",
+      "subClassOf": [
+        "sh:NodeShape",
+        "edg:ConstructClass"
+      ]
+    },
+    {
+      "@id": "edg:FrequenciesRecord",
+      "subClassOf": [
+        "edg:Statistics",
+        "edg:DataProfileViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:FrequencyOfChange",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:FunctionalRequirement",
+      "subClassOf": "edg:Requirement"
+    },
+    {
+      "@id": "edg:GeoLocation",
+      "subClassOf": "edg:Location"
+    },
+    {
+      "@id": "edg:GlossaryProject",
+      "subClassOf": [
+        "edg:AssetCollection",
+        "teamwork:Vocabulary"
+      ]
+    },
+    {
+      "@id": "edg:GlossaryTerm",
+      "subClassOf": [
+        "edg:DatatypeViewpoint",
+        "edg:ComplianceAspect",
+        "edg:GlossaryViewpoint",
+        "edg:GlossaryTermRelatable",
+        "prov:Entity",
+        "edg:Asset",
+        "edg:PermissibleValuesAssignable"
+      ]
+    },
+    {
+      "@id": "edg:GlossaryTermRelatable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:GlossaryViewpoint",
+      "subClassOf": "edg:Viewpoint"
+    },
+    {
+      "@id": "edg:GoogleCloudAIpipeline",
+      "subClassOf": "edg:MLpipeline"
+    },
+    {
+      "@id": "edg:Governance",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:GovernanceAsset",
+      "subClassOf": "edg:Asset"
+    },
+    {
+      "@id": "edg:GovernanceModelProject",
+      "subClassOf": [
+        "teamwork:Vocabulary",
+        "edg:AssetCollection"
+      ]
+    },
+    {
+      "@id": "edg:GovernancePolicy",
+      "subClassOf": "edg:Policy"
+    },
+    {
+      "@id": "edg:GovernanceProcess",
+      "subClassOf": "edg:GovernanceViewpoint"
+    },
+    {
+      "@id": "edg:GovernanceViewpoint",
+      "subClassOf": [
+        "edg:DataAssetsViewpoint",
+        "edg:EnterpriseViewpoint",
+        "edg:Viewpoint",
+        "edg:TechnicalViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:GraphStore",
+      "subClassOf": "edg:Database"
+    },
+    {
+      "@id": "edg:GuidanceDocument",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Document",
+        "edg:Governance"
+      ]
+    },
+    {
+      "@id": "edg:HardwareExecutable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:HardwareVendor",
+      "subClassOf": "edg:Vendor"
+    },
+    {
+      "@id": "edg:HevoPipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:IaaS",
+      "subClassOf": "edg:CloudComputingService"
+    },
+    {
+      "@id": "edg:Identifiable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:IdentificationLabel",
+      "subClassOf": [
+        "edg:DataExchangeable",
+        "edg:InformationAssetViewpoint",
+        "edg:InformationAsset"
+      ]
+    },
+    {
+      "@id": "edg:IdentificationMethod",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:ImagesDataSet",
+      "subClassOf": "edg:DataSet"
+    },
+    {
+      "@id": "edg:ImpactAnalyzable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:ImpactAnalyzableClass",
+      "subClassOf": "edg:AssetClass"
+    },
+    {
+      "@id": "edg:ImpactProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "edg:ImpactScale",
+      "subClassOf": "edg:OrdinalScale"
+    },
+    {
+      "@id": "edg:Indicator",
+      "subClassOf": [
+        "edg:GovernanceViewpoint",
+        "edg:GovernanceAsset",
+        "edg:ComplianceAspect",
+        "edg:Traceable"
+      ]
+    },
+    {
+      "@id": "edg:IndustryTerm",
+      "subClassOf": "edg:GlossaryTerm"
+    },
+    {
+      "@id": "edg:InformaticaPowerCenterPipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:InformationAsset",
+      "subClassOf": [
+        "edg:ParticipationsAspect",
+        "edg:LogicalFlowPayloadable",
+        "edg:EnterpriseAsset",
+        "prov:Entity",
+        "edg:Provenance"
+      ]
+    },
+    {
+      "@id": "edg:InformationAssetViewpoint",
+      "subClassOf": [
+        "edg:EnterpriseViewpoint",
+        "edg:Viewpoint",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:InformationPackage",
+      "subClassOf": [
+        "edg:InformationAssetViewpoint",
+        "edg:InformationAsset",
+        "edg:DataExchangeable"
+      ]
+    },
+    {
+      "@id": "edg:InformationRecord",
+      "subClassOf": [
+        "edg:InformationAsset",
+        "edg:Governance",
+        "edg:InformationAssetViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:InternalSystem",
+      "subClassOf": "edg:System"
+    },
+    {
+      "@id": "edg:Interoperable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:InventoryDocument",
+      "subClassOf": [
+        "edg:Governance",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:Invoice",
+      "subClassOf": [
+        "edg:Form",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:Issue",
+      "subClassOf": [
+        "edg:GovernanceViewpoint",
+        "edg:RequirementsViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:IssueStatus",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:JDBCdatatype",
+      "subClassOf": "edg:PhysicalDatatype"
+    },
+    {
+      "@id": "edg:JSONdataSet",
+      "subClassOf": "edg:DataSet"
+    },
+    {
+      "@id": "edg:JobDescriptionDocument",
+      "subClassOf": [
+        "edg:Document",
+        "edg:Governance"
+      ]
+    },
+    {
+      "@id": "edg:JobTitle",
+      "subClassOf": [
+        "edg:Party",
+        "edg:WorkflowParticipant"
+      ]
+    },
+    {
+      "@id": "edg:KafkaPipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:KerasPipeline",
+      "subClassOf": "edg:MLpipeline"
+    },
+    {
+      "@id": "edg:KeyPerformanceIndicator",
+      "subClassOf": "edg:Indicator"
+    },
+    {
+      "@id": "edg:LandingPageWidgetConfig",
+      "subClassOf": "edg:GovernanceViewpoint"
+    },
+    {
+      "@id": "edg:LineageAnalyzable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:LineageAnalyzableClass",
+      "subClassOf": "edg:AssetClass"
+    },
+    {
+      "@id": "edg:LineageModelProject",
+      "subClassOf": [
+        "edg:AssetCollection",
+        "teamwork:Vocabulary"
+      ]
+    },
+    {
+      "@id": "edg:LineageProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "edg:Locatable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:Location",
+      "subClassOf": [
+        "edg:Construct",
+        "edg:Narratable"
+      ]
+    },
+    {
+      "@id": "edg:LogicalAttribute",
+      "subClassOf": [
+        "edg:Protectable",
+        "edg:LogicalDataAsset",
+        "edg:Traceable",
+        "edg:ComplianceAspect"
+      ]
+    },
+    {
+      "@id": "edg:LogicalDataAsset",
+      "subClassOf": [
+        "edg:DataAssetViewFromEnterpriseAssets",
+        "edg:DataAsset",
+        "edg:DataAssetViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:LogicalDataModel",
+      "subClassOf": [
+        "edg:Model",
+        "edg:Provenance",
+        "edg:ComplianceAspect",
+        "edg:SemanticComplianceAspect",
+        "edg:Traceable",
+        "edg:LogicalDataAsset"
+      ]
+    },
+    {
+      "@id": "edg:LogicalDatatype",
+      "subClassOf": "edg:Datatype"
+    },
+    {
+      "@id": "edg:LogicalEntity",
+      "subClassOf": [
+        "edg:ComplianceAspect",
+        "edg:ExchangeableEntity",
+        "edg:LogicalDataAsset",
+        "edg:Provenance"
+      ]
+    },
+    {
+      "@id": "edg:LogicalFlow",
+      "subClassOf": [
+        "edg:TechnicalAssetViewFromEnterpriseAssets",
+        "edg:Flow"
+      ]
+    },
+    {
+      "@id": "edg:LogicalFlowPayloadable",
+      "subClassOf": "edg:Payloadable"
+    },
+    {
+      "@id": "edg:LogicalRelation",
+      "subClassOf": "edg:LogicalDataAsset"
+    },
+    {
+      "@id": "edg:LogicalRelationParticipant",
+      "subClassOf": "edg:LogicalDataAsset"
+    },
+    {
+      "@id": "edg:MLpipeline",
+      "subClassOf": "edg:SoftwarePipeline"
+    },
+    {
+      "@id": "edg:Measure",
+      "subClassOf": "edg:Indicator"
+    },
+    {
+      "@id": "edg:MetadataSource",
+      "subClassOf": [
+        "edg:Identifiable",
+        "edg:Construct"
+      ]
+    },
+    {
+      "@id": "edg:Metric",
+      "subClassOf": [
+        "edg:GovernanceViewpoint",
+        "edg:GovernanceAsset"
+      ]
+    },
+    {
+      "@id": "edg:MetricType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Model",
+      "subClassOf": [
+        "edg:AncillaryAsset",
+        "edg:Identifiable",
+        "edg:StatusAspect",
+        "edg:Narratable"
+      ]
+    },
+    {
+      "@id": "edg:ModelClass",
+      "subClassOf": [
+        "rdfs:Class",
+        "owl:Class",
+        "graphql:Schema"
+      ]
+    },
+    {
+      "@id": "edg:Narratable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:NetworkAttachedService",
+      "subClassOf": "edg:CloudComputingService"
+    },
+    {
+      "@id": "edg:NoSQLdatabase",
+      "subClassOf": "edg:Database"
+    },
+    {
+      "@id": "edg:NonFunctionalRequirement",
+      "subClassOf": "edg:Requirement"
+    },
+    {
+      "@id": "edg:NoticeDocument",
+      "subClassOf": [
+        "edg:Document",
+        "edg:Governance"
+      ]
+    },
+    {
+      "@id": "edg:NumericDataElement",
+      "subClassOf": "edg:DataElement"
+    },
+    {
+      "@id": "edg:Office",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "edg:OntologyAsset",
+      "subClassOf": [
+        "edg:AncillaryAsset",
+        "edg:Governance",
+        "edg:Traceable"
+      ]
+    },
+    {
+      "@id": "edg:OntologyClass",
+      "subClassOf": "edg:OntologyAsset"
+    },
+    {
+      "@id": "edg:OntologyDataset",
+      "subClassOf": "edg:OntologyGraph"
+    },
+    {
+      "@id": "edg:OntologyGraph",
+      "subClassOf": "edg:OntologyAsset"
+    },
+    {
+      "@id": "edg:OntologySchema",
+      "subClassOf": "edg:OntologyGraph"
+    },
+    {
+      "@id": "edg:OntologyVocabulary",
+      "subClassOf": "edg:OntologyGraph"
+    },
+    {
+      "@id": "edg:OperatingSystemType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:OracleDataIntegratorPipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:OrdinalScale",
+      "subClassOf": "edg:Scale"
+    },
+    {
+      "@id": "edg:Organization",
+      "subClassOf": [
+        "edg:Party",
+        "edg:GovernanceViewpoint",
+        "edg:EnterpriseAsset"
+      ]
+    },
+    {
+      "@id": "edg:OversightPolicy",
+      "subClassOf": "edg:Policy"
+    },
+    {
+      "@id": "edg:PIIterm",
+      "subClassOf": "edg:BusinessTerm"
+    },
+    {
+      "@id": "edg:PaaS",
+      "subClassOf": "edg:CloudComputingService"
+    },
+    {
+      "@id": "edg:PartOfProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "edg:ParticipationsAspect",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:Party",
+      "subClassOf": [
+        "edg:BusinessModelViewpoint",
+        "edg:EnterpriseAsset",
+        "prov:Agent",
+        "metadata:Actor",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:PartyAsRole",
+      "subClassOf": "edg:Party"
+    },
+    {
+      "@id": "edg:Payloadable",
+      "subClassOf": [
+        "edg:Processable",
+        "edg:Traceable",
+        "edg:DataAssetViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:PermissibleValuesAsset",
+      "subClassOf": [
+        "edg:DataQualityViewpoint",
+        "edg:Construct",
+        "edg:Identifiable"
+      ]
+    },
+    {
+      "@id": "edg:PermissibleValuesAssignable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:PermissionGovernanceRoleProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "edg:Person",
+      "subClassOf": [
+        "edg:Dutiable",
+        "edg:Party"
+      ]
+    },
+    {
+      "@id": "edg:PersonalDataCategory",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:PersonalDataUseConsent",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:PersonalDataUseProtection",
+      "subClassOf": "rdf:Statement"
+    },
+    {
+      "@id": "edg:PhysicalDataAsset",
+      "subClassOf": [
+        "edg:DataAssetViewFromEnterpriseAssets",
+        "edg:DataAsset",
+        "edg:DataAssetViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:PhysicalDataModel",
+      "subClassOf": [
+        "edg:SemanticComplianceAspect",
+        "edg:ProvenanceTimestamps",
+        "edg:Model",
+        "edg:ComplianceAspect",
+        "edg:PhysicalDataAsset",
+        "edg:Traceable"
+      ]
+    },
+    {
+      "@id": "edg:PhysicalDataModelDatabaseColumn",
+      "subClassOf": [
+        "edg:ComplianceAspect",
+        "edg:Traceable",
+        "edg:PhysicalDataAsset"
+      ]
+    },
+    {
+      "@id": "edg:PhysicalDataModelDatabaseSchema",
+      "subClassOf": "edg:DatabaseSchema"
+    },
+    {
+      "@id": "edg:PhysicalDataModelDatabaseTable",
+      "subClassOf": [
+        "edg:ComplianceAspect",
+        "edg:Table"
+      ]
+    },
+    {
+      "@id": "edg:PhysicalDatabaseSchema",
+      "subClassOf": "edg:DatabaseSchema"
+    },
+    {
+      "@id": "edg:PhysicalDatatype",
+      "subClassOf": "edg:Datatype"
+    },
+    {
+      "@id": "edg:PhysicalFlow",
+      "subClassOf": "edg:Flow"
+    },
+    {
+      "@id": "edg:PhysicalFlowPayloadable",
+      "subClassOf": "edg:Payloadable"
+    },
+    {
+      "@id": "edg:Place",
+      "subClassOf": [
+        "edg:BusinessModelViewpoint",
+        "edg:EnterpriseAsset",
+        "geo:SpatialThing",
+        "edg:EnterpriseEnabler",
+        "edg:Locatable",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:Plan",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Governance",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:Policy",
+      "subClassOf": [
+        "edg:GovernanceAsset",
+        "edg:GovernanceViewpoint",
+        "edg:ComplianceAspect"
+      ]
+    },
+    {
+      "@id": "edg:PolicyCompliance",
+      "subClassOf": [
+        "edg:GovernanceViewpoint",
+        "edg:GovernanceAsset"
+      ]
+    },
+    {
+      "@id": "edg:PolicyDocument",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Governance",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:PolicyRequirement",
+      "subClassOf": "edg:Requirement"
+    },
+    {
+      "@id": "edg:Presentation",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Document",
+        "edg:Governance"
+      ]
+    },
+    {
+      "@id": "edg:Priority",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "edg:PrivacyPolicy",
+      "subClassOf": "edg:Policy"
+    },
+    {
+      "@id": "edg:Procedure",
+      "subClassOf": [
+        "edg:BusinessModelViewpoint",
+        "edg:EnterpriseAsset",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:ProcedureDocument",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Document",
+        "edg:Governance"
+      ]
+    },
+    {
+      "@id": "edg:Process",
+      "subClassOf": [
+        "edg:ComplianceAspect",
+        "edg:Interoperable",
+        "edg:BusinessModelViewpoint",
+        "edg:ParticipationsAspect",
+        "edg:EnterpriseAsset",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:ProcessActivity",
+      "subClassOf": [
+        "edg:LineageAnalyzable",
+        "edg:Interoperable",
+        "edg:EnterpriseAsset",
+        "edg:BusinessModelViewpoint",
+        "edg:ParticipationsAspect",
+        "edg:EnterpriseViewFromTechnicalAssets"
+      ]
+    },
+    {
+      "@id": "edg:ProcessAsset",
+      "subClassOf": [
+        "edg:Governance",
+        "edg:Asset",
+        "edg:Traceable"
+      ]
+    },
+    {
+      "@id": "edg:Processable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:ProductivityApplication",
+      "subClassOf": [
+        "edg:SemanticComplianceAspect",
+        "edg:EnterpriseSoftware",
+        "edg:Locatable",
+        "edg:EnterpriseEnabler",
+        "edg:SoftwareExecutable",
+        "edg:Configurable",
+        "edg:AccessControllable",
+        "edg:ComplianceAspect",
+        "edg:Interoperable"
+      ]
+    },
+    {
+      "@id": "edg:Program",
+      "subClassOf": [
+        "edg:BusinessModelViewpoint",
+        "edg:EnterpriseAsset"
+      ]
+    },
+    {
+      "@id": "edg:Project",
+      "subClassOf": [
+        "edg:BusinessModelViewpoint",
+        "edg:EnterpriseViewFromTechnicalAssets",
+        "edg:EnterpriseAsset"
+      ]
+    },
+    {
+      "@id": "edg:ProjectTeam",
+      "subClassOf": "edg:Team"
+    },
+    {
+      "@id": "edg:PropertyValueSet",
+      "subClassOf": "edg:PermissibleValuesAsset"
+    },
+    {
+      "@id": "edg:Protectable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:ProtectionMethod",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Provenance",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:ProvenanceTimestamps",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:Publication",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:GovernanceAsset",
+        "edg:Document",
+        "edg:Governance"
+      ]
+    },
+    {
+      "@id": "edg:Purpose",
+      "subClassOf": "edg:Construct"
+    },
+    {
+      "@id": "edg:QualityAssuranceAspect",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:QuantifiableDataElement",
+      "subClassOf": [
+        "edg:DataElement",
+        "qudt:Quantity"
+      ]
+    },
+    {
+      "@id": "edg:QuantilesRecord",
+      "subClassOf": [
+        "edg:DataProfileViewpoint",
+        "edg:Statistics"
+      ]
+    },
+    {
+      "@id": "edg:Record",
+      "subClassOf": [
+        "edg:DataQualityAspect",
+        "edg:DataExchangeable",
+        "edg:PhysicalDataAsset"
+      ]
+    },
+    {
+      "@id": "edg:ReferenceDataSource",
+      "subClassOf": "edg:Asset"
+    },
+    {
+      "@id": "edg:ReferenceDatasetValueSelector",
+      "subClassOf": "edg:PermissibleValuesAsset"
+    },
+    {
+      "@id": "edg:RegulationsDocument",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:RegulatoryRequirement",
+      "subClassOf": "edg:Requirement"
+    },
+    {
+      "@id": "edg:RelationalDatabase",
+      "subClassOf": "edg:Database"
+    },
+    {
+      "@id": "edg:Report",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:InformationAssetViewpoint",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:ReportColumn",
+      "subClassOf": "edg:DataElement"
+    },
+    {
+      "@id": "edg:ReportTable",
+      "subClassOf": [
+        "edg:Table",
+        "edg:InformationAsset",
+        "edg:InformationAssetViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:ReportType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Requirement",
+      "subClassOf": [
+        "edg:GovernanceViewpoint",
+        "edg:Asset",
+        "edg:RequirementsViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:RequirementStatus",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:RequirementsModelProject",
+      "subClassOf": [
+        "teamwork:Vocabulary",
+        "edg:AssetCollection"
+      ]
+    },
+    {
+      "@id": "edg:RequirementsViewpoint",
+      "subClassOf": "edg:Viewpoint"
+    },
+    {
+      "@id": "edg:ResearchPaper",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:ResourceLocalNameConstructMethod",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Resourceable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:Responsibility",
+      "subClassOf": [
+        "edg:GovernanceViewpoint",
+        "edg:GovernanceAsset",
+        "edg:BusinessModelViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:Responsive",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:Risk",
+      "subClassOf": [
+        "edg:GovernanceViewpoint",
+        "edg:GovernanceAsset"
+      ]
+    },
+    {
+      "@id": "edg:Room",
+      "subClassOf": "edg:BuildingUnit"
+    },
+    {
+      "@id": "edg:SQLdatatype",
+      "subClassOf": "edg:PhysicalDatatype"
+    },
+    {
+      "@id": "edg:SSISpipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:SaaS",
+      "subClassOf": "edg:CloudComputingService"
+    },
+    {
+      "@id": "edg:ScalarDatatypeUnion",
+      "subClassOf": "edg:Construct"
+    },
+    {
+      "@id": "edg:Scale",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Schema",
+      "subClassOf": [
+        "edg:SemanticComplianceAspect",
+        "edg:DataQualityAspect",
+        "edg:Traceable",
+        "edg:PhysicalDataAsset",
+        "edg:ComplianceAspect"
+      ]
+    },
+    {
+      "@id": "edg:ScriptClass",
+      "subClassOf": "rdfs:Class"
+    },
+    {
+      "@id": "edg:SearchTheEdgWidgetConfig",
+      "subClassOf": "edg:LandingPageWidgetConfig"
+    },
+    {
+      "@id": "edg:SecurityRequirement",
+      "subClassOf": "edg:Requirement"
+    },
+    {
+      "@id": "edg:SemanticComplianceAspect",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:Server",
+      "subClassOf": [
+        "edg:EnterpriseSoftware",
+        "edg:AccessControllable",
+        "edg:Locatable"
+      ]
+    },
+    {
+      "@id": "edg:ServiceEndpoint",
+      "subClassOf": [
+        "edg:Locatable",
+        "edg:SoftwareAsset",
+        "edg:AccessControllable",
+        "edg:Configurable",
+        "edg:Interoperable",
+        "edg:Protectable"
+      ]
+    },
+    {
+      "@id": "edg:Sociable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:SoftwareAsset",
+      "subClassOf": "edg:TechnicalAsset"
+    },
+    {
+      "@id": "edg:SoftwareCapability",
+      "subClassOf": "edg:AncillaryAsset"
+    },
+    {
+      "@id": "edg:SoftwareExecutable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:SoftwareExecutableType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:SoftwareFunction",
+      "subClassOf": [
+        "edg:SoftwareAsset",
+        "edg:SoftwareExecutable"
+      ]
+    },
+    {
+      "@id": "edg:SoftwareModel",
+      "subClassOf": "edg:Model"
+    },
+    {
+      "@id": "edg:SoftwarePipeline",
+      "subClassOf": "edg:System"
+    },
+    {
+      "@id": "edg:SoftwarePlatform",
+      "subClassOf": "edg:TechnicalAsset"
+    },
+    {
+      "@id": "edg:SoftwareProgram",
+      "subClassOf": [
+        "edg:EnterpriseSoftware",
+        "edg:SoftwareExecutable"
+      ]
+    },
+    {
+      "@id": "edg:SoftwareService",
+      "subClassOf": [
+        "edg:TechnicalAssetViewFromEnterpriseAssets",
+        "edg:Locatable",
+        "edg:AccessControllable",
+        "edg:EnterpriseSoftware",
+        "edg:EnterpriseEnabler",
+        "edg:Configurable"
+      ]
+    },
+    {
+      "@id": "edg:SoftwareSuite",
+      "subClassOf": [
+        "edg:AccessControllable",
+        "edg:TechnicalAssetViewFromEnterpriseAssets",
+        "edg:EnterpriseEnabler",
+        "edg:Configurable",
+        "edg:Interoperable",
+        "edg:EnterpriseSoftware"
+      ]
+    },
+    {
+      "@id": "edg:SoftwareVendor",
+      "subClassOf": "edg:Vendor"
+    },
+    {
+      "@id": "edg:SolutionStackType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:Specification",
+      "subClassOf": [
+        "edg:EnterpriseViewpointFromDataAssets",
+        "edg:Document"
+      ]
+    },
+    {
+      "@id": "edg:SpreadsheetDataSet",
+      "subClassOf": "edg:DataSet"
+    },
+    {
+      "@id": "edg:SpreadsheetFile",
+      "subClassOf": [
+        "edg:FileAsset",
+        "edg:SpreadsheetsWorkbook"
+      ]
+    },
+    {
+      "@id": "edg:SpreadsheetsWorkbook",
+      "subClassOf": "edg:DataSetCollection"
+    },
+    {
+      "@id": "edg:StakeholderGroup",
+      "subClassOf": "edg:Party"
+    },
+    {
+      "@id": "edg:Statistics",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "edg:StatusAspect",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:Stewardship",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:StringDataElement",
+      "subClassOf": "edg:DataElement"
+    },
+    {
+      "@id": "edg:SubjectArea",
+      "subClassOf": [
+        "edg:Narratable",
+        "edg:Category",
+        "edg:GovernanceViewpoint",
+        "edg:Stewardship",
+        "edg:Identifiable",
+        "edg:RequirementsViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:Suite",
+      "subClassOf": "edg:BuildingUnit"
+    },
+    {
+      "@id": "edg:System",
+      "subClassOf": [
+        "edg:ComplianceAspect",
+        "edg:SoftwareExecutable",
+        "edg:EnterpriseEnabler",
+        "edg:ReferenceDataSource",
+        "edg:MetadataSource",
+        "edg:SemanticComplianceAspect",
+        "edg:Locatable",
+        "edg:AccessControllable",
+        "edg:Interoperable",
+        "edg:EnterpriseSoftware",
+        "edg:Configurable"
+      ]
+    },
+    {
+      "@id": "edg:SystemAnnouncementsWidgetConfig",
+      "subClassOf": "edg:LandingPageWidgetConfig"
+    },
+    {
+      "@id": "edg:Table",
+      "subClassOf": [
+        "edg:PhysicalDataAsset",
+        "edg:DataStructure",
+        "edg:DataQualityAspect"
+      ]
+    },
+    {
+      "@id": "edg:TableColumn",
+      "subClassOf": [
+        "edg:DataQualityAspect",
+        "edg:DataElement",
+        "edg:PhysicalDataAsset"
+      ]
+    },
+    {
+      "@id": "edg:TalendPipeline",
+      "subClassOf": "edg:ETLpipeline"
+    },
+    {
+      "@id": "edg:TaxonomyNodeValueSet",
+      "subClassOf": "edg:PermissibleValuesAsset"
+    },
+    {
+      "@id": "edg:Team",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "edg:TechnicalAsset",
+      "subClassOf": [
+        "edg:Asset",
+        "edg:TechnicalViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:TechnicalAssetViewFromEnterpriseAssets",
+      "subClassOf": "edg:EnterpriseViewpoint"
+    },
+    {
+      "@id": "edg:TechnicalAssetsProject",
+      "subClassOf": [
+        "teamwork:Vocabulary",
+        "edg:AssetCollection"
+      ]
+    },
+    {
+      "@id": "edg:TechnicalTerm",
+      "subClassOf": "edg:GlossaryTerm"
+    },
+    {
+      "@id": "edg:TechnicalViewpoint",
+      "subClassOf": "edg:Viewpoint"
+    },
+    {
+      "@id": "edg:TensorFlowPipeline",
+      "subClassOf": "edg:MLpipeline"
+    },
+    {
+      "@id": "edg:TheanoPipeline",
+      "subClassOf": "edg:MLpipeline"
+    },
+    {
+      "@id": "edg:ThreeLevelRatingScale",
+      "subClassOf": "edg:OrdinalScale"
+    },
+    {
+      "@id": "edg:Traceable",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:TypeConstruct",
+      "subClassOf": "edg:Construct"
+    },
+    {
+      "@id": "edg:UIproperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "edg:UIpropertyConstraint",
+      "subClassOf": "sh:PropertyShape"
+    },
+    {
+      "@id": "edg:UNKNOWN-TYPE",
+      "subClassOf": "edg:Construct"
+    },
+    {
+      "@id": "edg:USgovClassifiedInformationSystem",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:UseCase",
+      "subClassOf": [
+        "edg:Traceable",
+        "edg:StatusAspect",
+        "edg:Identifiable",
+        "edg:AncillaryAsset",
+        "edg:Narratable",
+        "edg:RequirementsViewpoint"
+      ]
+    },
+    {
+      "@id": "edg:Vendor",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:View",
+      "subClassOf": "edg:Construct"
+    },
+    {
+      "@id": "edg:Viewpoint",
+      "subClassOf": [
+        "owl:Thing",
+        "edg:Aspect"
+      ]
+    },
+    {
+      "@id": "edg:ViewpointClass",
+      "subClassOf": [
+        "sh:NodeShape",
+        "owl:Class"
+      ]
+    },
+    {
+      "@id": "edg:WorkflowParticipant",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "edg:WorkflowParticipantProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "edg:WorkingGroup",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "edg:XMLschemaFile",
+      "subClassOf": [
+        "edg:Schema",
+        "edg:FileAsset"
+      ]
+    },
+    {
+      "@id": "edg:ZooKeeperAPIerrorCode",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:ZooKeeperStateType",
+      "subClassOf": "edg:EDGenumeratedValue"
+    },
+    {
+      "@id": "edg:abstract",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "edg:accessControl",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "edg:accessControlNotes",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "edg:approvalDate",
+      "range": "xsd:date"
+    },
+    {
+      "@id": "edg:aspectClass",
+      "range": "edg:Aspect"
+    },
+    {
+      "@id": "edg:attributeOf",
+      "domain": "edg:LogicalAttribute",
+      "range": "edg:LogicalEntity"
+    },
+    {
+      "@id": "edg:businessFunction",
+      "subPropertyOf": "edg:function"
+    },
+    {
+      "@id": "edg:businessSubFunction",
+      "subPropertyOf": "edg:function"
+    },
+    {
+      "@id": "edg:class",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "edg:collectionGuidance",
+      "subPropertyOf": "edg:guidance"
+    },
+    {
+      "@id": "edg:columnOf",
+      "subPropertyOf": "edg:partOf"
+    },
+    {
+      "@id": "edg:complianceIndicator",
+      "range": "edg:ComplianceIndicator",
+      "subPropertyOf": "edg:indicator"
+    },
+    {
+      "@id": "edg:complianceWithMetadata",
+      "subPropertyOf": "edg:complianceWithGovernedResource"
+    },
+    {
+      "@id": "edg:complianceWithOntology",
+      "subPropertyOf": "edg:complianceWithGovernedResource"
+    },
+    {
+      "@id": "edg:complianceWithReferenceData",
+      "subPropertyOf": "edg:complianceWithGovernedResource"
+    },
+    {
+      "@id": "edg:complianceWithTaxonomy",
+      "subPropertyOf": "edg:complianceWithGovernedResource"
+    },
+    {
+      "@id": "edg:compliesWithPolicyRequirement",
+      "subPropertyOf": "edg:tracesTo"
+    },
+    {
+      "@id": "edg:compliesWithPrivacyRequirement",
+      "subPropertyOf": "edg:compliesWithPolicyRequirement"
+    },
+    {
+      "@id": "edg:compliesWithRegulatoryRequirement",
+      "subPropertyOf": "edg:compliesWithPolicyRequirement"
+    },
+    {
+      "@id": "edg:compliesWithSecurityRequirement",
+      "subPropertyOf": "edg:compliesWithPolicyRequirement"
+    },
+    {
+      "@id": "edg:configurationNotes",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "edg:created",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "edg:dataAssetConsumer",
+      "subPropertyOf": "edg:dependent"
+    },
+    {
+      "@id": "edg:dataAssetProducer",
+      "subPropertyOf": "edg:dependency"
+    },
+    {
+      "@id": "edg:dataAssetSource",
+      "subPropertyOf": "edg:dependency"
+    },
+    {
+      "@id": "edg:dataAssetTarget",
+      "subPropertyOf": "edg:dependent"
+    },
+    {
+      "@id": "edg:dataQualityStatus",
+      "range": "edg:DataQualityStatus"
+    },
+    {
+      "@id": "edg:dependencyOf",
+      "range": "edg:Event"
+    },
+    {
+      "@id": "edg:dependsOnDataFrom",
+      "subPropertyOf": "prov:wasDerivedFrom"
+    },
+    {
+      "@id": "edg:derivedByFunction",
+      "subPropertyOf": "prov:wasDerivedFrom"
+    },
+    {
+      "@id": "edg:directMapping",
+      "subPropertyOf": "prov:wasDerivedFrom"
+    },
+    {
+      "@id": "edg:documentLink",
+      "subPropertyOf": "edg:link"
+    },
+    {
+      "@id": "edg:effectiveEndDate",
+      "range": "xsd:date"
+    },
+    {
+      "@id": "edg:effectiveStartDate",
+      "range": "xsd:date"
+    },
+    {
+      "@id": "edg:email",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:endDate",
+      "range": "xsd:date"
+    },
+    {
+      "@id": "edg:endpointSource",
+      "subPropertyOf": "edg:dependency"
+    },
+    {
+      "@id": "edg:endpointTarget",
+      "subPropertyOf": "edg:dependent"
+    },
+    {
+      "@id": "edg:equivalentTeamworkPermissionRole",
+      "range": "teamwork:PermissionRoleProperty"
+    },
+    {
+      "@id": "edg:errorMsg",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:faxNumber",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:flowConsumer",
+      "subPropertyOf": "edg:dependent"
+    },
+    {
+      "@id": "edg:flowSource",
+      "subPropertyOf": "edg:dependency"
+    },
+    {
+      "@id": "edg:frequencyNotes",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "edg:goals",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "edg:governanceMeasure",
+      "subPropertyOf": "edg:indicator"
+    },
+    {
+      "@id": "edg:graph",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "edg:guidanceLink",
+      "subPropertyOf": "edg:link"
+    },
+    {
+      "@id": "edg:hasSoftwareModule",
+      "subPropertyOf": "edg:usesSoftwareExecutable"
+    },
+    {
+      "@id": "edg:hiddenPropertyForRole",
+      "domain": "rdf:Property",
+      "range": "edg:WorkflowParticipantProperty"
+    },
+    {
+      "@id": "edg:hideClass",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:hideSubClasses",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:hostURL",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "edg:hostedOn",
+      "subPropertyOf": "edg:hosts"
+    },
+    {
+      "@id": "edg:hosts",
+      "subPropertyOf": "edg:hostedOn"
+    },
+    {
+      "@id": "edg:hostsApplication",
+      "subPropertyOf": "edg:hosts"
+    },
+    {
+      "@id": "edg:informationAssetConsumer",
+      "subPropertyOf": "edg:dependent"
+    },
+    {
+      "@id": "edg:informationAssetProducer",
+      "subPropertyOf": "edg:dependency"
+    },
+    {
+      "@id": "edg:informationProducer",
+      "subPropertyOf": "edg:dependency"
+    },
+    {
+      "@id": "edg:instancesHeldInAssetCollectionType",
+      "domain": "edg:AssetClass",
+      "range": "teamwork:ProjectType"
+    },
+    {
+      "@id": "edg:inverseLabel",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:isDepictionType",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:isDiagramGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isForeignKey",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:isInformationAssetExchangesGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isInteroperableDownstreamDependenciesGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isInteroperableUpstreamDependenciesGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isLogicalEntityAttribuesGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isLogicalEntityRelationshipsGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isLogicalFlowsGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isLogicalOnly",
+      "domain": "edg:LogicalAttribute",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:isNullable",
+      "domain": [
+        "edg:DatabaseColumn",
+        "edg:LogicalAttribute"
+      ],
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:isPhysicalFlowsGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isPrimaryKey",
+      "domain": [
+        "edg:DatabaseColumn",
+        "edg:LogicalAttribute"
+      ],
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:isProvenanceImpactGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isRequired",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:isServiceEndpointDataExchangeDetailsGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:isSummaryGadget",
+      "subPropertyOf": "edg:isGadget"
+    },
+    {
+      "@id": "edg:lastImported",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "edg:lastModifedByImport",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "edg:lastModified",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "edg:lastProfiled",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "edg:locationLink",
+      "subPropertyOf": "edg:link"
+    },
+    {
+      "@id": "edg:logicalDatatype",
+      "subPropertyOf": "edg:datatype"
+    },
+    {
+      "@id": "edg:logicalEntity",
+      "domain": "edg:LogicalDataModel",
+      "range": "edg:LogicalEntity"
+    },
+    {
+      "@id": "edg:mapsTo",
+      "subPropertyOf": "prov:wasDerivedFrom"
+    },
+    {
+      "@id": "edg:mapsToClass",
+      "subPropertyOf": "edg:mapsTo"
+    },
+    {
+      "@id": "edg:mapsToColumn",
+      "subPropertyOf": "prov:wasDerivedFrom"
+    },
+    {
+      "@id": "edg:mapsToLogicalAttribute",
+      "subPropertyOf": "edg:mapsTo"
+    },
+    {
+      "@id": "edg:mapsToLogicalEntity",
+      "subPropertyOf": "edg:mapsTo"
+    },
+    {
+      "@id": "edg:mapsToProperty",
+      "subPropertyOf": "edg:mapsTo"
+    },
+    {
+      "@id": "edg:mapsToReferenceData",
+      "subPropertyOf": "edg:mapsTo"
+    },
+    {
+      "@id": "edg:mapsToTerm",
+      "subPropertyOf": "edg:mapsTo"
+    },
+    {
+      "@id": "edg:metricsSupport",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:name",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:notificationRole",
+      "range": "edg:WorkflowParticipantProperty"
+    },
+    {
+      "@id": "edg:nullOptions",
+      "domain": "edg:DatabaseColumn",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:order",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "edg:originatedBy",
+      "range": "edg:Organization"
+    },
+    {
+      "@id": "edg:performanceIndicator",
+      "subPropertyOf": "edg:indicator"
+    },
+    {
+      "@id": "edg:performsActivity",
+      "subClassOf": "edg:performs"
+    },
+    {
+      "@id": "edg:performsCapability",
+      "subClassOf": "edg:performs"
+    },
+    {
+      "@id": "edg:performsFunction",
+      "subClassOf": "edg:performs"
+    },
+    {
+      "@id": "edg:physicalDatatype",
+      "subPropertyOf": "edg:datatype"
+    },
+    {
+      "@id": "edg:priority",
+      "range": "edg:DataRequirement"
+    },
+    {
+      "@id": "edg:producesDataFor",
+      "subPropertyOf": "edg:target"
+    },
+    {
+      "@id": "edg:profileSampleCount",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "edg:property",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "edg:propertyOf",
+      "domain": "edg:BigDataProperty",
+      "range": "edg:BigDataTable"
+    },
+    {
+      "@id": "edg:rationale",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "edg:referenceLink",
+      "subPropertyOf": "edg:link"
+    },
+    {
+      "@id": "edg:reportingEndDate",
+      "range": "xsd:date"
+    },
+    {
+      "@id": "edg:reportingStartDate",
+      "range": "xsd:date"
+    },
+    {
+      "@id": "edg:requirementStatement",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "edg:resourceURIconstructorFunction",
+      "range": "spin:Function"
+    },
+    {
+      "@id": "edg:resourceUsedBy",
+      "range": "edg:Process"
+    },
+    {
+      "@id": "edg:sameAs",
+      "subPropertyOf": "prov:wasDerivedFrom"
+    },
+    {
+      "@id": "edg:scalability",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:softwareFunctionSource",
+      "subPropertyOf": "edg:dependency"
+    },
+    {
+      "@id": "edg:softwareFunctionTarget",
+      "subPropertyOf": "edg:dependent"
+    },
+    {
+      "@id": "edg:softwareProgramSource",
+      "subPropertyOf": "edg:dependency"
+    },
+    {
+      "@id": "edg:softwareProgramTarget",
+      "subPropertyOf": "edg:dependent"
+    },
+    {
+      "@id": "edg:sourceApplication",
+      "subPropertyOf": "edg:source"
+    },
+    {
+      "@id": "edg:sourceLink",
+      "subPropertyOf": "edg:link"
+    },
+    {
+      "@id": "edg:specifiesNeedFor",
+      "subPropertyOf": "edg:specifies"
+    },
+    {
+      "@id": "edg:specifiesWorkOn",
+      "subPropertyOf": "edg:specifies"
+    },
+    {
+      "@id": "edg:startDate",
+      "range": "xsd:date"
+    },
+    {
+      "@id": "edg:subDomainOf",
+      "range": "edg:DataSubjectArea"
+    },
+    {
+      "@id": "edg:subRequirement",
+      "domain": "edg:Requirement",
+      "range": "edg:Requirement"
+    },
+    {
+      "@id": "edg:subScheduleOf",
+      "subPropertyOf": "edg:compositionProperty"
+    },
+    {
+      "@id": "edg:subjectArea",
+      "domain": "edg:AssetCollection",
+      "range": "edg:SubjectArea"
+    },
+    {
+      "@id": "edg:subsystem",
+      "subPropertyOf": "edg:system"
+    },
+    {
+      "@id": "edg:supportsActivity",
+      "subPropertyOf": "edg:supports"
+    },
+    {
+      "@id": "edg:supportsBusinessActivity",
+      "subPropertyOf": "edg:supports"
+    },
+    {
+      "@id": "edg:supportsBusinessCapability",
+      "subPropertyOf": "edg:supports"
+    },
+    {
+      "@id": "edg:supportsOrganization",
+      "subPropertyOf": "edg:supports"
+    },
+    {
+      "@id": "edg:supportsProcess",
+      "subPropertyOf": "edg:supports"
+    },
+    {
+      "@id": "edg:suppress",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "edg:system",
+      "domain": "edg:Environment",
+      "range": "edg:System"
+    },
+    {
+      "@id": "edg:tableOf",
+      "subPropertyOf": "edg:partOf"
+    },
+    {
+      "@id": "edg:tag",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:targetApplication",
+      "subPropertyOf": "edg:target"
+    },
+    {
+      "@id": "edg:telephone",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:termUsedByOrganization",
+      "subPropertyOf": "edg:usedBy"
+    },
+    {
+      "@id": "edg:timestamp",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "edg:transfersData",
+      "subPropertyOf": "edg:transfersAsset"
+    },
+    {
+      "@id": "edg:transfersInformationAsset",
+      "subPropertyOf": "edg:transfersAsset"
+    },
+    {
+      "@id": "edg:transfersPackage",
+      "subPropertyOf": "edg:transfersAsset"
+    },
+    {
+      "@id": "edg:type",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "edg:url",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "edg:usedByJobTitle",
+      "subPropertyOf": "edg:usedBy"
+    },
+    {
+      "@id": "edg:usedByOrganization",
+      "subPropertyOf": "edg:usedBy"
+    },
+    {
+      "@id": "edg:usedOnForm",
+      "subPropertyOf": "edg:compositionProperty"
+    },
+    {
+      "@id": "edg:usedOnSchedule",
+      "subPropertyOf": "edg:compositionProperty"
+    },
+    {
+      "@id": "edg:usesDatabaseView",
+      "subPropertyOf": "edg:usesSoftwareExecutable"
+    },
+    {
+      "@id": "edg:usesPipeline",
+      "subPropertyOf": [
+        "prov:wasDerivedFrom",
+        "edg:usesSoftwareExecutable"
+      ]
+    },
+    {
+      "@id": "edg:usesScript",
+      "subPropertyOf": "edg:usesSoftwareProgram"
+    },
+    {
+      "@id": "edg:usesSoftwareFunction",
+      "subPropertyOf": "edg:usesSoftwareExecutable"
+    },
+    {
+      "@id": "edg:usesSoftwarePlatform",
+      "subPropertyOf": "edg:usesSoftwareExecutable"
+    },
+    {
+      "@id": "edg:usesSoftwareProgram",
+      "subPropertyOf": "edg:usesSoftwareExecutable"
+    },
+    {
+      "@id": "edg:usesStoredProcedure",
+      "subPropertyOf": "edg:usesSoftwareExecutable"
+    },
+    {
+      "@id": "edg:usesTrainingDataset",
+      "subPropertyOf": "prov:wasDerivedFrom"
+    },
+    {
+      "@id": "edg:usesTransform",
+      "subPropertyOf": "edg:usesSoftwareProgram"
+    },
+    {
+      "@id": "edg:variantOf",
+      "subPropertyOf": "prov:wasDerivedFrom"
+    },
+    {
+      "@id": "edg:viewOf",
+      "subPropertyOf": "edg:partOf"
+    },
+    {
+      "@id": "taxonomies:Taxonomy",
+      "subClassOf": [
+        "teamwork:Vocabulary",
+        "edg:AssetCollection",
+        "edg:ReferenceDataSource"
+      ]
+    },
+    {
+      "@id": "taggerprojects:ContentTagSet",
+      "subClassOf": "edg:AssetCollection"
+    },
+    {
+      "@id": "dataenum:ADSPermissionState",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:DetectionMethod",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:FuelTreatmentStatus",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:GeospatialGeometry",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:MappingDisplayIsVisible",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:ObstacleLighting",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:PerimeterExtant",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:WaterSourceAvailability",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:caseSensitivity",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "dataenum:dataSensitivityLevel",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "wfitenum:ApplicationRole",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "wfitenum:applicationLifecycleStage",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "wfitenum:applicationTier",
+      "subClassOf": "edg:CustomEnumeratedValue"
+    },
+    {
+      "@id": "business_rules:BusinessRule",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "wfglos:DataStandardTerm",
+      "subClassOf": "edg:BusinessTerm"
+    },
+    {
+      "@id": "wfglos:GeospatialTerm",
+      "subClassOf": "edg:BusinessTerm"
+    },
+    {
+      "@id": "nwcg_org:Board",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "nwcg_org:Committee",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "nwcg_org:CourseSteeringCommittee",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "nwcg_org:CurriculumManagementUnit",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "nwcg_org:ExecutiveBoard",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "nwcg_org:Subcommittee",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "nwcg_org:TaskTeam",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "nwcg_org:Unit",
+      "subClassOf": "edg:Organization"
+    },
+    {
+      "@id": "layer:GeospatialDataLayer",
+      "subClassOf": "edg:ExternalDataSet"
+    },
+    {
+      "@id": "layer:GeospatialDataLayerViewpoint",
+      "subClassOf": "edg:DataAssetsViewpoint"
+    },
+    {
+      "@id": "datastd:DataElementStandard",
+      "subClassOf": "datastd:DataStandard"
+    },
+    {
+      "@id": "datastd:DataStandard",
+      "subClassOf": "datastd:StandardViewpoint"
+    },
+    {
+      "@id": "datastd:ExchangedDataElement",
+      "subClassOf": [
+        "datastd:StandardViewpoint",
+        "edg:DataElement"
+      ]
+    },
+    {
+      "@id": "datastd:ExchangedIncidentDataElement",
+      "subClassOf": "datastd:ExchangedDataElement"
+    },
+    {
+      "@id": "datastd:ExchangedResourceDataElement",
+      "subClassOf": "datastd:ExchangedDataElement"
+    },
+    {
+      "@id": "datastd:GeospatialDataLayerStandard",
+      "subClassOf": "datastd:DataStandard"
+    },
+    {
+      "@id": "datastd:StandardViewpoint",
+      "subClassOf": [
+        "edg:DataAssetsViewpoint",
+        "owl:Thing"
+      ]
+    },
+    {
+      "@id": "dc:description",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dct:author",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dct:contributor",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dct:creator",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dct:description",
+      "range": [
+        "rdf:HTML",
+        "xsd:string"
+      ]
+    },
+    {
+      "@id": "dct:rights",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dct:source",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "dct:subject",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dct:title",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "qudt:AbstractQuantityKind",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:AlignmentType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:ArrayDataOrderType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:Aspect",
+      "subClassOf": [
+        "owl:Thing",
+        "edg:Aspect"
+      ]
+    },
+    {
+      "@id": "qudt:AspectClass",
+      "subClassOf": "rdfs:Class"
+    },
+    {
+      "@id": "qudt:BaseDimensionMagnitude",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:BigIntegerType",
+      "subClassOf": "qudt:IntegerDatatype"
+    },
+    {
+      "@id": "qudt:BinaryPrefix",
+      "subClassOf": "qudt:Prefix"
+    },
+    {
+      "@id": "qudt:BitEncodingType",
+      "subClassOf": "qudt:Encoding"
+    },
+    {
+      "@id": "qudt:BitField",
+      "subClassOf": "xsd:string"
+    },
+    {
+      "@id": "qudt:BitFieldType",
+      "subClassOf": "qudt:ScalarDatatype"
+    },
+    {
+      "@id": "qudt:BooleanEncodingType",
+      "subClassOf": "qudt:Encoding"
+    },
+    {
+      "@id": "qudt:BooleanType",
+      "subClassOf": "qudt:OrdinalType"
+    },
+    {
+      "@id": "qudt:BooleanTypeEnumeratedValue",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:ByteEncodingType",
+      "subClassOf": "qudt:Encoding"
+    },
+    {
+      "@id": "qudt:CRC32",
+      "subClassOf": "xsd:integer"
+    },
+    {
+      "@id": "qudt:CardinalityType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:CharEncodingType",
+      "subClassOf": "qudt:Encoding"
+    },
+    {
+      "@id": "qudt:CharacterType",
+      "subClassOf": "qudt:OrdinalType"
+    },
+    {
+      "@id": "qudt:Citation",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:Comment",
+      "subClassOf": [
+        "owl:Thing",
+        "qudt:Verifiable"
+      ]
+    },
+    {
+      "@id": "qudt:Concept",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "qudt:ConstantValue",
+      "subClassOf": "qudt:QuantityValue"
+    },
+    {
+      "@id": "qudt:CountingUnit",
+      "subClassOf": "qudt:DimensionlessUnit"
+    },
+    {
+      "@id": "qudt:CurrencyUnit",
+      "subClassOf": "qudt:DimensionlessUnit"
+    },
+    {
+      "@id": "qudt:DataEncoding",
+      "subClassOf": "qudt:Aspect"
+    },
+    {
+      "@id": "qudt:Datatype",
+      "subClassOf": [
+        "edg:ANSICdatatype",
+        "edg:LogicalDatatype",
+        "qudt:Concept"
+      ]
+    },
+    {
+      "@id": "qudt:DatatypeShape",
+      "subClassOf": "edg:Aspect"
+    },
+    {
+      "@id": "qudt:DateStringType",
+      "subClassOf": "qudt:DateTimeStringType"
+    },
+    {
+      "@id": "qudt:DateTimeStringEncodingType",
+      "subClassOf": "qudt:StringEncodingType"
+    },
+    {
+      "@id": "qudt:DateTimeStringType",
+      "subClassOf": "qudt:StringType"
+    },
+    {
+      "@id": "qudt:DecimalPrefix",
+      "subClassOf": "qudt:Prefix"
+    },
+    {
+      "@id": "qudt:DerivedUnit",
+      "subClassOf": "qudt:Unit"
+    },
+    {
+      "@id": "qudt:DimensionlessUnit",
+      "subClassOf": "qudt:Unit"
+    },
+    {
+      "@id": "qudt:Discipline",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:DiscreteStateEnumeration",
+      "subClassOf": "dtype:Enumeration"
+    },
+    {
+      "@id": "qudt:DoublePrecisionType",
+      "subClassOf": "qudt:NumericType"
+    },
+    {
+      "@id": "qudt:Encoding",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:EndianType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:EnumeratedValue",
+      "subClassOf": [
+        "qudt:Concept",
+        "dtype:EnumeratedValue",
+        "qudt:Datatype"
+      ]
+    },
+    {
+      "@id": "qudt:Enumeration",
+      "subClassOf": [
+        "qudt:Concept",
+        "dtype:Enumeration"
+      ]
+    },
+    {
+      "@id": "qudt:EnumerationScale",
+      "subClassOf": [
+        "dtype:Enumeration",
+        "qudt:Scale"
+      ]
+    },
+    {
+      "@id": "qudt:Figure",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:FloatingPointEncodingType",
+      "subClassOf": "qudt:Encoding"
+    },
+    {
+      "@id": "qudt:HexBinaryType",
+      "subClassOf": "qudt:TextStringType"
+    },
+    {
+      "@id": "qudt:IntegerDatatype",
+      "subClassOf": [
+        "qudt:OrdinalType",
+        "qudt:NumericType"
+      ]
+    },
+    {
+      "@id": "qudt:IntegerEncodingType",
+      "subClassOf": "qudt:Encoding"
+    },
+    {
+      "@id": "qudt:IntervalScale",
+      "subClassOf": "qudt:Scale"
+    },
+    {
+      "@id": "qudt:LatexString",
+      "subClassOf": "xsd:string"
+    },
+    {
+      "@id": "qudt:LimitType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:LogarithmicUnit",
+      "subClassOf": "qudt:DimensionlessUnit"
+    },
+    {
+      "@id": "qudt:LongIntegerType",
+      "subClassOf": "qudt:IntegerDatatype"
+    },
+    {
+      "@id": "qudt:MathFunctionType",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:MultiDimensionalDataFormat",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "qudt:NIST_SP811_Comment",
+      "subClassOf": "qudt:Comment"
+    },
+    {
+      "@id": "qudt:Narratable",
+      "subClassOf": "qudt:Aspect"
+    },
+    {
+      "@id": "qudt:NominalScale",
+      "subClassOf": "qudt:Scale"
+    },
+    {
+      "@id": "qudt:Number",
+      "subClassOf": "qudt:Value"
+    },
+    {
+      "@id": "qudt:NumericType",
+      "subClassOf": [
+        "qudt:ScalarDatatype",
+        "qudt:DatatypeShape"
+      ]
+    },
+    {
+      "@id": "qudt:OctetType",
+      "subClassOf": "qudt:UnsignedIntegerType"
+    },
+    {
+      "@id": "qudt:OrderedType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:OrdinalScale",
+      "subClassOf": "qudt:Scale"
+    },
+    {
+      "@id": "qudt:OrdinalType",
+      "subClassOf": "qudt:ScalarDatatype"
+    },
+    {
+      "@id": "qudt:Organization",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:PaddingType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:Percentage",
+      "subClassOf": "qudt:NumericType"
+    },
+    {
+      "@id": "qudt:PhysicalConstant",
+      "subClassOf": "qudt:Quantity"
+    },
+    {
+      "@id": "qudt:PositiveIntegerType",
+      "subClassOf": [
+        "qudt:UnsignedType",
+        "qudt:IntegerDatatype"
+      ]
+    },
+    {
+      "@id": "qudt:Prefix",
+      "subClassOf": [
+        "qudt:Concept",
+        "qudt:Verifiable"
+      ]
+    },
+    {
+      "@id": "qudt:Quantifiable",
+      "subClassOf": "qudt:Aspect"
+    },
+    {
+      "@id": "qudt:Quantity",
+      "subClassOf": [
+        "qudt:Quantifiable",
+        "qudt:Concept"
+      ]
+    },
+    {
+      "@id": "qudt:QuantityKind",
+      "subClassOf": [
+        "qudt:Verifiable",
+        "qudt:AbstractQuantityKind"
+      ]
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector_CGS",
+      "subClassOf": "qudt:QuantityKindDimensionVector"
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector_CGS-EMU",
+      "subClassOf": "qudt:QuantityKindDimensionVector_CGS"
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector_CGS-ESU",
+      "subClassOf": "qudt:QuantityKindDimensionVector_CGS"
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector_CGS-GAUSS",
+      "subClassOf": "qudt:QuantityKindDimensionVector_CGS"
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector_CGS-LH",
+      "subClassOf": "qudt:QuantityKindDimensionVector_CGS"
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector_ISO",
+      "subClassOf": "qudt:QuantityKindDimensionVector"
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector_Imperial",
+      "subClassOf": "qudt:QuantityKindDimensionVector"
+    },
+    {
+      "@id": "qudt:QuantityKindDimensionVector_SI",
+      "subClassOf": "qudt:QuantityKindDimensionVector"
+    },
+    {
+      "@id": "qudt:QuantityType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:QuantityValue",
+      "subClassOf": [
+        "qudt:Concept",
+        "qudt:Quantifiable"
+      ]
+    },
+    {
+      "@id": "qudt:RatioScale",
+      "subClassOf": "qudt:Scale"
+    },
+    {
+      "@id": "qudt:RealDatatype",
+      "subClassOf": "qudt:NumericType"
+    },
+    {
+      "@id": "qudt:RealDoublePrecisionType",
+      "subClassOf": [
+        "qudt:RealDatatype",
+        "qudt:DoublePrecisionType"
+      ]
+    },
+    {
+      "@id": "qudt:RealNumber",
+      "subClassOf": "qudt:Number"
+    },
+    {
+      "@id": "qudt:RealSinglePrecisionType",
+      "subClassOf": [
+        "qudt:RealDatatype",
+        "qudt:SinglePrecisionType"
+      ]
+    },
+    {
+      "@id": "qudt:Rule",
+      "subClassOf": [
+        "qudt:Concept",
+        "qudt:Verifiable"
+      ]
+    },
+    {
+      "@id": "qudt:RuleType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:ScalarDatatype",
+      "subClassOf": [
+        "edg:ScalarDatatypeUnion",
+        "qudt:Datatype"
+      ]
+    },
+    {
+      "@id": "qudt:Scale",
+      "subClassOf": [
+        "qudt:Concept",
+        "qudt:DatatypeShape"
+      ]
+    },
+    {
+      "@id": "qudt:ScaleType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:ShortIntegerType",
+      "subClassOf": "qudt:IntegerDatatype"
+    },
+    {
+      "@id": "qudt:SignedBigIntegerType",
+      "subClassOf": [
+        "qudt:BigIntegerType",
+        "qudt:SignedIntegerType"
+      ]
+    },
+    {
+      "@id": "qudt:SignedIntegerType",
+      "subClassOf": [
+        "qudt:IntegerDatatype",
+        "qudt:SignedType"
+      ]
+    },
+    {
+      "@id": "qudt:SignedLongIntegerType",
+      "subClassOf": [
+        "qudt:SignedIntegerType",
+        "qudt:LongIntegerType"
+      ]
+    },
+    {
+      "@id": "qudt:SignedMediumIntegerType",
+      "subClassOf": "qudt:SignedIntegerType"
+    },
+    {
+      "@id": "qudt:SignedShortIntegerType",
+      "subClassOf": [
+        "qudt:SignedIntegerType",
+        "qudt:ShortIntegerType"
+      ]
+    },
+    {
+      "@id": "qudt:SignedType",
+      "subClassOf": "qudt:NumericType"
+    },
+    {
+      "@id": "qudt:SignedVariableLengthIntegerType",
+      "subClassOf": [
+        "qudt:SignedIntegerType",
+        "qudt:VariableLengthIntegerType"
+      ]
+    },
+    {
+      "@id": "qudt:SignednessType",
+      "subClassOf": "qudt:EnumeratedValue"
+    },
+    {
+      "@id": "qudt:SinglePrecisionType",
+      "subClassOf": "qudt:NumericType"
+    },
+    {
+      "@id": "qudt:Statement",
+      "subClassOf": "rdf:Statement"
+    },
+    {
+      "@id": "qudt:StringEncodingType",
+      "subClassOf": "qudt:Encoding"
+    },
+    {
+      "@id": "qudt:StringType",
+      "subClassOf": [
+        "qudt:ScalarDatatype",
+        "edg:ScalarDatatypeUnion",
+        "qudt:DatatypeShape"
+      ]
+    },
+    {
+      "@id": "qudt:StringUTF16",
+      "subClassOf": "qudt:TextStringType"
+    },
+    {
+      "@id": "qudt:StringUTF8",
+      "subClassOf": "qudt:TextStringType"
+    },
+    {
+      "@id": "qudt:StructuredDatatype",
+      "subClassOf": "qudt:Datatype"
+    },
+    {
+      "@id": "qudt:Symbol",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:SystemOfQuantityKinds",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:SystemOfUnits",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:TextStringType",
+      "subClassOf": "qudt:StringType"
+    },
+    {
+      "@id": "qudt:Time",
+      "subClassOf": "qudt:Value"
+    },
+    {
+      "@id": "qudt:TimeDataType",
+      "subClassOf": "qudt:ScalarDatatype"
+    },
+    {
+      "@id": "qudt:TimeInterval",
+      "subClassOf": "qudt:Value"
+    },
+    {
+      "@id": "qudt:TimeStringType",
+      "subClassOf": "qudt:TextStringType"
+    },
+    {
+      "@id": "qudt:UCUMci",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "qudt:UCUMci-term",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "qudt:UCUMcs",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "qudt:UCUMcs-term",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "qudt:UTC-DayTime",
+      "subClassOf": "xsd:string"
+    },
+    {
+      "@id": "qudt:Unit",
+      "subClassOf": [
+        "qudt:Concept",
+        "qudt:Verifiable",
+        "qudt:Narratable"
+      ]
+    },
+    {
+      "@id": "qudt:UnsignedBigIntegerType",
+      "subClassOf": [
+        "qudt:BigIntegerType",
+        "qudt:UnsignedIntegerType"
+      ]
+    },
+    {
+      "@id": "qudt:UnsignedIntegerType",
+      "subClassOf": [
+        "qudt:IntegerDatatype",
+        "qudt:UnsignedType"
+      ]
+    },
+    {
+      "@id": "qudt:UnsignedLongIntegerType",
+      "subClassOf": [
+        "qudt:LongIntegerType",
+        "qudt:UnsignedIntegerType"
+      ]
+    },
+    {
+      "@id": "qudt:UnsignedMediumIntegerType",
+      "subClassOf": "qudt:UnsignedIntegerType"
+    },
+    {
+      "@id": "qudt:UnsignedShortIntegerType",
+      "subClassOf": [
+        "qudt:ShortIntegerType",
+        "qudt:UnsignedIntegerType"
+      ]
+    },
+    {
+      "@id": "qudt:UnsignedType",
+      "subClassOf": "qudt:NumericType"
+    },
+    {
+      "@id": "qudt:UnsignedVariableLengthIntegerType",
+      "subClassOf": [
+        "qudt:UnsignedIntegerType",
+        "qudt:VariableLengthIntegerType"
+      ]
+    },
+    {
+      "@id": "qudt:UserQuantityKind",
+      "subClassOf": "qudt:AbstractQuantityKind"
+    },
+    {
+      "@id": "qudt:Value",
+      "subClassOf": "qudt:Concept"
+    },
+    {
+      "@id": "qudt:VariableLengthIntegerType",
+      "subClassOf": "qudt:IntegerDatatype"
+    },
+    {
+      "@id": "qudt:Verifiable",
+      "subClassOf": "qudt:Aspect"
+    },
+    {
+      "@id": "qudt:allowedUnitOfSystem",
+      "subPropertyOf": "qudt:unitOfSystem"
+    },
+    {
+      "@id": "qudt:ansiSQLName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:applicableCGSUnit",
+      "subPropertyOf": "qudt:applicableUnit"
+    },
+    {
+      "@id": "qudt:applicableISOUnit",
+      "subPropertyOf": "qudt:applicableUnit"
+    },
+    {
+      "@id": "qudt:applicableImperialUnit",
+      "subPropertyOf": "qudt:applicableUnit"
+    },
+    {
+      "@id": "qudt:applicablePlanckUnit",
+      "subPropertyOf": "qudt:applicableUnit"
+    },
+    {
+      "@id": "qudt:applicableSIUnit",
+      "subPropertyOf": "qudt:applicableUnit"
+    },
+    {
+      "@id": "qudt:applicableUSCustomaryUnit",
+      "subPropertyOf": "qudt:applicableUnit"
+    },
+    {
+      "@id": "qudt:baseCGSUnitDimensions",
+      "subPropertyOf": "qudt:baseUnitDimensions"
+    },
+    {
+      "@id": "qudt:baseISOUnitDimensions",
+      "subPropertyOf": "qudt:baseUnitDimensions"
+    },
+    {
+      "@id": "qudt:baseImperialUnitDimensions",
+      "subPropertyOf": "qudt:baseUnitDimensions"
+    },
+    {
+      "@id": "qudt:baseSIUnitDimensions",
+      "subPropertyOf": "qudt:baseUnitDimensions"
+    },
+    {
+      "@id": "qudt:baseUSCustomaryUnitDimensions",
+      "subPropertyOf": "qudt:baseUnitDimensions"
+    },
+    {
+      "@id": "qudt:baseUnitOfSystem",
+      "subPropertyOf": "qudt:coherentUnitOfSystem"
+    },
+    {
+      "@id": "qudt:cName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:coherentUnitOfSystem",
+      "subPropertyOf": "qudt:definedUnitOfSystem"
+    },
+    {
+      "@id": "qudt:coherentUnitSystem",
+      "subPropertyOf": "qudt:hasUnitSystem"
+    },
+    {
+      "@id": "qudt:definedUnitOfSystem",
+      "subPropertyOf": "qudt:unitOfSystem"
+    },
+    {
+      "@id": "qudt:derivedCoherentUnitOfSystem",
+      "subPropertyOf": [
+        "qudt:derivedUnitOfSystem",
+        "qudt:coherentUnitOfSystem"
+      ]
+    },
+    {
+      "@id": "qudt:derivedNonCoherentUnitOfSystem",
+      "subPropertyOf": "qudt:derivedUnitOfSystem"
+    },
+    {
+      "@id": "qudt:derivedQuantityKindOfSystem",
+      "subPropertyOf": "qudt:isQuantityKindOf"
+    },
+    {
+      "@id": "qudt:derivedUnitOfSystem",
+      "subPropertyOf": "qudt:unitOfSystem"
+    },
+    {
+      "@id": "qudt:description",
+      "subPropertyOf": "dct:description"
+    },
+    {
+      "@id": "qudt:dimensionExponentForAmountOfSubstance",
+      "subPropertyOf": "qudt:dimensionExponent"
+    },
+    {
+      "@id": "qudt:dimensionExponentForElectricCurrent",
+      "subPropertyOf": "qudt:dimensionExponent"
+    },
+    {
+      "@id": "qudt:dimensionExponentForLength",
+      "subPropertyOf": "qudt:dimensionExponent"
+    },
+    {
+      "@id": "qudt:dimensionExponentForLuminousIntensity",
+      "subPropertyOf": "qudt:dimensionExponent"
+    },
+    {
+      "@id": "qudt:dimensionExponentForMass",
+      "subPropertyOf": "qudt:dimensionExponent"
+    },
+    {
+      "@id": "qudt:dimensionExponentForThermodynamicTemperature",
+      "subPropertyOf": "qudt:dimensionExponent"
+    },
+    {
+      "@id": "qudt:dimensionExponentForTime",
+      "subPropertyOf": "qudt:dimensionExponent"
+    },
+    {
+      "@id": "qudt:dimensionlessExponent",
+      "subPropertyOf": "qudt:dimensionExponent"
+    },
+    {
+      "@id": "qudt:floatPercentage",
+      "subClassOf": "xsd:float"
+    },
+    {
+      "@id": "qudt:hasAllowedUnit",
+      "subPropertyOf": "qudt:hasUnit"
+    },
+    {
+      "@id": "qudt:hasBaseQuantityKind",
+      "subPropertyOf": "qudt:hasQuantityKind"
+    },
+    {
+      "@id": "qudt:hasBaseUnit",
+      "subPropertyOf": "qudt:hasCoherentUnit"
+    },
+    {
+      "@id": "qudt:hasCoherentUnit",
+      "subPropertyOf": "qudt:hasDefinedUnit"
+    },
+    {
+      "@id": "qudt:hasDefinedUnit",
+      "subPropertyOf": "qudt:hasUnit"
+    },
+    {
+      "@id": "qudt:hasDerivedCoherentUnit",
+      "subPropertyOf": [
+        "qudt:hasDerivedUnit",
+        "qudt:hasCoherentUnit"
+      ]
+    },
+    {
+      "@id": "qudt:hasDerivedNonCoherentUnit",
+      "subPropertyOf": "qudt:hasDerivedUnit"
+    },
+    {
+      "@id": "qudt:hasNonCoherentUnit",
+      "subPropertyOf": "qudt:hasDefinedUnit"
+    },
+    {
+      "@id": "qudt:hasPrefixUnit",
+      "subPropertyOf": "qudt:hasDefinedUnit"
+    },
+    {
+      "@id": "qudt:hexbinary",
+      "subClassOf": "xsd:string"
+    },
+    {
+      "@id": "qudt:integerPercentage",
+      "subClassOf": "xsd:integer"
+    },
+    {
+      "@id": "qudt:isBaseQuantityKindOfSystem",
+      "subPropertyOf": "qudt:isQuantityKindOf"
+    },
+    {
+      "@id": "qudt:isoNormativeReference",
+      "subPropertyOf": "qudt:normativeReference"
+    },
+    {
+      "@id": "qudt:javaName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:jsName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:latexSymbol",
+      "subPropertyOf": "qudt:literal"
+    },
+    {
+      "@id": "qudt:length",
+      "subPropertyOf": [
+        "qudt:minLength",
+        "qudt:maxLength"
+      ]
+    },
+    {
+      "@id": "qudt:literal",
+      "subPropertyOf": "dtype:literal"
+    },
+    {
+      "@id": "qudt:mathMLdefinition",
+      "subPropertyOf": "qudt:mathDefinition"
+    },
+    {
+      "@id": "qudt:matlabName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:maxExclusive",
+      "subPropertyOf": "qudt:upperBound"
+    },
+    {
+      "@id": "qudt:maxInclusive",
+      "subPropertyOf": "qudt:upperBound"
+    },
+    {
+      "@id": "qudt:microsoftSQLServerName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:minExclusive",
+      "subPropertyOf": "qudt:lowerBound"
+    },
+    {
+      "@id": "qudt:minInclusive",
+      "subPropertyOf": "qudt:lowerBound"
+    },
+    {
+      "@id": "qudt:mySQLName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:odbcName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:oleDBName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:oracleSQLName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:protocolBuffersName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:pythonName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "qudt:rollRotationDefinition",
+      "subPropertyOf": "qudt:rotationDefinition"
+    },
+    {
+      "@id": "qudt:scalarValue",
+      "subPropertyOf": "qudt:value"
+    },
+    {
+      "@id": "qudt:stringValue",
+      "subPropertyOf": "qudt:scalarValue"
+    },
+    {
+      "@id": "qudt:symbol",
+      "subPropertyOf": "qudt:literal"
+    },
+    {
+      "@id": "qudt:systemDerivedQuantityKind",
+      "subPropertyOf": "qudt:hasQuantityKind"
+    },
+    {
+      "@id": "qudt:timeDatatype",
+      "subPropertyOf": "qudt:type"
+    },
+    {
+      "@id": "qudt:ucumCaseInsensitiveCode",
+      "subPropertyOf": "qudt:ucumCode"
+    },
+    {
+      "@id": "qudt:ucumCaseSensitiveCode",
+      "subPropertyOf": "qudt:ucumCode"
+    },
+    {
+      "@id": "qudt:ucumCode",
+      "subPropertyOf": "skos:notation"
+    },
+    {
+      "@id": "qudt:value",
+      "subPropertyOf": "rdf:value"
+    },
+    {
+      "@id": "qudt:vbName",
+      "subPropertyOf": "qudt:id"
+    },
+    {
+      "@id": "sioc:Role",
+      "subClassOf": [
+        "edg:WorkflowParticipant",
+        "edg:Party"
+      ]
+    },
+    {
+      "@id": "sioc:UserAccount",
+      "subClassOf": [
+        "edg:Person",
+        "edg:WorkflowParticipant"
+      ]
+    },
+    {
+      "@id": "rdmprojects:ReferenceDataset",
+      "subClassOf": [
+        "teamwork:Vocabulary",
+        "edg:AssetCollection",
+        "edg:ReferenceDataSource"
+      ]
+    },
+    {
+      "@id": "crosswalkprojects:Crosswalk",
+      "subClassOf": "teamwork:Vocabulary"
+    },
+    {
+      "@id": "datagraph:DataGraphProject",
+      "subClassOf": [
+        "teamwork:Vocabulary",
+        "edg:ReferenceDataSource",
+        "edg:MetadataSource"
+      ]
+    },
+    {
+      "@id": "ontologyprojects:Ontology",
+      "subClassOf": [
+        "rdfs:Resource",
+        "edg:AssetCollection",
+        "edg:ReferenceDataSource",
+        "teamwork:Vocabulary"
+      ]
+    },
+    {
+      "@id": "corpusprojects:CorpusProject",
+      "subClassOf": "teamwork:Vocabulary"
+    },
+    {
+      "@id": "metadata:Actor",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "metadata:ChangeFrequency",
+      "subClassOf": "metadata:Frequency"
+    },
+    {
+      "@id": "metadata:Frequency",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "metadata:PaymentType",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "metadata:Standard",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "metadata:Status",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "metadata:UpdateMethod",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "metadata:UpdateProcess",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "metadata:accessPaymentType",
+      "domain": "owl:Ontology",
+      "range": "metadata:PaymentType"
+    },
+    {
+      "@id": "metadata:accessToUpdatesPaymentType",
+      "domain": "owl:Ontology",
+      "range": "metadata:PaymentType"
+    },
+    {
+      "@id": "metadata:basedOn",
+      "domain": "owl:Ontology",
+      "range": "metadata:Standard"
+    },
+    {
+      "@id": "metadata:changeFrequency",
+      "domain": "owl:Ontology",
+      "range": "metadata:ChangeFrequency"
+    },
+    {
+      "@id": "metadata:changeFrequencyNotes",
+      "domain": "owl:Ontology",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "metadata:dateGenerated",
+      "domain": "owl:Ontology",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "metadata:defaultStatus",
+      "range": "metadata:Status"
+    },
+    {
+      "@id": "metadata:effectiveEndDate",
+      "domain": [
+        "edg:Governance",
+        "owl:Ontology"
+      ],
+      "range": "xsd:date"
+    },
+    {
+      "@id": "metadata:effectiveStartDate",
+      "domain": [
+        "edg:Governance",
+        "owl:Ontology"
+      ],
+      "range": "xsd:date"
+    },
+    {
+      "@id": "metadata:identifier",
+      "domain": "owl:Ontology",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "metadata:isEnterprise",
+      "domain": "owl:Ontology",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "metadata:isExternalDataset",
+      "domain": "owl:Ontology",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "metadata:keyword",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "metadata:maintainedBy",
+      "domain": "owl:Ontology",
+      "range": "edg:Organization"
+    },
+    {
+      "@id": "metadata:officialName",
+      "domain": "owl:Ontology",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "metadata:onboardingProcedure",
+      "domain": "owl:Ontology",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "metadata:provisioningProcedure",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "metadata:purpose",
+      "domain": "owl:Ontology",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "metadata:referenceURL",
+      "domain": "owl:Ontology",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "metadata:sourcedFrom",
+      "domain": "owl:Ontology",
+      "range": "edg:Organization"
+    },
+    {
+      "@id": "metadata:standardizedBy",
+      "domain": "metadata:Standard",
+      "range": "edg:Organization"
+    },
+    {
+      "@id": "metadata:status",
+      "domain": "owl:Ontology",
+      "range": "metadata:Status"
+    },
+    {
+      "@id": "metadata:statusAllowsEdits",
+      "domain": "metadata:Status",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "metadata:subscriptionNote",
+      "domain": "owl:Ontology",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "metadata:transformedUsing",
+      "domain": "owl:Ontology"
+    },
+    {
+      "@id": "metadata:updateFileURL",
+      "domain": "owl:Ontology",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "metadata:updateFrequency",
+      "range": "metadata:Frequency"
+    },
+    {
+      "@id": "metadata:version",
+      "domain": "owl:Ontology",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "swa:instancesHaveRandomURI",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "teamwork:ProjectType",
+      "subClassOf": [
+        "rdfs:Resource",
+        "owl:Ontology"
+      ]
+    },
+    {
+      "@id": "teamwork:Vocabulary",
+      "subClassOf": "owl:Ontology"
+    },
+    {
+      "@id": "teamworkconstraints:AllLocalSubjectsTarget",
+      "subClassOf": "sh:Target"
+    },
+    {
+      "@id": "tosh:editGroupDescription",
+      "domain": "sh:PropertyGroup",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "tosh:systemNamespace",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "tosh:viewGadget",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "tosh:viewGroupDescription",
+      "domain": "sh:PropertyGroup",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "tosh:viewWidget",
+      "range": "swa:ObjectViewerClass"
+    },
+    {
+      "@id": "dtype:CodeList",
+      "subClassOf": "dtype:Enumeration"
+    },
+    {
+      "@id": "dtype:CompositeCodeList",
+      "subClassOf": [
+        "_:b1",
+        "dtype:CodeList"
+      ]
+    },
+    {
+      "@id": "dtype:DerivedCodeList",
+      "subClassOf": [
+        "_:b27",
+        "_:b28",
+        "dtype:CodeList",
+        "_:b29"
+      ]
+    },
+    {
+      "@id": "dtype:EnumeratedValue",
+      "subClassOf": [
+        "_:b36",
+        "owl:Thing",
+        "_:b37",
+        "_:b38",
+        "_:b39"
+      ]
+    },
+    {
+      "@id": "dtype:Enumeration",
+      "subClassOf": [
+        "_:b33",
+        "owl:Thing",
+        "_:b34",
+        "_:b35"
+      ]
+    },
+    {
+      "@id": "dtype:SimpleCodeList",
+      "subClassOf": [
+        "_:b32",
+        "dtype:CodeList"
+      ]
+    },
+    {
+      "@id": "dtype:ValueReference",
+      "subClassOf": [
+        "_:b40",
+        "_:b41",
+        "owl:Thing",
+        "_:b42"
+      ]
+    },
+    {
+      "@id": "dtype:code",
+      "range": "xsd:anySimpleType"
+    },
+    {
+      "@id": "dtype:dateUnion",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dtype:isInvalid",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "dtype:literal",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "dtype:numericUnion",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "dtype:order",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "dtype:orderIndex",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "vaem:Aspect",
+      "subClassOf": "vaem:Dimension"
+    },
+    {
+      "@id": "vaem:Dimension",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "vaem:Discipline",
+      "subClassOf": "vaem:Dimension"
+    },
+    {
+      "@id": "vaem:Domain",
+      "subClassOf": "vaem:Dimension"
+    },
+    {
+      "@id": "vaem:GraphMetaData",
+      "subClassOf": [
+        "_:b2",
+        "_:b3",
+        "owl:Thing",
+        "_:b4",
+        "_:b5",
+        "_:b6",
+        "_:b7",
+        "_:b8",
+        "_:b9",
+        "_:b10",
+        "_:b11",
+        "_:b12",
+        "_:b13",
+        "_:b14",
+        "_:b15",
+        "_:b16",
+        "_:b17",
+        "_:b18",
+        "_:b19",
+        "_:b20",
+        "_:b21",
+        "_:b22",
+        "_:b23",
+        "_:b24",
+        "_:b25",
+        "_:b26"
+      ]
+    },
+    {
+      "@id": "vaem:GraphRole",
+      "subClassOf": [
+        "_:b30",
+        "owl:Thing",
+        "_:b31"
+      ]
+    },
+    {
+      "@id": "vaem:Party",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "vaem:Viewpoint",
+      "subClassOf": "vaem:Dimension"
+    },
+    {
+      "@id": "vaem:applicableDiscipline",
+      "subPropertyOf": "vaem:hasDimension"
+    },
+    {
+      "@id": "vaem:applicableDomain",
+      "subPropertyOf": "vaem:hasDimension"
+    },
+    {
+      "@id": "vaem:comment",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:filePrefix",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:graphName",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:graphTitle",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:hasAspect",
+      "subPropertyOf": "vaem:hasDimension"
+    },
+    {
+      "@id": "vaem:hasGraphMetadata",
+      "range": "vaem:GraphMetaData"
+    },
+    {
+      "@id": "vaem:hasGraphRole",
+      "range": "vaem:GraphRole"
+    },
+    {
+      "@id": "vaem:hasViewpoint",
+      "subPropertyOf": "vaem:hasDimension"
+    },
+    {
+      "@id": "vaem:intent",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:isElaboratedIn",
+      "range": "xsd:anyURI",
+      "subPropertyOf": "rdfs:isDefinedBy"
+    },
+    {
+      "@id": "vaem:isMetadataFor",
+      "range": "owl:Ontology"
+    },
+    {
+      "@id": "vaem:latestPublishedVersion",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "vaem:logo",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "vaem:name",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:namespace",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "vaem:namespacePrefix",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:owner",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:previousPublishedVersion",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "vaem:publishedDate",
+      "range": "xsd:date",
+      "subPropertyOf": "vaem:date"
+    },
+    {
+      "@id": "vaem:rationale",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:rdfxmlFileURL",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "vaem:releaseDate",
+      "range": "xsd:date",
+      "subPropertyOf": "vaem:date"
+    },
+    {
+      "@id": "vaem:revision",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:specificity",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "vaem:todo",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "vaem:turtleFileURL",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "vaem:urlForHTML",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "vaem:usesNonImportedResource",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "vaem:website",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "vaem:withAttributionTo",
+      "domain": "vaem:GraphMetaData",
+      "range": "rdf:HTML"
+    },
+    {
+      "@id": "rdf:Alt",
+      "subClassOf": "rdfs:Container"
+    },
+    {
+      "@id": "rdf:Bag",
+      "subClassOf": "rdfs:Container"
+    },
+    {
+      "@id": "rdf:HTML",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "rdf:JSON",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "rdf:List",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "rdf:Property",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "rdf:Seq",
+      "subClassOf": "rdfs:Container"
+    },
+    {
+      "@id": "rdf:Statement",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "rdf:XMLLiteral",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "rdf:first",
+      "domain": "rdf:List",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "rdf:langString",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "rdf:object",
+      "domain": "rdf:Statement",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "rdf:predicate",
+      "domain": "rdf:Statement",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "rdf:rest",
+      "domain": "rdf:List",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "rdf:subject",
+      "domain": "rdf:Statement",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "rdf:type",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "rdf:value",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "rdfs:Class",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "rdfs:Container",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "rdfs:ContainerMembershipProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "rdfs:Datatype",
+      "subClassOf": "rdfs:Class"
+    },
+    {
+      "@id": "rdfs:Literal",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "rdfs:comment",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "rdfs:domain",
+      "domain": "rdf:Property",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "rdfs:isDefinedBy",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Resource",
+      "subPropertyOf": "rdfs:seeAlso"
+    },
+    {
+      "@id": "rdfs:label",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "rdfs:member",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "rdfs:range",
+      "domain": "rdf:Property",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "rdfs:seeAlso",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "rdfs:subClassOf",
+      "domain": "rdfs:Class",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "rdfs:subPropertyOf",
+      "domain": "rdf:Property",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "xsd:ENTITY",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:ID",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:IDREF",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:NCName",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:NMTOKEN",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:NOTATION",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:Name",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:QName",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:anySimpleType",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:anyURI",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:base64Binary",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:boolean",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:byte",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:date",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:dateTime",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:dateTimeStamp",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:decimal",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:double",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:duration",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:float",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:fractionDigits",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "xsd:gDay",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:gMonth",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:gMonthDay",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:gYear",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:gYearMonth",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:hexBinary",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:int",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:integer",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:language",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:length",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "xsd:long",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:maxExclusive",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:maxInclusive",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:maxLength",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "xsd:minExclusive",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:minInclusive",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:minLength",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "xsd:negativeInteger",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:nonNegativeInteger",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:nonPositiveInteger",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:normalizedString",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:pattern",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "xsd:positiveInteger",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:short",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:string",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:time",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:token",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:totalDigits",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "xsd:unsignedByte",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:unsignedInt",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:unsignedLong",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "xsd:unsignedShort",
+      "subClassOf": "rdfs:Literal"
+    },
+    {
+      "@id": "owl:AllDifferent",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:AllDisjointClasses",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:AllDisjointProperties",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:Annotation",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:AnnotationProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "owl:AsymmetricProperty",
+      "subClassOf": "owl:ObjectProperty"
+    },
+    {
+      "@id": "owl:Axiom",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:Class",
+      "subClassOf": "rdfs:Class"
+    },
+    {
+      "@id": "owl:DataRange",
+      "subClassOf": "rdfs:Datatype"
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "owl:DeprecatedClass",
+      "subClassOf": "rdfs:Class"
+    },
+    {
+      "@id": "owl:DeprecatedProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "owl:FunctionalProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "owl:InverseFunctionalProperty",
+      "subClassOf": "owl:ObjectProperty"
+    },
+    {
+      "@id": "owl:IrreflexiveProperty",
+      "subClassOf": "owl:ObjectProperty"
+    },
+    {
+      "@id": "owl:NamedIndividual",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "owl:NegativePropertyAssertion",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:Nothing",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "owl:Ontology",
+      "subClassOf": [
+        "rdfs:Resource",
+        "graphql:Schema"
+      ]
+    },
+    {
+      "@id": "owl:OntologyProperty",
+      "subClassOf": "rdf:Property"
+    },
+    {
+      "@id": "owl:ReflexiveProperty",
+      "subClassOf": "owl:ObjectProperty"
+    },
+    {
+      "@id": "owl:Restriction",
+      "subClassOf": "owl:Class"
+    },
+    {
+      "@id": "owl:SymmetricProperty",
+      "subClassOf": "owl:ObjectProperty"
+    },
+    {
+      "@id": "owl:Thing",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:TransitiveProperty",
+      "subClassOf": "owl:ObjectProperty"
+    },
+    {
+      "@id": "owl:allValuesFrom",
+      "domain": "owl:Restriction",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "owl:annotatedProperty",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:annotatedSource",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:annotatedTarget",
+      "domain": "rdfs:Resource",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:assertionProperty",
+      "domain": "owl:NegativePropertyAssertion",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "owl:backwardCompatibleWith",
+      "domain": "owl:Ontology",
+      "range": "owl:Ontology"
+    },
+    {
+      "@id": "owl:bottomDataProperty",
+      "domain": "owl:Thing",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "owl:bottomObjectProperty",
+      "domain": "owl:Thing",
+      "range": "owl:Thing"
+    },
+    {
+      "@id": "owl:cardinality",
+      "domain": "owl:Restriction",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "owl:complementOf",
+      "domain": "owl:Class",
+      "range": "owl:Class"
+    },
+    {
+      "@id": "owl:datatypeComplementOf",
+      "domain": "rdfs:Datatype",
+      "range": "rdfs:Datatype"
+    },
+    {
+      "@id": "owl:deprecated",
+      "domain": "rdfs:Resource",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "owl:differentFrom",
+      "domain": "owl:Thing",
+      "range": "owl:Thing"
+    },
+    {
+      "@id": "owl:disjointUnionOf",
+      "domain": "owl:Class",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:disjointWith",
+      "domain": "owl:Class",
+      "range": "owl:Class"
+    },
+    {
+      "@id": "owl:distinctMembers",
+      "domain": "owl:AllDifferent",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:equivalentClass",
+      "domain": "rdfs:Class",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "owl:equivalentProperty",
+      "domain": "rdf:Property",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "owl:hasKey",
+      "domain": "owl:Class",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:hasSelf",
+      "domain": "owl:Restriction",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:hasValue",
+      "domain": "owl:Restriction",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:imports",
+      "domain": "owl:Ontology",
+      "range": "owl:Ontology"
+    },
+    {
+      "@id": "owl:incompatibleWith",
+      "domain": "owl:Ontology",
+      "range": "owl:Ontology"
+    },
+    {
+      "@id": "owl:intersectionOf",
+      "domain": "rdfs:Class",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:inverseOf",
+      "domain": "owl:ObjectProperty",
+      "range": "owl:ObjectProperty"
+    },
+    {
+      "@id": "owl:maxCardinality",
+      "domain": "owl:Restriction",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "owl:maxQualifiedCardinality",
+      "domain": "owl:Restriction",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "owl:members",
+      "domain": "rdfs:Resource",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:minCardinality",
+      "domain": "owl:Restriction",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "owl:minQualifiedCardinality",
+      "domain": "owl:Restriction",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "owl:onClass",
+      "domain": "owl:Restriction",
+      "range": "owl:Class"
+    },
+    {
+      "@id": "owl:onDataRange",
+      "domain": "owl:Restriction",
+      "range": "rdfs:Datatype"
+    },
+    {
+      "@id": "owl:onDatatype",
+      "domain": "rdfs:Datatype",
+      "range": "rdfs:Datatype"
+    },
+    {
+      "@id": "owl:onProperties",
+      "domain": "owl:Restriction",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:onProperty",
+      "domain": "owl:Restriction",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "owl:oneOf",
+      "domain": "rdfs:Class",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:priorVersion",
+      "domain": "owl:Ontology",
+      "range": "owl:Ontology"
+    },
+    {
+      "@id": "owl:propertyChainAxiom",
+      "domain": "owl:ObjectProperty",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:propertyDisjointWith",
+      "domain": "rdf:Property",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "owl:qualifiedCardinality",
+      "domain": "owl:Restriction",
+      "range": "xsd:nonNegativeInteger"
+    },
+    {
+      "@id": "owl:sameAs",
+      "domain": "owl:Thing",
+      "range": "owl:Thing"
+    },
+    {
+      "@id": "owl:someValuesFrom",
+      "domain": "owl:Restriction",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "owl:sourceIndividual",
+      "domain": "owl:NegativePropertyAssertion",
+      "range": "owl:Thing"
+    },
+    {
+      "@id": "owl:targetIndividual",
+      "domain": "owl:NegativePropertyAssertion",
+      "range": "owl:Thing"
+    },
+    {
+      "@id": "owl:targetValue",
+      "domain": "owl:NegativePropertyAssertion",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "owl:topDataProperty",
+      "domain": "owl:Thing",
+      "range": "rdfs:Literal"
+    },
+    {
+      "@id": "owl:topObjectProperty",
+      "domain": "owl:Thing",
+      "range": "owl:Thing"
+    },
+    {
+      "@id": "owl:unionOf",
+      "domain": "rdfs:Class",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "owl:versionIRI",
+      "domain": "owl:Ontology",
+      "range": "owl:Ontology"
+    },
+    {
+      "@id": "owl:versionInfo",
+      "domain": "rdfs:Resource"
+    },
+    {
+      "@id": "owl:withRestrictions",
+      "domain": "rdfs:Datatype",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "geo:SpatialThing",
+      "subClassOf": "edg:Location"
+    },
+    {
+      "@id": "skos:Collection",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "skos:Concept",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "skos:ConceptScheme",
+      "subClassOf": "owl:Thing"
+    },
+    {
+      "@id": "skos:OrderedCollection",
+      "subClassOf": "skos:Collection"
+    },
+    {
+      "@id": "skos:altLabel",
+      "subPropertyOf": "rdfs:label"
+    },
+    {
+      "@id": "skos:broadMatch",
+      "subPropertyOf": [
+        "skos:broader",
+        "skos:mappingRelation"
+      ]
+    },
+    {
+      "@id": "skos:broader",
+      "subPropertyOf": "skos:broaderTransitive"
+    },
+    {
+      "@id": "skos:broaderTransitive",
+      "subPropertyOf": "skos:semanticRelation"
+    },
+    {
+      "@id": "skos:changeNote",
+      "subPropertyOf": "skos:note"
+    },
+    {
+      "@id": "skos:closeMatch",
+      "subPropertyOf": "skos:mappingRelation"
+    },
+    {
+      "@id": "skos:definition",
+      "subPropertyOf": "skos:note"
+    },
+    {
+      "@id": "skos:editorialNote",
+      "subPropertyOf": "skos:note"
+    },
+    {
+      "@id": "skos:exactMatch",
+      "subPropertyOf": "skos:closeMatch"
+    },
+    {
+      "@id": "skos:example",
+      "subPropertyOf": "skos:note"
+    },
+    {
+      "@id": "skos:hasTopConcept",
+      "domain": "skos:ConceptScheme",
+      "range": "skos:Concept"
+    },
+    {
+      "@id": "skos:hiddenLabel",
+      "subPropertyOf": "rdfs:label"
+    },
+    {
+      "@id": "skos:historyNote",
+      "subPropertyOf": "skos:note"
+    },
+    {
+      "@id": "skos:inScheme",
+      "range": "skos:ConceptScheme"
+    },
+    {
+      "@id": "skos:mappingRelation",
+      "subPropertyOf": "skos:semanticRelation"
+    },
+    {
+      "@id": "skos:member",
+      "domain": "skos:Collection",
+      "range": "_:b0"
+    },
+    {
+      "@id": "skos:memberList",
+      "domain": "skos:OrderedCollection",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "skos:narrowMatch",
+      "subPropertyOf": [
+        "skos:mappingRelation",
+        "skos:narrower"
+      ]
+    },
+    {
+      "@id": "skos:narrower",
+      "subPropertyOf": "skos:narrowerTransitive"
+    },
+    {
+      "@id": "skos:narrowerTransitive",
+      "subPropertyOf": "skos:semanticRelation"
+    },
+    {
+      "@id": "skos:prefLabel",
+      "subPropertyOf": "rdfs:label"
+    },
+    {
+      "@id": "skos:related",
+      "subPropertyOf": "skos:semanticRelation"
+    },
+    {
+      "@id": "skos:relatedMatch",
+      "subPropertyOf": [
+        "skos:related",
+        "skos:mappingRelation"
+      ]
+    },
+    {
+      "@id": "skos:scopeNote",
+      "subPropertyOf": "skos:note"
+    },
+    {
+      "@id": "skos:semanticRelation",
+      "domain": "skos:Concept",
+      "range": "skos:Concept"
+    },
+    {
+      "@id": "skos:topConceptOf",
+      "domain": "skos:Concept",
+      "range": "skos:ConceptScheme",
+      "subPropertyOf": "skos:inScheme"
+    },
+    {
+      "@id": "prov:Agent",
+      "subClassOf": [
+        "rdfs:Resource",
+        "edg:EnterpriseEnabler",
+        "edg:Identifiable",
+        "edg:Narratable",
+        "edg:StatusAspect",
+        "edg:Interoperable"
+      ]
+    },
+    {
+      "@id": "prov:Entity",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "prov:generatedAtTime",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "domain": "edg:Provenance",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "sh:AbstractResult",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:ConstraintComponent",
+      "subClassOf": "sh:Parameterizable"
+    },
+    {
+      "@id": "sh:Function",
+      "subClassOf": "sh:Parameterizable"
+    },
+    {
+      "@id": "sh:JSConstraint",
+      "subClassOf": "sh:JSExecutable"
+    },
+    {
+      "@id": "sh:JSExecutable",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:JSFunction",
+      "subClassOf": [
+        "sh:JSExecutable",
+        "sh:Function"
+      ]
+    },
+    {
+      "@id": "sh:JSLibrary",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:JSRule",
+      "subClassOf": [
+        "sh:Rule",
+        "sh:JSExecutable"
+      ]
+    },
+    {
+      "@id": "sh:JSTarget",
+      "subClassOf": [
+        "sh:Target",
+        "sh:JSExecutable"
+      ]
+    },
+    {
+      "@id": "sh:JSTargetType",
+      "subClassOf": [
+        "sh:TargetType",
+        "sh:JSExecutable"
+      ]
+    },
+    {
+      "@id": "sh:JSValidator",
+      "subClassOf": [
+        "sh:Validator",
+        "sh:JSExecutable"
+      ]
+    },
+    {
+      "@id": "sh:NodeKind",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:NodeShape",
+      "subClassOf": "sh:Shape"
+    },
+    {
+      "@id": "sh:Parameter",
+      "subClassOf": "sh:PropertyShape"
+    },
+    {
+      "@id": "sh:Parameterizable",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:PrefixDeclaration",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:PropertyGroup",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:PropertyShape",
+      "subClassOf": "sh:Shape"
+    },
+    {
+      "@id": "sh:ResultAnnotation",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:Rule",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:SPARQLAskExecutable",
+      "subClassOf": "sh:SPARQLExecutable"
+    },
+    {
+      "@id": "sh:SPARQLAskValidator",
+      "subClassOf": [
+        "sh:SPARQLAskExecutable",
+        "sh:Validator"
+      ]
+    },
+    {
+      "@id": "sh:SPARQLConstraint",
+      "subClassOf": "sh:SPARQLSelectExecutable"
+    },
+    {
+      "@id": "sh:SPARQLConstructExecutable",
+      "subClassOf": "sh:SPARQLExecutable"
+    },
+    {
+      "@id": "sh:SPARQLExecutable",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:SPARQLFunction",
+      "subClassOf": [
+        "sh:SPARQLSelectExecutable",
+        "sh:SPARQLAskExecutable",
+        "sh:Function"
+      ]
+    },
+    {
+      "@id": "sh:SPARQLRule",
+      "subClassOf": [
+        "sh:Rule",
+        "sh:SPARQLConstructExecutable"
+      ]
+    },
+    {
+      "@id": "sh:SPARQLSelectExecutable",
+      "subClassOf": "sh:SPARQLExecutable"
+    },
+    {
+      "@id": "sh:SPARQLSelectValidator",
+      "subClassOf": [
+        "sh:Validator",
+        "sh:SPARQLSelectExecutable"
+      ]
+    },
+    {
+      "@id": "sh:SPARQLTarget",
+      "subClassOf": [
+        "sh:SPARQLSelectExecutable",
+        "sh:SPARQLAskExecutable",
+        "sh:Target"
+      ]
+    },
+    {
+      "@id": "sh:SPARQLTargetType",
+      "subClassOf": [
+        "sh:SPARQLSelectExecutable",
+        "sh:SPARQLAskExecutable",
+        "sh:TargetType"
+      ]
+    },
+    {
+      "@id": "sh:SPARQLUpdateExecutable",
+      "subClassOf": "sh:SPARQLExecutable"
+    },
+    {
+      "@id": "sh:Severity",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:Shape",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:Target",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:TargetType",
+      "subClassOf": [
+        "rdfs:Class",
+        "sh:Parameterizable"
+      ]
+    },
+    {
+      "@id": "sh:TripleRule",
+      "subClassOf": "sh:Rule"
+    },
+    {
+      "@id": "sh:ValidationReport",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:ValidationResult",
+      "subClassOf": "sh:AbstractResult"
+    },
+    {
+      "@id": "sh:Validator",
+      "subClassOf": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:alternativePath",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "sh:and",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "sh:annotationProperty",
+      "domain": "sh:ResultAnnotation",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "sh:annotationValue",
+      "domain": "sh:ResultAnnotation"
+    },
+    {
+      "@id": "sh:annotationVarName",
+      "domain": "sh:ResultAnnotation",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:ask",
+      "domain": "sh:SPARQLAskExecutable",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:class",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "sh:closed",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "sh:condition",
+      "domain": "sh:Rule",
+      "range": "sh:Shape"
+    },
+    {
+      "@id": "sh:conforms",
+      "domain": "sh:ValidationReport",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "sh:construct",
+      "domain": "sh:SPARQLConstructExecutable",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:datatype",
+      "range": "rdfs:Datatype"
+    },
+    {
+      "@id": "sh:deactivated",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "sh:declare",
+      "range": "sh:PrefixDeclaration"
+    },
+    {
+      "@id": "sh:defaultValue",
+      "domain": "sh:PropertyShape"
+    },
+    {
+      "@id": "sh:description",
+      "domain": "sh:PropertyShape"
+    },
+    {
+      "@id": "sh:detail",
+      "domain": "sh:AbstractResult",
+      "range": "sh:AbstractResult"
+    },
+    {
+      "@id": "sh:disjoint",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "sh:entailment",
+      "domain": "owl:Ontology",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:equals",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "sh:filterShape",
+      "range": "sh:Shape"
+    },
+    {
+      "@id": "sh:flags",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:focusNode",
+      "domain": "sh:AbstractResult"
+    },
+    {
+      "@id": "sh:group",
+      "domain": "sh:PropertyShape",
+      "range": "sh:PropertyGroup"
+    },
+    {
+      "@id": "sh:ignoredProperties",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "sh:in",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "sh:inversePath",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:js",
+      "range": "sh:JSConstraint"
+    },
+    {
+      "@id": "sh:jsFunctionName",
+      "domain": "sh:JSExecutable",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:jsLibrary",
+      "range": "sh:JSLibrary"
+    },
+    {
+      "@id": "sh:jsLibraryURL",
+      "domain": "sh:JSLibrary",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "sh:labelTemplate",
+      "domain": "sh:Parameterizable"
+    },
+    {
+      "@id": "sh:languageIn",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "sh:lessThan",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "sh:lessThanOrEquals",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "sh:limit",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "sh:maxCount",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "sh:maxLength",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "sh:minCount",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "sh:minLength",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "sh:name",
+      "domain": "sh:PropertyShape"
+    },
+    {
+      "@id": "sh:namespace",
+      "domain": "sh:PrefixDeclaration",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "sh:node",
+      "range": "sh:NodeShape"
+    },
+    {
+      "@id": "sh:nodeKind",
+      "range": "sh:NodeKind"
+    },
+    {
+      "@id": "sh:nodeValidator",
+      "domain": "sh:ConstraintComponent",
+      "range": "sh:Validator"
+    },
+    {
+      "@id": "sh:not",
+      "range": "sh:Shape"
+    },
+    {
+      "@id": "sh:object",
+      "domain": "sh:TripleRule"
+    },
+    {
+      "@id": "sh:offset",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "sh:oneOrMorePath",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:optional",
+      "domain": "sh:Parameter",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "sh:or",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "sh:order",
+      "range": "xsd:decimal"
+    },
+    {
+      "@id": "sh:parameter",
+      "domain": "sh:Parameterizable",
+      "range": "sh:Parameter"
+    },
+    {
+      "@id": "sh:path",
+      "domain": "sh:PropertyShape",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:pattern",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:predicate",
+      "domain": "sh:TripleRule"
+    },
+    {
+      "@id": "sh:prefix",
+      "domain": "sh:PrefixDeclaration",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:prefixes",
+      "domain": "sh:SPARQLExecutable"
+    },
+    {
+      "@id": "sh:property",
+      "domain": "sh:Shape",
+      "range": "sh:PropertyShape"
+    },
+    {
+      "@id": "sh:propertyValidator",
+      "domain": "sh:ConstraintComponent",
+      "range": "sh:Validator"
+    },
+    {
+      "@id": "sh:qualifiedMaxCount",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "sh:qualifiedMinCount",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "sh:qualifiedValueShape",
+      "range": "sh:Shape"
+    },
+    {
+      "@id": "sh:qualifiedValueShapesDisjoint",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "sh:result",
+      "domain": "sh:ValidationReport",
+      "range": "sh:ValidationResult"
+    },
+    {
+      "@id": "sh:resultAnnotation",
+      "domain": "sh:SPARQLSelectValidator",
+      "range": "sh:ResultAnnotation"
+    },
+    {
+      "@id": "sh:resultMessage",
+      "domain": "sh:AbstractResult"
+    },
+    {
+      "@id": "sh:resultPath",
+      "domain": "sh:AbstractResult",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:resultSeverity",
+      "domain": "sh:AbstractResult",
+      "range": "sh:Severity"
+    },
+    {
+      "@id": "sh:returnType",
+      "domain": "sh:Function",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "sh:rule",
+      "domain": "sh:Shape",
+      "range": "sh:Rule"
+    },
+    {
+      "@id": "sh:select",
+      "domain": "sh:SPARQLSelectExecutable",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:severity",
+      "domain": "sh:Shape",
+      "range": "sh:Severity"
+    },
+    {
+      "@id": "sh:shapesGraph",
+      "domain": "owl:Ontology",
+      "range": "owl:Ontology"
+    },
+    {
+      "@id": "sh:shapesGraphWellFormed",
+      "domain": "sh:ValidationReport",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "sh:sourceConstraint",
+      "domain": "sh:AbstractResult"
+    },
+    {
+      "@id": "sh:sourceConstraintComponent",
+      "domain": "sh:AbstractResult",
+      "range": "sh:ConstraintComponent"
+    },
+    {
+      "@id": "sh:sourceShape",
+      "domain": "sh:AbstractResult",
+      "range": "sh:Shape"
+    },
+    {
+      "@id": "sh:sparql",
+      "domain": "sh:Shape",
+      "range": "sh:SPARQLConstraint"
+    },
+    {
+      "@id": "sh:subject",
+      "domain": "sh:TripleRule"
+    },
+    {
+      "@id": "sh:suggestedShapesGraph",
+      "domain": "owl:Ontology",
+      "range": "owl:Ontology"
+    },
+    {
+      "@id": "sh:target",
+      "domain": "sh:Shape",
+      "range": "sh:Target"
+    },
+    {
+      "@id": "sh:targetClass",
+      "domain": "sh:Shape",
+      "range": "rdfs:Class"
+    },
+    {
+      "@id": "sh:targetNode",
+      "domain": "sh:Shape"
+    },
+    {
+      "@id": "sh:targetObjectsOf",
+      "domain": "sh:Shape",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "sh:targetSubjectsOf",
+      "domain": "sh:Shape",
+      "range": "rdf:Property"
+    },
+    {
+      "@id": "sh:uniqueLang",
+      "range": "xsd:boolean"
+    },
+    {
+      "@id": "sh:update",
+      "domain": "sh:SPARQLUpdateExecutable",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "sh:validator",
+      "domain": "sh:ConstraintComponent",
+      "range": "sh:Validator"
+    },
+    {
+      "@id": "sh:value",
+      "domain": "sh:AbstractResult"
+    },
+    {
+      "@id": "sh:xone",
+      "range": "rdf:List"
+    },
+    {
+      "@id": "sh:zeroOrMorePath",
+      "range": "rdfs:Resource"
+    },
+    {
+      "@id": "sh:zeroOrOnePath",
+      "range": "rdfs:Resource"
+    }
+  ],
+  "@context": {
+    "subPropertyOf": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type": "@id"
+    },
+    "range": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type": "@id"
+    },
+    "subClassOf": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type": "@id"
+    },
+    "domain": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type": "@id"
+    },
+    "dataenum": "http://nwcg.gov/enum/data#",
+    "metadata": "http://topbraid.org/metadata#",
+    "wfglos": "http://nwcg.gov/model/glossary_extension#",
+    "teamworkupdate": "http://teamworkAPI.topbraid.com/teamworkUpdate#",
+    "swaclasses": "http://topbraid.org/swaclasses#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "edg.v": "http://edg.topbraid.solutions/view/",
+    "spif": "http://spinrdf.org/spif#",
+    "tables": "http://topbraid.org/tables#",
+    "crosswalkprojects": "http://teamwork.topbraidlive.org/crosswalkprojects#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "nwcg_org": "http://nwcg.gov/model/nwcg_org#",
+    "wfitenum": "http://nwcg.gov/enum/wfit#",
+    "debug-swa": "http://debug.topbraidlive.org/1.0/swa/",
+    "tasks": "http://topbraid.org/tasks#",
+    "swash": "http://topbraid.org/swash#",
+    "s3": "http://topbraid.org/s3#",
+    "datagraph": "http://teamwork.topbraidlive.org/datagraph/datagraphprojects#",
+    "tosh": "http://topbraid.org/tosh#",
+    "skosspin": "http://topbraid.org/spin/skosspin#",
+    "dtype": "http://www.linkedmodel.org/schema/dtype#",
+    "sharepoint-termstore": "http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#",
+    "taxonomies": "http://evn.topbraidlive.org/evnprojects#",
+    "datastd": "http://nwcg.gov/model/standard#",
+    "rdmfact": "http://topbraid.org/rdmfact#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "smf": "http://topbraid.org/sparqlmotionfunctions#",
+    "layer": "http://nwcg.gov/model/referenceLayer#",
+    "evnconstraints": "http://topbraid.org/spin/evnconstraints#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "tablesmap": "http://topbraid.org/spin/tablesmap#",
+    "search": "http://topbraid.org/search#",
+    "sml": "http://topbraid.org/sparqlmotionlib#",
+    "crosswalk": "http://topbraid.org/crosswalk#",
+    "datatype": "http://qudt.org/vocab/datatype/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "arg": "http://spinrdf.org/arg#",
+    "tracker": "http://teamwork.topbraidlive.org/ui/tracker#",
+    "sm": "http://topbraid.org/sparqlmotion#",
+    "graphql": "http://datashapes.org/graphql#",
+    "spinmap": "http://spinrdf.org/spinmap#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "sp": "http://spinrdf.org/sp#",
+    "skosxl": "http://www.w3.org/2008/05/skos-xl#",
+    "uix": "http://topbraidlive.org/uix#",
+    "crosswalk.spin": "http://topbraid.org/crosswalk.spin#",
+    "nlp": "http://topbraid.org/nlp#",
+    "tosh.ui": "http://topbraid.org/tosh.ui#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "teamwork": "http://topbraid.org/teamwork#",
+    "swon": "http://uispin.org/swon#",
+    "nwcgorg": "http://nwcg.gov/ent/nwcg_org/",
+    "spin": "http://spinrdf.org/spin#",
+    "textindex": "http://topbraid.org/textindex#",
+    "spra": "http://spinrdf.org/spra#",
+    "rdm": "http://rdm.topbraidlive.org/rdm/",
+    "taggerprojects": "http://evn.topbraidlive.org/taggerprojects#",
+    "swa": "http://topbraid.org/swa#",
+    "sparql": "http://datashapes.org/sparql#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "governance": "http://topbraid.org/teamworkgovernance.ui#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "skostemplate": "http://topbraid.org/spin/skostemplates#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "ontologyprojects": "http://teamwork.topbraidlive.org/ontologyprojects#",
+    "tops": "http://www.topbraid.org/tops#",
+    "corpus": "http://topbraid.org/corpus#",
+    "qudt.type": "http://qudt.org/vocab/type/",
+    "teamworks3": "http://teamwork.topbraidlive.org/ui/teamworks3#",
+    "crosswalkapp": "http://topbraid.org/swa/crosswalkapp#",
+    "ui": "http://uispin.org/ui#",
+    "safindex": "http://topbraid.org/safindex#",
+    "html": "http://uispin.org/html#",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "spinmapl": "http://topbraid.org/spin/spinmapl#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "sioc": "http://rdfs.org/sioc/ns#",
+    "vaem": "http://www.linkedmodel.org/schema/vaem#",
+    "business_rules": "http://nwcg.gov/model/business_rule#",
+    "voag": "http://voag.linkedmodel.org/voag/",
+    "edg": "http://edg.topbraid.solutions/model/",
+    "list": "http://jena.apache.org/ARQ/list#",
+    "tbladmin": "http://server.topbraidlive.org/system-applications/tbladmin#",
+    "spl": "http://spinrdf.org/spl#",
+    "teamworkconstraints": "http://topbraid.org/teamworkconstraints#",
+    "glossary": "http://nwcg.gov/glos/nwcg_terms/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "tbgeo": "http://topbraid.org/tbgeo#",
+    "jfn": "java:org.apache.jena.sparql.function.library.",
+    "spr": "http://spinrdf.org/spr#",
+    "dash": "http://datashapes.org/dash#",
+    "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "corpusprojects": "http://topbraid.org/corpus-projects#",
+    "dcam": "http://purl.org/dc/dcam/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fn": "http://www.w3.org/2005/xpath-functions#",
+    "swauml": "http://topbraid.org/swauml#",
+    "scheduler": "http://topbraid.org/scheduler#",
+    "rdmprojects": "http://rdm.topbraidlive.org/rdmprojects#",
+    "dct": "http://purl.org/dc/terms/",
+    "metash": "http://datashapes.org/metash#",
+    "raci": "http://topbraid.org/raci#",
+    "quantity": "http://qudt.org/vocab/quantity/",
+    "org": "http://www.w3.org/ns/org#",
+    "afn": "http://jena.hpl.hp.com/ARQ/function#",
+    "owlrl": "http://topbraid.org/spin/owlrl#",
+    "lib-importer": "http://edg.topbraid.solutions/importer/lib#",
+    "softwareprojects": "http://teamwork.topbraidlive.org/software/softwareprojects#",
+    "quantitykind": "http://qudt.org/vocab/quantitykind/",
+    "pf": "http://jena.hpl.hp.com/ARQ/property#"
+  }
+}

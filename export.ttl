@@ -1,0 +1,3622 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix business_rules:       <http://nwcg.gov/model/business_rule#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix dataenum:             <http://nwcg.gov/enum/data#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix datastd:              <http://nwcg.gov/model/standard#> .
+@prefix datatype:             <http://qudt.org/vocab/datatype/> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix glossary:             <http://nwcg.gov/glos/nwcg_terms/> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix layer:                <http://nwcg.gov/model/referenceLayer#> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix nwcg_org:             <http://nwcg.gov/model/nwcg_org#> .
+@prefix nwcgorg:              <http://nwcg.gov/ent/nwcg_org/> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind:         <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix qudt.type:            <http://qudt.org/vocab/type/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix softwareprojects:     <http://teamwork.topbraidlive.org/software/softwareprojects#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wfglos:               <http://nwcg.gov/model/glossary_extension#> .
+@prefix wfitenum:             <http://nwcg.gov/enum/wfit#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+qudt:ucumCaseInsensitiveCode
+        rdfs:subPropertyOf  qudt:ucumCode .
+
+sh:order  rdfs:range  xsd:decimal .
+
+qudt:Number  rdfs:subClassOf  qudt:Value .
+
+sh:PrefixDeclaration  rdfs:subClassOf  rdfs:Resource .
+
+vaem:intent  rdfs:range  xsd:string .
+
+edg:GovernanceModelProject
+        rdfs:subClassOf  teamwork:Vocabulary , edg:AssetCollection .
+
+edg:EnumerationOntology
+        rdfs:subClassOf  teamwork:Vocabulary , edg:AssetCollection , ontologyprojects:Ontology .
+
+qudt:Rule  rdfs:subClassOf  qudt:Concept , qudt:Verifiable .
+
+qudt:dimensionExponentForTime
+        rdfs:subPropertyOf  qudt:dimensionExponent .
+
+edg:FormSchedule  rdfs:subClassOf  edg:InformationAssetViewpoint , edg:InformationAsset .
+
+dash:MultiViewer  rdfs:subClassOf  dash:Viewer .
+
+dct:contributor  rdfs:range  xsd:string .
+
+sh:js   rdfs:range  sh:JSConstraint .
+
+edg:Publication  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:GovernanceAsset , edg:Document , edg:Governance .
+
+dct:creator  rdfs:range  xsd:string .
+
+sh:sourceConstraintComponent
+        rdfs:domain  sh:AbstractResult ;
+        rdfs:range   sh:ConstraintComponent .
+
+qudt:hasDerivedNonCoherentUnit
+        rdfs:subPropertyOf  qudt:hasDerivedUnit .
+
+qudt:DimensionlessUnit
+        rdfs:subClassOf  qudt:Unit .
+
+edg:DataSetCollection
+        rdfs:subClassOf  edg:PhysicalFlowPayloadable , edg:ProvenanceTimestamps , edg:ComplianceAspect , edg:AccessControllable , edg:PhysicalDataAsset , edg:DataExchangeable , edg:Sociable , edg:DataStructure .
+
+graphql:InputValue  rdfs:subClassOf  rdfs:Resource .
+
+edg:resourceURIconstructorFunction
+        rdfs:range  spin:Function .
+
+edg:supportsBusinessCapability
+        rdfs:subPropertyOf  edg:supports .
+
+edg:DataSet  rdfs:subClassOf  edg:Sociable , edg:DataQualityAspect , edg:PhysicalDataAsset , edg:AccessControllable , edg:ComplianceAspect , edg:ProvenanceTimestamps , edg:SemanticComplianceAspect , edg:PhysicalFlowPayloadable , edg:DataExchangeable .
+
+edg:FileTable  rdfs:subClassOf  edg:Table , edg:ComplianceAspect .
+
+edg:complianceWithReferenceData
+        rdfs:subPropertyOf  edg:complianceWithGovernedResource .
+
+dash:expectedResultIsTTL
+        rdfs:domain  dash:TestCase ;
+        rdfs:range   xsd:boolean .
+
+edg:GlossaryViewpoint
+        rdfs:subClassOf  edg:Viewpoint .
+
+edg:isLogicalOnly  rdfs:domain  edg:LogicalAttribute ;
+        rdfs:range   xsd:boolean .
+
+qudt:applicableUSCustomaryUnit
+        rdfs:subPropertyOf  qudt:applicableUnit .
+
+dash:GraphUpdate  rdfs:subClassOf  dash:Suggestion .
+
+qudt:Unit  rdfs:subClassOf  qudt:Concept , qudt:Verifiable , qudt:Narratable .
+
+edg:BusinessCapability
+        rdfs:subClassOf  edg:Interoperable , edg:BusinessModelViewpoint , edg:ParticipationsAspect , edg:ComplianceAspect , edg:Governance , edg:EnterpriseAsset , edg:EnterpriseViewFromTechnicalAssets .
+
+datagraph:DataGraphProject
+        rdfs:subClassOf  teamwork:Vocabulary , edg:ReferenceDataSource , edg:MetadataSource .
+
+edg:ExternalSystem  rdfs:subClassOf  edg:System .
+
+sh:jsLibraryURL  rdfs:domain  sh:JSLibrary ;
+        rdfs:range   xsd:anyURI .
+
+edg:TechnicalAssetViewFromEnterpriseAssets
+        rdfs:subClassOf  edg:EnterpriseViewpoint .
+
+owl:hasKey  rdfs:domain  owl:Class ;
+        rdfs:range   rdf:List .
+
+qudt:OrdinalScale  rdfs:subClassOf  qudt:Scale .
+
+dash:abstract  rdfs:domain  rdfs:Class ;
+        rdfs:range   xsd:boolean .
+
+dash:ExploreAction  rdfs:subClassOf  dash:ResourceAction .
+
+owl:hasSelf  rdfs:domain  owl:Restriction ;
+        rdfs:range   rdfs:Resource .
+
+rdmprojects:ReferenceDataset
+        rdfs:subClassOf  teamwork:Vocabulary , edg:AssetCollection , edg:ReferenceDataSource .
+
+edg:FrequenciesRecord
+        rdfs:subClassOf  edg:Statistics , edg:DataProfileViewpoint .
+
+edg:endDate  rdfs:range  xsd:date .
+
+qudt:symbol  rdfs:subPropertyOf  qudt:literal .
+
+edg:PartOfProperty  rdfs:subClassOf  rdf:Property .
+
+edg:JobTitle  rdfs:subClassOf  edg:Party , edg:WorkflowParticipant .
+
+edg:DataSecurityPolicy
+        rdfs:subClassOf  edg:DataPolicy .
+
+sh:detail  rdfs:domain  sh:AbstractResult ;
+        rdfs:range   sh:AbstractResult .
+
+edg:mapsToReferenceData
+        rdfs:subPropertyOf  edg:mapsTo .
+
+dash:stem  rdfs:range  xsd:string .
+
+edg:businessFunction  rdfs:subPropertyOf
+                edg:function .
+
+edg:inverseLabel  rdfs:range  xsd:string .
+
+xsd:string  rdfs:subClassOf  rdfs:Literal .
+
+edg:DashboardGadgetTab
+        rdfs:subClassOf  edg:DashboardModelsViewpoint .
+
+xsd:QName  rdfs:subClassOf  rdfs:Literal .
+
+xsd:hexBinary  rdfs:subClassOf  rdfs:Literal .
+
+owl:DeprecatedClass  rdfs:subClassOf  rdfs:Class .
+
+edg:DataRetentionPolicy
+        rdfs:subClassOf  edg:DataPolicy .
+
+skos:changeNote  rdfs:subPropertyOf  skos:note .
+
+owl:AsymmetricProperty
+        rdfs:subClassOf  owl:ObjectProperty .
+
+vaem:Aspect  rdfs:subClassOf  vaem:Dimension .
+
+edg:Requirement  rdfs:subClassOf  edg:GovernanceViewpoint , edg:Asset , edg:RequirementsViewpoint .
+
+dash:validateShapes  rdfs:domain  dash:GraphValidationTestCase ;
+        rdfs:range   xsd:boolean .
+
+qudt:QuantityKindDimensionVector_CGS-ESU
+        rdfs:subClassOf  qudt:QuantityKindDimensionVector_CGS .
+
+qudt:QuantityKindDimensionVector_CGS
+        rdfs:subClassOf  qudt:QuantityKindDimensionVector .
+
+edg:SaaS  rdfs:subClassOf  edg:CloudComputingService .
+
+edg:ReportTable  rdfs:subClassOf  edg:Table , edg:InformationAsset , edg:InformationAssetViewpoint .
+
+edg:IndustryTerm  rdfs:subClassOf  edg:GlossaryTerm .
+
+edg:SemanticComplianceAspect
+        rdfs:subClassOf  edg:Aspect .
+
+dct:source  rdfs:range  xsd:anyURI .
+
+sh:jsLibrary  rdfs:range  sh:JSLibrary .
+
+qudt:ArrayDataOrderType
+        rdfs:subClassOf  qudt:EnumeratedValue .
+
+qudt:UCUMci-term  rdfs:subClassOf  rdfs:Resource .
+
+edg:Room  rdfs:subClassOf  edg:BuildingUnit .
+
+edg:hiddenPropertyForRole
+        rdfs:domain  rdf:Property ;
+        rdfs:range   edg:WorkflowParticipantProperty .
+
+dash:HasValueTarget  rdfs:subClassOf  sh:Target .
+
+qudt:baseUSCustomaryUnitDimensions
+        rdfs:subPropertyOf  qudt:baseUnitDimensions .
+
+edg:BusinessPlan  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Plan .
+
+owl:disjointWith  rdfs:domain  owl:Class ;
+        rdfs:range   owl:Class .
+
+edg:ReferenceDataSource
+        rdfs:subClassOf  edg:Asset .
+
+edg:DatabaseTable  rdfs:subClassOf  edg:Table , edg:ComplianceAspect , edg:DatabaseSynonymable .
+
+edg:rationale  rdfs:range  rdf:HTML .
+
+edg:ModelClass  rdfs:subClassOf  rdfs:Class , owl:Class , graphql:Schema .
+
+edg:AccessControl  rdfs:subClassOf  edg:GovernanceViewpoint , edg:AncillaryAsset .
+
+edg:SoftwareCapability
+        rdfs:subClassOf  edg:AncillaryAsset .
+
+edg:abstract  rdfs:range  rdf:HTML .
+
+qudt:LimitType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+dash:includedExecutionPlatform
+        rdfs:domain  dash:ExecutionPlatform ;
+        rdfs:range   dash:ExecutionPlatform .
+
+qudt:StringUTF8  rdfs:subClassOf  qudt:TextStringType .
+
+edg:mapsToLogicalEntity
+        rdfs:subPropertyOf  edg:mapsTo .
+
+qudt:BitEncodingType  rdfs:subClassOf  qudt:Encoding .
+
+owl:cardinality  rdfs:domain  owl:Restriction ;
+        rdfs:range   xsd:nonNegativeInteger .
+
+edg:HevoPipeline  rdfs:subClassOf  edg:ETLpipeline .
+
+dash:FunctionTestCase
+        rdfs:subClassOf  dash:TestCase .
+
+edg:SoftwareFunction  rdfs:subClassOf  edg:SoftwareAsset , edg:SoftwareExecutable .
+
+graphql:name  rdfs:range  xsd:string .
+
+sh:SPARQLSelectExecutable
+        rdfs:subClassOf  sh:SPARQLExecutable .
+
+sh:Validator  rdfs:subClassOf  rdfs:Resource .
+
+edg:BuildingComplex  rdfs:subClassOf  edg:Place .
+
+sh:resultAnnotation  rdfs:domain  sh:SPARQLSelectValidator ;
+        rdfs:range   sh:ResultAnnotation .
+
+qudt:CurrencyUnit  rdfs:subClassOf  qudt:DimensionlessUnit .
+
+edg:BusinessOutcome  rdfs:subClassOf  edg:EnterpriseAsset , edg:BusinessModelViewpoint .
+
+sh:Target  rdfs:subClassOf  rdfs:Resource .
+
+edg:PolicyCompliance  rdfs:subClassOf  edg:GovernanceViewpoint , edg:GovernanceAsset .
+
+qudt:ByteEncodingType
+        rdfs:subClassOf  qudt:Encoding .
+
+qudt:Encoding  rdfs:subClassOf  qudt:Concept .
+
+metadata:isEnterprise
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:boolean .
+
+rdfs:isDefinedBy  rdfs:domain  rdfs:Resource ;
+        rdfs:range          rdfs:Resource ;
+        rdfs:subPropertyOf  rdfs:seeAlso .
+
+sh:namespace  rdfs:domain  sh:PrefixDeclaration ;
+        rdfs:range   xsd:anyURI .
+
+edg:email  rdfs:range  xsd:string .
+
+edg:CloudComputingService
+        rdfs:subClassOf  edg:SoftwareService .
+
+dataenum:MappingDisplayIsVisible
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+qudt:applicableCGSUnit
+        rdfs:subPropertyOf  qudt:applicableUnit .
+
+qudt:PositiveIntegerType
+        rdfs:subClassOf  qudt:UnsignedType , qudt:IntegerDatatype .
+
+qudt:SignedVariableLengthIntegerType
+        rdfs:subClassOf  qudt:SignedIntegerType , qudt:VariableLengthIntegerType .
+
+edg:Scale  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+qudt:LatexString  rdfs:subClassOf  xsd:string .
+
+edg:DataGovernanceMaturityLevel
+        rdfs:subClassOf  edg:OrdinalScale .
+
+edg:PhysicalFlowPayloadable
+        rdfs:subClassOf  edg:Payloadable .
+
+edg:Locatable  rdfs:subClassOf  edg:Aspect .
+
+edg:RelationalDatabase
+        rdfs:subClassOf  edg:Database .
+
+edg:ExchangeableEntity
+        rdfs:subClassOf  edg:Traceable .
+
+vaem:hasGraphMetadata
+        rdfs:range  vaem:GraphMetaData .
+
+sh:sourceShape  rdfs:domain  sh:AbstractResult ;
+        rdfs:range   sh:Shape .
+
+qudt:minInclusive  rdfs:subPropertyOf  qudt:lowerBound .
+
+edg:supportsProcess  rdfs:subPropertyOf
+                edg:supports .
+
+edg:NonFunctionalRequirement
+        rdfs:subClassOf  edg:Requirement .
+
+vaem:Dimension  rdfs:subClassOf  owl:Thing .
+
+dash:FailureTestCaseResult
+        rdfs:subClassOf  dash:TestCaseResult .
+
+xsd:NCName  rdfs:subClassOf  rdfs:Literal .
+
+dct:rights  rdfs:range  xsd:string .
+
+dash:SingleEditor  rdfs:subClassOf  dash:Editor .
+
+edg:producesDataFor  rdfs:subPropertyOf
+                edg:target .
+
+edg:RequirementStatus
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:TableColumn  rdfs:subClassOf  edg:DataQualityAspect , edg:DataElement , edg:PhysicalDataAsset .
+
+qudt:PaddingType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+prov:Agent  rdfs:subClassOf  rdfs:Resource , edg:EnterpriseEnabler , edg:Identifiable , edg:Narratable , edg:StatusAspect , edg:Interoperable .
+
+business_rules:BusinessRule
+        rdfs:subClassOf  owl:Thing .
+
+skos:narrowMatch  rdfs:subPropertyOf  skos:mappingRelation , skos:narrower .
+
+edg:AuthorizationMethod
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:AssetStatus  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:performanceIndicator
+        rdfs:subPropertyOf  edg:indicator .
+
+edg:CMMIcapabilityMaturityLevel
+        rdfs:subClassOf  edg:OrdinalScale .
+
+edg:PersonalDataUseProtection
+        rdfs:subClassOf  rdf:Statement .
+
+edg:SQLdatatype  rdfs:subClassOf  edg:PhysicalDatatype .
+
+skos:hiddenLabel  rdfs:subPropertyOf  rdfs:label .
+
+sh:annotationProperty
+        rdfs:domain  sh:ResultAnnotation ;
+        rdfs:range   rdf:Property .
+
+edg:Schema  rdfs:subClassOf  edg:SemanticComplianceAspect , edg:DataQualityAspect , edg:Traceable , edg:PhysicalDataAsset , edg:ComplianceAspect .
+
+owl:propertyChainAxiom
+        rdfs:domain  owl:ObjectProperty ;
+        rdfs:range   rdf:List .
+
+xsd:gYearMonth  rdfs:subClassOf  rdfs:Literal .
+
+dct:author  rdfs:range  xsd:string .
+
+dash:InferencingTestCase
+        rdfs:subClassOf  dash:TestCase .
+
+skos:ConceptScheme  rdfs:subClassOf  owl:Thing .
+
+owl:versionIRI  rdfs:domain  owl:Ontology ;
+        rdfs:range   owl:Ontology .
+
+metadata:keyword  rdfs:range  xsd:string .
+
+edg:BuildingUnit  rdfs:subClassOf  edg:Place .
+
+dash:onAllValues  rdfs:range  xsd:boolean .
+
+dash:SingleViewer  rdfs:subClassOf  dash:Viewer .
+
+edg:supportsOrganization
+        rdfs:subPropertyOf  edg:supports .
+
+dash:expectedResult  rdfs:domain  dash:TestCase .
+
+dataenum:GeospatialGeometry
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+sh:qualifiedMaxCount  rdfs:range  xsd:integer .
+
+dash:ActionTestCase  rdfs:subClassOf  dash:TestCase .
+
+edg:dataQualityStatus
+        rdfs:range  edg:DataQualityStatus .
+
+edg:configurationNotes
+        rdfs:range  rdf:HTML .
+
+edg:BusinessPerformanceIndicator
+        rdfs:subClassOf  edg:Indicator .
+
+owl:ObjectProperty  rdfs:subClassOf  rdf:Property .
+
+edg:LineageAnalyzable
+        rdfs:subClassOf  edg:Aspect .
+
+qudt:UnsignedMediumIntegerType
+        rdfs:subClassOf  qudt:UnsignedIntegerType .
+
+edg:FiveLevelRatingScale
+        rdfs:subClassOf  edg:OrdinalScale .
+
+vaem:hasViewpoint  rdfs:subPropertyOf  vaem:hasDimension .
+
+edg:name  rdfs:range  xsd:string .
+
+qudt:oracleSQLName  rdfs:subPropertyOf  qudt:id .
+
+qudt:BooleanEncodingType
+        rdfs:subClassOf  qudt:Encoding .
+
+owl:distinctMembers  rdfs:domain  owl:AllDifferent ;
+        rdfs:range   rdf:List .
+
+edg:Process  rdfs:subClassOf  edg:ComplianceAspect , edg:Interoperable , edg:BusinessModelViewpoint , edg:ParticipationsAspect , edg:EnterpriseAsset , edg:EnterpriseViewFromTechnicalAssets .
+
+edg:DataQualityIssueRecord
+        rdfs:subClassOf  edg:AncillaryAsset , edg:DataQualityViewpoint .
+
+sh:entailment  rdfs:domain  owl:Ontology ;
+        rdfs:range   rdfs:Resource .
+
+graphql:ListType  rdfs:subClassOf  graphql:InputType .
+
+edg:SoftwareSuite  rdfs:subClassOf  edg:AccessControllable , edg:TechnicalAssetViewFromEnterpriseAssets , edg:EnterpriseEnabler , edg:Configurable , edg:Interoperable , edg:EnterpriseSoftware .
+
+sh:targetNode  rdfs:domain  sh:Shape .
+
+sh:sparql  rdfs:domain  sh:Shape ;
+        rdfs:range   sh:SPARQLConstraint .
+
+edg:LogicalDataAsset  rdfs:subClassOf  edg:DataAssetViewFromEnterpriseAssets , edg:DataAsset , edg:DataAssetViewFromTechnicalAssets .
+
+skos:member  rdfs:domain  skos:Collection ;
+        rdfs:range   []  .
+
+dash:ScriptConstraint
+        rdfs:subClassOf  dash:Script .
+
+edg:dataAssetConsumer
+        rdfs:subPropertyOf  edg:dependent .
+
+xsd:maxLength  rdfs:range  xsd:nonNegativeInteger .
+
+edg:ConfigurationFile
+        rdfs:subClassOf  edg:FileAsset .
+
+edg:DataSetSchema  rdfs:subClassOf  edg:Schema .
+
+sh:rule  rdfs:domain  sh:Shape ;
+        rdfs:range   sh:Rule .
+
+qudt:BitFieldType  rdfs:subClassOf  qudt:ScalarDatatype .
+
+graphql:sparqlTransform
+        rdfs:domain  sh:PropertyShape ;
+        rdfs:range   xsd:string .
+
+qudt:TextStringType  rdfs:subClassOf  qudt:StringType .
+
+owl:NamedIndividual  rdfs:subClassOf  owl:Thing .
+
+metadata:basedOn  rdfs:domain  owl:Ontology ;
+        rdfs:range   metadata:Standard .
+
+dash:TestEnvironment  rdfs:subClassOf  rdfs:Resource .
+
+dash:suggestionGenerator
+        rdfs:range  dash:SuggestionGenerator .
+
+dtype:CompositeCodeList
+        rdfs:subClassOf  dtype:CodeList ;
+        rdfs:subClassOf  []  .
+
+edg:DataQualityAspect
+        rdfs:subClassOf  edg:Aspect .
+
+vaem:previousPublishedVersion
+        rdfs:range  xsd:anyURI .
+
+rdfs:seeAlso  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Resource .
+
+edg:hostURL  rdfs:range  xsd:anyURI .
+
+xsd:double  rdfs:subClassOf  rdfs:Literal .
+
+skos:definition  rdfs:subPropertyOf  skos:note .
+
+dash:SuccessTestCaseResult
+        rdfs:subClassOf  dash:TestCaseResult .
+
+edg:Agency  rdfs:subClassOf  edg:Enterprise .
+
+edg:SearchTheEdgWidgetConfig
+        rdfs:subClassOf  edg:LandingPageWidgetConfig .
+
+edg:hasSoftwareModule
+        rdfs:subPropertyOf  edg:usesSoftwareExecutable .
+
+edg:transfersInformationAsset
+        rdfs:subPropertyOf  edg:transfersAsset .
+
+edg:CalculatedDataElement
+        rdfs:subClassOf  edg:DataElement .
+
+edg:compliesWithPolicyRequirement
+        rdfs:subPropertyOf  edg:tracesTo .
+
+dash:ResourceService  rdfs:subClassOf  dash:Service .
+
+edg:telephone  rdfs:range  xsd:string .
+
+edg:errorMsg  rdfs:range  xsd:string .
+
+qudt:baseSIUnitDimensions
+        rdfs:subPropertyOf  qudt:baseUnitDimensions .
+
+skos:related  rdfs:subPropertyOf  skos:semanticRelation .
+
+edg:TaxonomyNodeValueSet
+        rdfs:subClassOf  edg:PermissibleValuesAsset .
+
+edg:isProvenanceImpactGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+taxonomies:Taxonomy  rdfs:subClassOf  teamwork:Vocabulary , edg:AssetCollection , edg:ReferenceDataSource .
+
+edg:ComplianceAspect  rdfs:subClassOf  edg:Aspect .
+
+nwcg_org:TaskTeam  rdfs:subClassOf  edg:Organization .
+
+edg:suppress  rdfs:range  xsd:boolean .
+
+tosh:viewGroupDescription
+        rdfs:domain  sh:PropertyGroup ;
+        rdfs:range   xsd:string .
+
+edg:OracleDataIntegratorPipeline
+        rdfs:subClassOf  edg:ETLpipeline .
+
+vaem:isMetadataFor  rdfs:range  owl:Ontology .
+
+edg:ImpactAnalyzable  rdfs:subClassOf  edg:Aspect .
+
+edg:Suite  rdfs:subClassOf  edg:BuildingUnit .
+
+edg:DataExchangeable  rdfs:subClassOf  edg:Aspect .
+
+edg:compliesWithSecurityRequirement
+        rdfs:subPropertyOf  edg:compliesWithPolicyRequirement .
+
+edg:PersonalDataUseConsent
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:priority  rdfs:range  edg:DataRequirement .
+
+qudt:DateTimeStringType
+        rdfs:subClassOf  qudt:StringType .
+
+qudt:UnsignedType  rdfs:subClassOf  qudt:NumericType .
+
+edg:EnterpriseSoftware
+        rdfs:subClassOf  edg:TechnicalAsset .
+
+owl:InverseFunctionalProperty
+        rdfs:subClassOf  owl:ObjectProperty .
+
+edg:sourceLink  rdfs:subPropertyOf  edg:link .
+
+metadata:dateGenerated
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:dateTime .
+
+edg:DataAssetViewFromEnterpriseAssets
+        rdfs:subClassOf  edg:EnterpriseViewpoint .
+
+edg:AspectClass  rdfs:subClassOf  rdfs:Class , sh:NodeShape , owl:Class .
+
+edg:JSONdataSet  rdfs:subClassOf  edg:DataSet .
+
+edg:WorkflowParticipantProperty
+        rdfs:subClassOf  rdf:Property .
+
+edg:WorkingGroup  rdfs:subClassOf  edg:Organization .
+
+edg:Program  rdfs:subClassOf  edg:BusinessModelViewpoint , edg:EnterpriseAsset .
+
+edg:hostedOn  rdfs:subPropertyOf  edg:hosts .
+
+edg:InformationAsset  rdfs:subClassOf  edg:ParticipationsAspect , edg:LogicalFlowPayloadable , edg:EnterpriseAsset , prov:Entity , edg:Provenance .
+
+edg:DataGovernanceIndicator
+        rdfs:subClassOf  edg:Indicator .
+
+vaem:isElaboratedIn  rdfs:range  xsd:anyURI ;
+        rdfs:subPropertyOf  rdfs:isDefinedBy .
+
+dash:index  rdfs:range  xsd:integer .
+
+owl:equivalentClass  rdfs:domain  rdfs:Class ;
+        rdfs:range   rdfs:Class .
+
+edg:type  rdfs:range  xsd:string .
+
+skos:altLabel  rdfs:subPropertyOf  rdfs:label .
+
+dash:ValidationTestCase
+        rdfs:subClassOf  dash:TestCase .
+
+tosh:editGroupDescription
+        rdfs:domain  sh:PropertyGroup ;
+        rdfs:range   xsd:string .
+
+graphql:isIDField  rdfs:range  xsd:boolean .
+
+xsd:length  rdfs:range  xsd:nonNegativeInteger .
+
+edg:PhysicalFlow  rdfs:subClassOf  edg:Flow .
+
+rdf:langString  rdfs:subClassOf  rdfs:Literal .
+
+xsd:maxInclusive  rdfs:range  rdfs:Literal .
+
+edg:lastProfiled  rdfs:range  xsd:dateTime .
+
+qudt:matlabName  rdfs:subPropertyOf  qudt:id .
+
+qudt:NIST_SP811_Comment
+        rdfs:subClassOf  qudt:Comment .
+
+edg:SolutionStackType
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+skos:scopeNote  rdfs:subPropertyOf  skos:note .
+
+sh:ConstraintComponent
+        rdfs:subClassOf  sh:Parameterizable .
+
+graphql:JSON2RDFTestCase
+        rdfs:subClassOf  dash:TestCase .
+
+dataenum:WaterSourceAvailability
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+xsd:short  rdfs:subClassOf  rdfs:Literal .
+
+qudt:StringEncodingType
+        rdfs:subClassOf  qudt:Encoding .
+
+edg:Purpose  rdfs:subClassOf  edg:Construct .
+
+qudt:DataEncoding  rdfs:subClassOf  qudt:Aspect .
+
+teamworkconstraints:AllLocalSubjectsTarget
+        rdfs:subClassOf  sh:Target .
+
+owl:DataRange  rdfs:subClassOf  rdfs:Datatype .
+
+vaem:Domain  rdfs:subClassOf  vaem:Dimension .
+
+edg:PhysicalDataModel
+        rdfs:subClassOf  edg:SemanticComplianceAspect , edg:ProvenanceTimestamps , edg:Model , edg:ComplianceAspect , edg:PhysicalDataAsset , edg:Traceable .
+
+sh:SPARQLConstraint  rdfs:subClassOf  sh:SPARQLSelectExecutable .
+
+edg:property  rdfs:range  rdfs:Resource .
+
+edg:DatabaseColumn  rdfs:subClassOf  edg:DataQualityAspect , edg:DataProfileable , edg:DataElement .
+
+edg:RequirementsModelProject
+        rdfs:subClassOf  teamwork:Vocabulary , edg:AssetCollection .
+
+edg:InternalSystem  rdfs:subClassOf  edg:System .
+
+edg:ZooKeeperAPIerrorCode
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:PartyAsRole  rdfs:subClassOf  edg:Party .
+
+edg:Narratable  rdfs:subClassOf  edg:Aspect .
+
+edg:NetworkAttachedService
+        rdfs:subClassOf  edg:CloudComputingService .
+
+datastd:ExchangedResourceDataElement
+        rdfs:subClassOf  datastd:ExchangedDataElement .
+
+sh:SPARQLUpdateExecutable
+        rdfs:subClassOf  sh:SPARQLExecutable .
+
+sh:property  rdfs:domain  sh:Shape ;
+        rdfs:range   sh:PropertyShape .
+
+sioc:UserAccount  rdfs:subClassOf  edg:Person , edg:WorkflowParticipant .
+
+qudt:baseISOUnitDimensions
+        rdfs:subPropertyOf  qudt:baseUnitDimensions .
+
+dash:SPARQLUpdateSuggestionGenerator
+        rdfs:subClassOf  sh:SPARQLSelectExecutable , sh:SPARQLUpdateExecutable , dash:SuggestionGenerator .
+
+skos:example  rdfs:subPropertyOf  skos:note .
+
+vaem:applicableDomain
+        rdfs:subPropertyOf  vaem:hasDimension .
+
+owl:targetIndividual  rdfs:domain  owl:NegativePropertyAssertion ;
+        rdfs:range   owl:Thing .
+
+owl:minCardinality  rdfs:domain  owl:Restriction ;
+        rdfs:range   xsd:nonNegativeInteger .
+
+owl:backwardCompatibleWith
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   owl:Ontology .
+
+dash:viewer  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   dash:Viewer .
+
+edg:LogicalAttribute  rdfs:subClassOf  edg:Protectable , edg:LogicalDataAsset , edg:Traceable , edg:ComplianceAspect .
+
+qudt:maxExclusive  rdfs:subPropertyOf  qudt:upperBound .
+
+edg:HardwareExecutable
+        rdfs:subClassOf  edg:Aspect .
+
+teamwork:ProjectType  rdfs:subClassOf  rdfs:Resource , owl:Ontology .
+
+dash:SuggestionGenerator
+        rdfs:subClassOf  rdfs:Resource .
+
+edg:EXCELdatatype  rdfs:subClassOf  edg:PhysicalDatatype .
+
+edg:ClassificationScheme
+        rdfs:subClassOf  edg:Schema .
+
+dash:expectedResultIsJSON
+        rdfs:range  xsd:boolean .
+
+skos:hasTopConcept  rdfs:domain  skos:ConceptScheme ;
+        rdfs:range   skos:Concept .
+
+xsd:duration  rdfs:subClassOf  rdfs:Literal .
+
+edg:isLogicalEntityRelationshipsGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+sh:maxLength  rdfs:range  xsd:integer .
+
+edg:DataProfileable  rdfs:subClassOf  edg:Aspect .
+
+edg:specifiesNeedFor  rdfs:subPropertyOf
+                edg:specifies .
+
+edg:AssetClass  rdfs:subClassOf  rdfs:Class , sh:NodeShape , edg:ConstructClass .
+
+edg:ProtectionMethod  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:Dataflow  rdfs:subClassOf  edg:PhysicalFlow .
+
+edg:dependencyOf  rdfs:range  edg:Event .
+
+edg:usesSoftwarePlatform
+        rdfs:subPropertyOf  edg:usesSoftwareExecutable .
+
+qudt:derivedNonCoherentUnitOfSystem
+        rdfs:subPropertyOf  qudt:derivedUnitOfSystem .
+
+sh:ValidationReport  rdfs:subClassOf  rdfs:Resource .
+
+xsd:normalizedString  rdfs:subClassOf  rdfs:Literal .
+
+edg:Charter  rdfs:subClassOf  edg:InformationAssetViewpoint , edg:InformationAsset .
+
+edg:GlossaryTermRelatable
+        rdfs:subClassOf  edg:Aspect .
+
+qudt:QuantityValue  rdfs:subClassOf  qudt:Concept , qudt:Quantifiable .
+
+dash:Service  rdfs:subClassOf  dash:Script , sh:Parameterizable .
+
+owl:topObjectProperty
+        rdfs:domain  owl:Thing ;
+        rdfs:range   owl:Thing .
+
+owl:maxQualifiedCardinality
+        rdfs:domain  owl:Restriction ;
+        rdfs:range   xsd:nonNegativeInteger .
+
+dash:deletedTriple  rdfs:domain  dash:GraphUpdate ;
+        rdfs:range   rdf:Statement .
+
+edg:documentLink  rdfs:subPropertyOf  edg:link .
+
+prov:wasInfluencedBy  rdfs:domain  edg:Provenance ;
+        rdfs:range   xsd:anyURI .
+
+sh:targetSubjectsOf  rdfs:domain  sh:Shape ;
+        rdfs:range   rdf:Property .
+
+swa:instancesHaveRandomURI
+        rdfs:range  xsd:boolean .
+
+edg:SoftwareService  rdfs:subClassOf  edg:TechnicalAssetViewFromEnterpriseAssets , edg:Locatable , edg:AccessControllable , edg:EnterpriseSoftware , edg:EnterpriseEnabler , edg:Configurable .
+
+edg:effectiveEndDate  rdfs:range  xsd:date .
+
+edg:TalendPipeline  rdfs:subClassOf  edg:ETLpipeline .
+
+edg:EDGenumerationsProject
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+edg:lastModified  rdfs:range  xsd:dateTime .
+
+edg:ImpactProperty  rdfs:subClassOf  rdf:Property .
+
+edg:system  rdfs:domain  edg:Environment ;
+        rdfs:range   edg:System .
+
+edg:IdentificationMethod
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:businessSubFunction
+        rdfs:subPropertyOf  edg:function .
+
+metadata:UpdateProcess
+        rdfs:subClassOf  rdfs:Resource .
+
+edg:Division  rdfs:subClassOf  edg:Enterprise .
+
+edg:Governance  rdfs:subClassOf  edg:Aspect .
+
+qudt:UnsignedBigIntegerType
+        rdfs:subClassOf  qudt:BigIntegerType , qudt:UnsignedIntegerType .
+
+edg:PhysicalDataModelDatabaseTable
+        rdfs:subClassOf  edg:ComplianceAspect , edg:Table .
+
+sh:languageIn  rdfs:range  rdf:List .
+
+owl:maxCardinality  rdfs:domain  owl:Restriction ;
+        rdfs:range   xsd:nonNegativeInteger .
+
+edg:Stewardship  rdfs:subClassOf  edg:Aspect .
+
+sh:uniqueLang  rdfs:range  xsd:boolean .
+
+sh:value  rdfs:domain  sh:AbstractResult .
+
+dash:GraphService  rdfs:subClassOf  dash:Service .
+
+edg:DataQualityVerificationMethod
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+dash:defaultViewForRole
+        rdfs:domain  sh:NodeShape .
+
+edg:Server  rdfs:subClassOf  edg:EnterpriseSoftware , edg:AccessControllable , edg:Locatable .
+
+qudt:applicableSIUnit
+        rdfs:subPropertyOf  qudt:applicableUnit .
+
+edg:DatabaseSynonymable
+        rdfs:subClassOf  edg:Aspect .
+
+edg:subRequirement  rdfs:domain  edg:Requirement ;
+        rdfs:range   edg:Requirement .
+
+qudt:Value  rdfs:subClassOf  qudt:Concept .
+
+edg:logicalEntity  rdfs:domain  edg:LogicalDataModel ;
+        rdfs:range   edg:LogicalEntity .
+
+edg:ApacheSparkMLibPipeline
+        rdfs:subClassOf  edg:MLpipeline .
+
+qudt:TimeDataType  rdfs:subClassOf  qudt:ScalarDatatype .
+
+sh:pattern  rdfs:range  xsd:string .
+
+edg:QuantifiableDataElement
+        rdfs:subClassOf  edg:DataElement , qudt:Quantity .
+
+metadata:Frequency  rdfs:subClassOf  rdfs:Resource .
+
+edg:isDiagramGadget  rdfs:subPropertyOf
+                edg:isGadget .
+
+dash:AllSubjectsTarget
+        rdfs:subClassOf  sh:Target .
+
+dash:actionIconClass  rdfs:domain  dash:Action ;
+        rdfs:range   xsd:string .
+
+edg:Presentation  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Document , edg:Governance .
+
+edg:Category  rdfs:subClassOf  edg:Construct .
+
+edg:Datatype  rdfs:subClassOf  edg:DatatypeViewpoint , edg:Provenance , edg:Asset , edg:TypeConstruct .
+
+sh:optional  rdfs:domain  sh:Parameter ;
+        rdfs:range   xsd:boolean .
+
+sh:SPARQLTarget  rdfs:subClassOf  sh:SPARQLSelectExecutable , sh:SPARQLAskExecutable , sh:Target .
+
+qudt:EnumerationScale
+        rdfs:subClassOf  dtype:Enumeration , qudt:Scale .
+
+edg:CompetencyQuesion
+        rdfs:subClassOf  edg:Narratable , edg:AncillaryAsset , edg:RequirementsViewpoint , edg:StatusAspect , edg:Traceable , edg:Identifiable .
+
+owl:onClass  rdfs:domain  owl:Restriction ;
+        rdfs:range   owl:Class .
+
+qudt:vbName  rdfs:subPropertyOf  qudt:id .
+
+xsd:byte  rdfs:subClassOf  rdfs:Literal .
+
+dash:height  rdfs:range  xsd:integer .
+
+qudt:UCUMcs-term  rdfs:subClassOf  rdfs:Resource .
+
+edg:ProjectTeam  rdfs:subClassOf  edg:Team .
+
+edg:EnumerationClass  rdfs:subClassOf  edg:AssetClass , prov:Entity , edg:Provenance , edg:StatusAspect .
+
+owl:inverseOf  rdfs:domain  owl:ObjectProperty ;
+        rdfs:range   owl:ObjectProperty .
+
+qudt:javaName  rdfs:subPropertyOf  qudt:id .
+
+edg:usesScript  rdfs:subPropertyOf  edg:usesSoftwareProgram .
+
+xsd:IDREF  rdfs:subClassOf  rdfs:Literal .
+
+owl:minQualifiedCardinality
+        rdfs:domain  owl:Restriction ;
+        rdfs:range   xsd:nonNegativeInteger .
+
+qudt:RealNumber  rdfs:subClassOf  qudt:Number .
+
+edg:LogicalRelationParticipant
+        rdfs:subClassOf  edg:LogicalDataAsset .
+
+xsd:pattern  rdfs:range  xsd:string .
+
+metadata:effectiveEndDate
+        rdfs:domain  edg:Governance , owl:Ontology ;
+        rdfs:range   xsd:date .
+
+skos:prefLabel  rdfs:subPropertyOf  rdfs:label .
+
+edg:BusinessFunction  rdfs:subClassOf  edg:BusinessModelViewpoint , edg:EnterpriseAsset , edg:EnterpriseViewFromTechnicalAssets .
+
+qudt:applicableISOUnit
+        rdfs:subPropertyOf  qudt:applicableUnit .
+
+edg:mapsTo  rdfs:subPropertyOf  prov:wasDerivedFrom .
+
+edg:Construct  rdfs:subClassOf  owl:Thing .
+
+dtype:literal  rdfs:range  xsd:string .
+
+layer:GeospatialDataLayerViewpoint
+        rdfs:subClassOf  edg:DataAssetsViewpoint .
+
+metadata:isExternalDataset
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:boolean .
+
+metadata:sourcedFrom  rdfs:domain  owl:Ontology ;
+        rdfs:range   edg:Organization .
+
+sh:class  rdfs:range  rdfs:Class .
+
+edg:Provenance  rdfs:subClassOf  edg:Aspect .
+
+vaem:urlForHTML  rdfs:range  xsd:anyURI .
+
+qudt:floatPercentage  rdfs:subClassOf  xsd:float .
+
+edg:PhysicalDataModelDatabaseSchema
+        rdfs:subClassOf  edg:DatabaseSchema .
+
+sioc:Role  rdfs:subClassOf  edg:WorkflowParticipant , edg:Party .
+
+edg:AncillaryAsset  rdfs:subClassOf  owl:Thing .
+
+edg:PaaS  rdfs:subClassOf  edg:CloudComputingService .
+
+dct:description  rdfs:range  rdf:HTML , xsd:string .
+
+edg:collectionGuidance
+        rdfs:subPropertyOf  edg:guidance .
+
+owl:sourceIndividual  rdfs:domain  owl:NegativePropertyAssertion ;
+        rdfs:range   owl:Thing .
+
+owl:AnnotationProperty
+        rdfs:subClassOf  rdf:Property .
+
+xsd:token  rdfs:subClassOf  rdfs:Literal .
+
+qudt:SignedMediumIntegerType
+        rdfs:subClassOf  qudt:SignedIntegerType .
+
+skos:mappingRelation  rdfs:subPropertyOf
+                skos:semanticRelation .
+
+edg:ProcessAsset  rdfs:subClassOf  edg:Governance , edg:Asset , edg:Traceable .
+
+qudt:Statement  rdfs:subClassOf  rdf:Statement .
+
+qudt:hasPrefixUnit  rdfs:subPropertyOf  qudt:hasDefinedUnit .
+
+edg:QualityAssuranceAspect
+        rdfs:subClassOf  edg:Aspect .
+
+sh:focusNode  rdfs:domain  sh:AbstractResult .
+
+edg:Identifiable  rdfs:subClassOf  edg:Aspect .
+
+qudt:CharacterType  rdfs:subClassOf  qudt:OrdinalType .
+
+edg:StringDataElement
+        rdfs:subClassOf  edg:DataElement .
+
+qudt:value  rdfs:subPropertyOf  rdf:value .
+
+edg:DataSetsRegistryProject
+        rdfs:subClassOf  edg:AssetCollection .
+
+edg:SpreadsheetFile  rdfs:subClassOf  edg:FileAsset , edg:SpreadsheetsWorkbook .
+
+xsd:long  rdfs:subClassOf  rdfs:Literal .
+
+edg:Cardinality  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:isLogicalFlowsGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+vaem:hasAspect  rdfs:subPropertyOf  vaem:hasDimension .
+
+edg:EDGenumeratedValue
+        rdfs:subClassOf  edg:EnumeratedValue , edg:Identifiable , edg:EnumeratedValueViewpoint .
+
+owl:sameAs  rdfs:domain  owl:Thing ;
+        rdfs:range   owl:Thing .
+
+xsd:ID  rdfs:subClassOf  rdfs:Literal .
+
+qudt:hasNonCoherentUnit
+        rdfs:subPropertyOf  qudt:hasDefinedUnit .
+
+edg:Procedure  rdfs:subClassOf  edg:BusinessModelViewpoint , edg:EnterpriseAsset , edg:EnterpriseViewFromTechnicalAssets .
+
+owl:bottomObjectProperty
+        rdfs:domain  owl:Thing ;
+        rdfs:range   owl:Thing .
+
+owl:hasValue  rdfs:domain  owl:Restriction ;
+        rdfs:range   rdfs:Resource .
+
+sh:ResultAnnotation  rdfs:subClassOf  rdfs:Resource .
+
+sh:SPARQLConstructExecutable
+        rdfs:subClassOf  sh:SPARQLExecutable .
+
+vaem:Discipline  rdfs:subClassOf  vaem:Dimension .
+
+qudt:QuantityKindDimensionVector_CGS-EMU
+        rdfs:subClassOf  qudt:QuantityKindDimensionVector_CGS .
+
+skos:broaderTransitive
+        rdfs:subPropertyOf  skos:semanticRelation .
+
+edg:BusinessEvent  rdfs:subClassOf  edg:Locatable , edg:ParticipationsAspect , edg:BusinessModelViewpoint , edg:EnterpriseAsset .
+
+edg:ReportColumn  rdfs:subClassOf  edg:DataElement .
+
+dash:SuccessResult  rdfs:subClassOf  sh:AbstractResult .
+
+edg:FileAsset  rdfs:subClassOf  edg:Processable , edg:ProvenanceTimestamps , edg:PhysicalDataAsset , edg:DataQualityAspect , edg:Traceable , edg:Protectable , edg:AccessControllable , edg:ComplianceAspect .
+
+edg:IaaS  rdfs:subClassOf  edg:CloudComputingService .
+
+edg:Association  rdfs:subClassOf  edg:Enterprise .
+
+qudt:length  rdfs:subPropertyOf  qudt:minLength , qudt:maxLength .
+
+owl:AllDisjointClasses
+        rdfs:subClassOf  rdfs:Resource .
+
+rdf:Seq  rdfs:subClassOf  rdfs:Container .
+
+edg:PropertyValueSet  rdfs:subClassOf  edg:PermissibleValuesAsset .
+
+edg:hideSubClasses  rdfs:range  xsd:boolean .
+
+dc:description  rdfs:range  xsd:string .
+
+edg:AzureDatabricksPipeline
+        rdfs:subClassOf  edg:ETLpipeline .
+
+edg:Certificate  rdfs:subClassOf  edg:Governance , edg:Document .
+
+qudt:hexbinary  rdfs:subClassOf  xsd:string .
+
+owl:oneOf  rdfs:domain  rdfs:Class ;
+        rdfs:range   rdf:List .
+
+sh:or   rdfs:range  rdf:List .
+
+qudt:DatatypeShape  rdfs:subClassOf  edg:Aspect .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+dash:ScriptFunction  rdfs:subClassOf  sh:Function , dash:Script .
+
+edg:TechnicalAsset  rdfs:subClassOf  edg:Asset , edg:TechnicalViewpoint .
+
+sh:result  rdfs:domain  sh:ValidationReport ;
+        rdfs:range   sh:ValidationResult .
+
+edg:ConfigurationAsset
+        rdfs:subClassOf  edg:AncillaryAsset .
+
+skos:broader  rdfs:subPropertyOf  skos:broaderTransitive .
+
+edg:termUsedByOrganization
+        rdfs:subPropertyOf  edg:usedBy .
+
+qudt:dimensionExponentForLuminousIntensity
+        rdfs:subPropertyOf  qudt:dimensionExponent .
+
+dash:SPARQLConstructTemplate
+        rdfs:subClassOf  sh:SPARQLConstructExecutable , sh:Parameterizable .
+
+edg:EDGenumerationClass
+        rdfs:subClassOf  edg:EnumerationClass , edg:Viewpoint , edg:Narratable , edg:Identifiable .
+
+metadata:identifier  rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:string .
+
+edg:UIpropertyConstraint
+        rdfs:subClassOf  sh:PropertyShape .
+
+edg:ProcessActivity  rdfs:subClassOf  edg:LineageAnalyzable , edg:Interoperable , edg:EnterpriseAsset , edg:BusinessModelViewpoint , edg:ParticipationsAspect , edg:EnterpriseViewFromTechnicalAssets .
+
+qudt:RealSinglePrecisionType
+        rdfs:subClassOf  qudt:RealDatatype , qudt:SinglePrecisionType .
+
+qudt:Citation  rdfs:subClassOf  qudt:Concept .
+
+qudt:stringValue  rdfs:subPropertyOf  qudt:scalarValue .
+
+edg:EnterpriseAsset  rdfs:subClassOf  edg:EnterpriseViewpoint , edg:Traceable , edg:Asset .
+
+owl:differentFrom  rdfs:domain  owl:Thing ;
+        rdfs:range   owl:Thing .
+
+qudt:BaseDimensionMagnitude
+        rdfs:subClassOf  qudt:Concept .
+
+edg:usesTrainingDataset
+        rdfs:subPropertyOf  prov:wasDerivedFrom .
+
+edg:aspectClass  rdfs:range  edg:Aspect .
+
+edg:Party  rdfs:subClassOf  edg:BusinessModelViewpoint , edg:EnterpriseAsset , prov:Agent , metadata:Actor , edg:EnterpriseViewFromTechnicalAssets .
+
+edg:usesSoftwareFunction
+        rdfs:subPropertyOf  edg:usesSoftwareExecutable .
+
+edg:DataExchange  rdfs:subClassOf  edg:EnterpriseAsset , edg:BusinessModelViewpoint , edg:ComplianceAspect , edg:EnterpriseViewFromTechnicalAssets .
+
+edg:LandingPageWidgetConfig
+        rdfs:subClassOf  edg:GovernanceViewpoint .
+
+sh:zeroOrOnePath  rdfs:range  rdfs:Resource .
+
+edg:Asset  rdfs:subClassOf  edg:Identifiable , edg:Narratable , edg:StatusAspect , owl:Thing .
+
+sh:xone  rdfs:range  rdf:List .
+
+graphql:Schema  rdfs:subClassOf  rdfs:Resource .
+
+edg:Form  rdfs:subClassOf  edg:DataExchangeable , edg:InformationAsset , edg:Governance , edg:InformationAssetViewpoint .
+
+skos:Collection  rdfs:subClassOf  owl:Thing .
+
+sh:NodeShape  rdfs:subClassOf  sh:Shape .
+
+sh:ignoredProperties  rdfs:range  rdf:List .
+
+edg:frequencyNotes  rdfs:range  rdf:HTML .
+
+qudt:UnsignedShortIntegerType
+        rdfs:subClassOf  qudt:ShortIntegerType , qudt:UnsignedIntegerType .
+
+edg:OperatingSystemType
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  rdfs:Resource , edg:AssetCollection , edg:ReferenceDataSource , teamwork:Vocabulary .
+
+owl:DatatypeProperty  rdfs:subClassOf  rdf:Property .
+
+qudt:DecimalPrefix  rdfs:subClassOf  qudt:Prefix .
+
+sh:JSRule  rdfs:subClassOf  sh:Rule , sh:JSExecutable .
+
+qudt:derivedUnitOfSystem
+        rdfs:subPropertyOf  qudt:unitOfSystem .
+
+edg:Measure  rdfs:subClassOf  edg:Indicator .
+
+edg:System  rdfs:subClassOf  edg:ComplianceAspect , edg:SoftwareExecutable , edg:EnterpriseEnabler , edg:ReferenceDataSource , edg:MetadataSource , edg:SemanticComplianceAspect , edg:Locatable , edg:AccessControllable , edg:Interoperable , edg:EnterpriseSoftware , edg:Configurable .
+
+edg:DataAsset  rdfs:subClassOf  edg:DataAssetsViewpoint , prov:Entity , edg:DataAssetViewFromTechnicalAssets , edg:Asset .
+
+edg:Statistics  rdfs:subClassOf  owl:Thing .
+
+sh:labelTemplate  rdfs:domain  sh:Parameterizable .
+
+edg:ServiceEndpoint  rdfs:subClassOf  edg:Locatable , edg:SoftwareAsset , edg:AccessControllable , edg:Configurable , edg:Interoperable , edg:Protectable .
+
+owl:IrreflexiveProperty
+        rdfs:subClassOf  owl:ObjectProperty .
+
+metadata:maintainedBy
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   edg:Organization .
+
+qudt:ucumCode  rdfs:subPropertyOf  skos:notation .
+
+dash:resourceAction  rdfs:domain  rdfs:Class ;
+        rdfs:range   dash:ResourceAction .
+
+edg:Priority  rdfs:subClassOf  owl:Thing .
+
+sh:JSFunction  rdfs:subClassOf  sh:JSExecutable , sh:Function .
+
+dtype:CodeList  rdfs:subClassOf  dtype:Enumeration .
+
+qudt:Comment  rdfs:subClassOf  owl:Thing , qudt:Verifiable .
+
+skos:historyNote  rdfs:subPropertyOf  skos:note .
+
+edg:reportingStartDate
+        rdfs:range  xsd:date .
+
+rdf:rest  rdfs:domain  rdf:List ;
+        rdfs:range   rdf:List .
+
+sh:maxCount  rdfs:range  xsd:integer .
+
+graphql:QueryTestCase
+        rdfs:subClassOf  dash:TestCase , graphql:Schema , graphql:Query .
+
+qudt:DateStringType  rdfs:subClassOf  qudt:DateTimeStringType .
+
+qudt:BooleanType  rdfs:subClassOf  qudt:OrdinalType .
+
+dataenum:caseSensitivity
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+graphql:InputType  rdfs:subClassOf  rdfs:Resource .
+
+xsd:float  rdfs:subClassOf  rdfs:Literal .
+
+qudt:QuantityKind  rdfs:subClassOf  qudt:Verifiable , qudt:AbstractQuantityKind .
+
+qudt:CharEncodingType
+        rdfs:subClassOf  qudt:Encoding .
+
+qudt:dimensionExponentForThermodynamicTemperature
+        rdfs:subPropertyOf  qudt:dimensionExponent .
+
+metadata:changeFrequencyNotes
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:string .
+
+edg:FormItem  rdfs:subClassOf  edg:InformationAssetViewpoint , edg:DataElement , edg:PhysicalDataAsset , edg:DataAssetViewFromTechnicalAssets .
+
+edg:Specification  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Document .
+
+rdf:XMLLiteral  rdfs:subClassOf  rdfs:Resource .
+
+rdfs:subClassOf  rdfs:domain  rdfs:Class ;
+        rdfs:range   rdfs:Class .
+
+sh:JSConstraint  rdfs:subClassOf  sh:JSExecutable .
+
+sh:SPARQLTargetType  rdfs:subClassOf  sh:SPARQLSelectExecutable , sh:SPARQLAskExecutable , sh:TargetType .
+
+qudt:SignedLongIntegerType
+        rdfs:subClassOf  qudt:SignedIntegerType , qudt:LongIntegerType .
+
+geo:SpatialThing  rdfs:subClassOf  edg:Location .
+
+edg:SoftwareExecutable
+        rdfs:subClassOf  edg:Aspect .
+
+edg:referenceLink  rdfs:subPropertyOf  edg:link .
+
+dash:ModifyAction  rdfs:subClassOf  dash:ResourceAction .
+
+vaem:website  rdfs:range  xsd:anyURI .
+
+qudt:QuantityKindDimensionVector_CGS-GAUSS
+        rdfs:subClassOf  qudt:QuantityKindDimensionVector_CGS .
+
+qudt:OctetType  rdfs:subClassOf  qudt:UnsignedIntegerType .
+
+edg:isPrimaryKey  rdfs:domain  edg:DatabaseColumn , edg:LogicalAttribute ;
+        rdfs:range   xsd:boolean .
+
+metadata:referenceURL
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:anyURI .
+
+edg:AccessRightRestriction
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:Protectable  rdfs:subClassOf  edg:Aspect .
+
+vaem:turtleFileURL  rdfs:range  xsd:anyURI .
+
+tosh:viewGadget  rdfs:range  rdfs:Resource .
+
+qudt:dimensionExponentForMass
+        rdfs:subPropertyOf  qudt:dimensionExponent .
+
+datastd:DataStandard  rdfs:subClassOf  datastd:StandardViewpoint .
+
+qudt:ScaleType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+vaem:latestPublishedVersion
+        rdfs:range  xsd:anyURI .
+
+edg:EnterpriseViewpointFromDataAssets
+        rdfs:subClassOf  edg:DataAssetsViewpoint .
+
+sh:target  rdfs:domain  sh:Shape ;
+        rdfs:range   sh:Target .
+
+rdf:Statement  rdfs:subClassOf  rdfs:Resource .
+
+graphql:queryShape  rdfs:range  sh:NodeShape .
+
+sh:JSExecutable  rdfs:subClassOf  rdfs:Resource .
+
+edg:OntologyClass  rdfs:subClassOf  edg:OntologyAsset .
+
+sh:update  rdfs:domain  sh:SPARQLUpdateExecutable ;
+        rdfs:range   xsd:string .
+
+edg:DatatypeFamilyType
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+qudt:Time  rdfs:subClassOf  qudt:Value .
+
+edg:Dashboard  rdfs:subClassOf  edg:DashboardModelsViewpoint .
+
+edg:SoftwareModel  rdfs:subClassOf  edg:Model .
+
+dataenum:ADSPermissionState
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+sh:zeroOrMorePath  rdfs:range  rdfs:Resource .
+
+qudt:QuantityKindDimensionVector_Imperial
+        rdfs:subClassOf  qudt:QuantityKindDimensionVector .
+
+qudt:Verifiable  rdfs:subClassOf  qudt:Aspect .
+
+edg:Project  rdfs:subClassOf  edg:BusinessModelViewpoint , edg:EnterpriseViewFromTechnicalAssets , edg:EnterpriseAsset .
+
+qudt:FloatingPointEncodingType
+        rdfs:subClassOf  qudt:Encoding .
+
+xsd:gDay  rdfs:subClassOf  rdfs:Literal .
+
+qudt:oleDBName  rdfs:subPropertyOf  qudt:id .
+
+xsd:minInclusive  rdfs:range  rdfs:Literal .
+
+graphql:InputObjectType
+        rdfs:subClassOf  rdfs:Resource .
+
+sh:description  rdfs:domain  sh:PropertyShape .
+
+edg:GovernanceAsset  rdfs:subClassOf  edg:Asset .
+
+edg:NumericDataElement
+        rdfs:subClassOf  edg:DataElement .
+
+vaem:withAttributionTo
+        rdfs:domain  vaem:GraphMetaData ;
+        rdfs:range   rdf:HTML .
+
+owl:unionOf  rdfs:domain  rdfs:Class ;
+        rdfs:range   rdf:List .
+
+edg:Responsive  rdfs:subClassOf  edg:Aspect .
+
+edg:EnumerationTypesOntology
+        rdfs:subClassOf  ontologyprojects:Ontology , edg:AssetCollection .
+
+edg:FrequencyOfChange
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+dash:Script  rdfs:subClassOf  rdfs:Resource .
+
+edg:columnOf  rdfs:subPropertyOf  edg:partOf .
+
+edg:specifiesWorkOn  rdfs:subPropertyOf
+                edg:specifies .
+
+sh:JSLibrary  rdfs:subClassOf  rdfs:Resource .
+
+qudt:ConstantValue  rdfs:subClassOf  qudt:QuantityValue .
+
+edg:ResourceLocalNameConstructMethod
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+owl:someValuesFrom  rdfs:domain  owl:Restriction ;
+        rdfs:range   rdfs:Class .
+
+rdf:List  rdfs:subClassOf  rdfs:Resource .
+
+edg:Risk  rdfs:subClassOf  edg:GovernanceViewpoint , edg:GovernanceAsset .
+
+edg:GovernanceViewpoint
+        rdfs:subClassOf  edg:DataAssetsViewpoint , edg:EnterpriseViewpoint , edg:Viewpoint , edg:TechnicalViewpoint .
+
+qudt:StringUTF16  rdfs:subClassOf  qudt:TextStringType .
+
+qudt:baseImperialUnitDimensions
+        rdfs:subPropertyOf  qudt:baseUnitDimensions .
+
+edg:KafkaPipeline  rdfs:subClassOf  edg:ETLpipeline .
+
+qudt:NominalScale  rdfs:subClassOf  qudt:Scale .
+
+sh:in   rdfs:range  rdf:List .
+
+edg:InformaticaPowerCenterPipeline
+        rdfs:subClassOf  edg:ETLpipeline .
+
+qudt:StringType  rdfs:subClassOf  qudt:ScalarDatatype , edg:ScalarDatatypeUnion , qudt:DatatypeShape .
+
+metadata:Actor  rdfs:subClassOf  rdfs:Resource .
+
+owl:priorVersion  rdfs:domain  owl:Ontology ;
+        rdfs:range   owl:Ontology .
+
+qudt:cName  rdfs:subPropertyOf  qudt:id .
+
+vaem:applicableDiscipline
+        rdfs:subPropertyOf  vaem:hasDimension .
+
+edg:accessControl  rdfs:range  rdf:HTML .
+
+edg:isPhysicalFlowsGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+sh:PropertyShape  rdfs:subClassOf  sh:Shape .
+
+rdfs:comment  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Literal .
+
+qudt:Concept  rdfs:subClassOf  owl:Thing .
+
+sh:Parameterizable  rdfs:subClassOf  rdfs:Resource .
+
+skos:narrower  rdfs:subPropertyOf  skos:narrowerTransitive .
+
+edg:BusinessModel  rdfs:subClassOf  edg:Model .
+
+edg:Traceable  rdfs:subClassOf  edg:Aspect .
+
+edg:BusinessArea  rdfs:subClassOf  edg:SubjectArea .
+
+sh:qualifiedValueShapesDisjoint
+        rdfs:range  xsd:boolean .
+
+skos:memberList  rdfs:domain  skos:OrderedCollection ;
+        rdfs:range   rdf:List .
+
+edg:RequirementsViewpoint
+        rdfs:subClassOf  edg:Viewpoint .
+
+owl:ReflexiveProperty
+        rdfs:subClassOf  owl:ObjectProperty .
+
+edg:ConstructClass  rdfs:subClassOf  owl:Class .
+
+qudt:minExclusive  rdfs:subPropertyOf  qudt:lowerBound .
+
+edg:ScalarDatatypeUnion
+        rdfs:subClassOf  edg:Construct .
+
+qudt:TimeStringType  rdfs:subClassOf  qudt:TextStringType .
+
+owl:incompatibleWith  rdfs:domain  owl:Ontology ;
+        rdfs:range   owl:Ontology .
+
+sh:SPARQLSelectValidator
+        rdfs:subClassOf  sh:Validator , sh:SPARQLSelectExecutable .
+
+metadata:provisioningProcedure
+        rdfs:range  xsd:string .
+
+edg:Organization  rdfs:subClassOf  edg:Party , edg:GovernanceViewpoint , edg:EnterpriseAsset .
+
+edg:TheanoPipeline  rdfs:subClassOf  edg:MLpipeline .
+
+qudt:DerivedUnit  rdfs:subClassOf  qudt:Unit .
+
+edg:Department  rdfs:subClassOf  edg:Narratable , edg:Construct .
+
+edg:StakeholderGroup  rdfs:subClassOf  edg:Party .
+
+edg:DatabaseExtract  rdfs:subClassOf  edg:PhysicalFlowPayloadable , edg:PhysicalDataAsset , edg:ComplianceAspect .
+
+dash:js  rdfs:domain  dash:Script ;
+        rdfs:range   xsd:string .
+
+dash:suggestion  rdfs:domain  sh:AbstractResult ;
+        rdfs:range   dash:Suggestion .
+
+sh:subject  rdfs:domain  sh:TripleRule .
+
+edg:AbInitioPipeline  rdfs:subClassOf  edg:ETLpipeline .
+
+qudt:CardinalityType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+qudt:RealDatatype  rdfs:subClassOf  qudt:NumericType .
+
+edg:GlossaryTerm  rdfs:subClassOf  edg:DatatypeViewpoint , edg:ComplianceAspect , edg:GlossaryViewpoint , edg:GlossaryTermRelatable , prov:Entity , edg:Asset , edg:PermissibleValuesAssignable .
+
+edg:Announcement  rdfs:subClassOf  edg:GovernanceViewpoint .
+
+edg:Sociable  rdfs:subClassOf  edg:Aspect .
+
+edg:OntologySchema  rdfs:subClassOf  edg:OntologyGraph .
+
+vaem:logo  rdfs:range  xsd:anyURI .
+
+qudt:LongIntegerType  rdfs:subClassOf  qudt:IntegerDatatype .
+
+edg:LogicalEntity  rdfs:subClassOf  edg:ComplianceAspect , edg:ExchangeableEntity , edg:LogicalDataAsset , edg:Provenance .
+
+edg:TensorFlowPipeline
+        rdfs:subClassOf  edg:MLpipeline .
+
+owl:members  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdf:List .
+
+edg:OversightPolicy  rdfs:subClassOf  edg:Policy .
+
+rdf:HTML  rdfs:subClassOf  rdfs:Literal .
+
+qudt:coherentUnitSystem
+        rdfs:subPropertyOf  qudt:hasUnitSystem .
+
+rdf:Alt  rdfs:subClassOf  rdfs:Container .
+
+edg:softwareFunctionTarget
+        rdfs:subPropertyOf  edg:dependent .
+
+edg:Building  rdfs:subClassOf  edg:Place .
+
+edg:ProvenanceTimestamps
+        rdfs:subClassOf  edg:Aspect .
+
+edg:ViewpointClass  rdfs:subClassOf  sh:NodeShape , owl:Class .
+
+qudt:coherentUnitOfSystem
+        rdfs:subPropertyOf  qudt:definedUnitOfSystem .
+
+datastd:ExchangedDataElement
+        rdfs:subClassOf  datastd:StandardViewpoint , edg:DataElement .
+
+edg:DataStructure  rdfs:subClassOf  edg:Processable , edg:PhysicalDataAsset , edg:Traceable .
+
+edg:ConfidentialityLevel
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:AccessControllable
+        rdfs:subClassOf  edg:Aspect .
+
+qudt:BinaryPrefix  rdfs:subClassOf  qudt:Prefix .
+
+edg:DataQualityIndicator
+        rdfs:subClassOf  edg:Indicator .
+
+qudt:Datatype  rdfs:subClassOf  edg:ANSICdatatype , edg:LogicalDatatype , qudt:Concept .
+
+edg:Person  rdfs:subClassOf  edg:Dutiable , edg:Party .
+
+sh:limit  rdfs:range  xsd:integer .
+
+vaem:GraphMetaData  rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  .
+
+qudt:Narratable  rdfs:subClassOf  qudt:Aspect .
+
+xsd:anySimpleType  rdfs:subClassOf  rdfs:Literal .
+
+edg:DataElement  rdfs:subClassOf  edg:Protectable , edg:ComplianceAspect , edg:Traceable , edg:Processable , edg:PermissibleValuesAssignable , edg:PhysicalDataAsset .
+
+dash:FailureResult  rdfs:subClassOf  sh:AbstractResult .
+
+edg:BusinessModelViewpoint
+        rdfs:subClassOf  edg:EnterpriseViewpoint .
+
+datastd:StandardViewpoint
+        rdfs:subClassOf  edg:DataAssetsViewpoint , owl:Thing .
+
+edg:NoSQLdatabase  rdfs:subClassOf  edg:Database .
+
+vaem:Viewpoint  rdfs:subClassOf  vaem:Dimension .
+
+owl:Thing  rdfs:subClassOf  rdfs:Resource .
+
+dash:shape  rdfs:range  sh:Shape .
+
+sh:offset  rdfs:range  xsd:integer .
+
+owl:equivalentProperty
+        rdfs:domain  rdf:Property ;
+        rdfs:range   rdf:Property .
+
+owl:complementOf  rdfs:domain  owl:Class ;
+        rdfs:range   owl:Class .
+
+nwcg_org:Committee  rdfs:subClassOf  edg:Organization .
+
+edg:sourceApplication
+        rdfs:subPropertyOf  edg:source .
+
+edg:EnterpriseModelsProject
+        rdfs:subClassOf  edg:AssetCollection , teamwork:Vocabulary .
+
+edg:requirementStatement
+        rdfs:range  rdf:HTML .
+
+edg:NoticeDocument  rdfs:subClassOf  edg:Document , edg:Governance .
+
+dtype:dateUnion  rdfs:subClassOf  rdfs:Resource .
+
+sh:deactivated  rdfs:range  xsd:boolean .
+
+edg:profileSampleCount
+        rdfs:range  xsd:integer .
+
+vaem:name  rdfs:range  xsd:string .
+
+qudt:hasDefinedUnit  rdfs:subPropertyOf
+                qudt:hasUnit .
+
+qudt:DateTimeStringEncodingType
+        rdfs:subClassOf  qudt:StringEncodingType .
+
+edg:PIIterm  rdfs:subClassOf  edg:BusinessTerm .
+
+xsd:nonPositiveInteger
+        rdfs:subClassOf  rdfs:Literal .
+
+edg:flowSource  rdfs:subPropertyOf  edg:dependency .
+
+dash:GraphValidationTestCase
+        rdfs:subClassOf  dash:ValidationTestCase .
+
+edg:endpointTarget  rdfs:subPropertyOf  edg:dependent .
+
+edg:Table  rdfs:subClassOf  edg:PhysicalDataAsset , edg:DataStructure , edg:DataQualityAspect .
+
+qudt:derivedCoherentUnitOfSystem
+        rdfs:subPropertyOf  qudt:derivedUnitOfSystem , qudt:coherentUnitOfSystem .
+
+vaem:namespacePrefix  rdfs:range  xsd:string .
+
+edg:PermissibleValuesAsset
+        rdfs:subClassOf  edg:DataQualityViewpoint , edg:Construct , edg:Identifiable .
+
+owl:bottomDataProperty
+        rdfs:domain  owl:Thing ;
+        rdfs:range   rdfs:Literal .
+
+owl:Ontology  rdfs:subClassOf  rdfs:Resource , graphql:Schema .
+
+sh:annotationVarName  rdfs:domain  sh:ResultAnnotation ;
+        rdfs:range   xsd:string .
+
+qudt:applicableImperialUnit
+        rdfs:subPropertyOf  qudt:applicableUnit .
+
+edg:targetApplication
+        rdfs:subPropertyOf  edg:target .
+
+edg:OntologyDataset  rdfs:subClassOf  edg:OntologyGraph .
+
+metadata:accessToUpdatesPaymentType
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   metadata:PaymentType .
+
+skos:Concept  rdfs:subClassOf  owl:Thing .
+
+edg:ProductivityApplication
+        rdfs:subClassOf  edg:SemanticComplianceAspect , edg:EnterpriseSoftware , edg:Locatable , edg:EnterpriseEnabler , edg:SoftwareExecutable , edg:Configurable , edg:AccessControllable , edg:ComplianceAspect , edg:Interoperable .
+
+xsd:anyURI  rdfs:subClassOf  rdfs:Literal .
+
+dash:applicableToClass
+        rdfs:domain  sh:Shape ;
+        rdfs:range   rdfs:Class .
+
+sh:propertyValidator  rdfs:domain  sh:ConstraintComponent ;
+        rdfs:range   sh:Validator .
+
+edg:metricsSupport  rdfs:range  xsd:string .
+
+sh:lessThanOrEquals  rdfs:range  rdf:Property .
+
+edg:SoftwarePipeline  rdfs:subClassOf  edg:System .
+
+edg:informationProducer
+        rdfs:subPropertyOf  edg:dependency .
+
+edg:ThreeLevelRatingScale
+        rdfs:subClassOf  edg:OrdinalScale .
+
+xsd:NOTATION  rdfs:subClassOf  rdfs:Literal .
+
+dash:localConstraint  rdfs:domain  sh:ConstraintComponent ;
+        rdfs:range   xsd:boolean .
+
+edg:PermissibleValuesAssignable
+        rdfs:subClassOf  edg:Aspect .
+
+xsd:ENTITY  rdfs:subClassOf  rdfs:Literal .
+
+xsd:totalDigits  rdfs:range  xsd:nonNegativeInteger .
+
+edg:OrdinalScale  rdfs:subClassOf  edg:Scale .
+
+sh:qualifiedMinCount  rdfs:range  xsd:integer .
+
+owl:Annotation  rdfs:subClassOf  rdfs:Resource .
+
+edg:ETLpipeline  rdfs:subClassOf  edg:SoftwarePipeline .
+
+sh:datatype  rdfs:range  rdfs:Datatype .
+
+qudt:applicablePlanckUnit
+        rdfs:subPropertyOf  qudt:applicableUnit .
+
+dash:AllObjectsTarget
+        rdfs:subClassOf  sh:Target .
+
+qudt:jsName  rdfs:subPropertyOf  qudt:id .
+
+edg:isInteroperableUpstreamDependenciesGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+edg:RegulatoryRequirement
+        rdfs:subClassOf  edg:Requirement .
+
+dataenum:DetectionMethod
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+vaem:owner  rdfs:range  xsd:string .
+
+edg:physicalDatatype  rdfs:subPropertyOf
+                edg:datatype .
+
+edg:CustomEnumeratedValue
+        rdfs:subClassOf  edg:CustomEnumerationViewpoint , edg:EnumeratedValue .
+
+qudt:AbstractQuantityKind
+        rdfs:subClassOf  qudt:Concept .
+
+edg:informationAssetProducer
+        rdfs:subPropertyOf  edg:dependency .
+
+edg:TypeConstruct  rdfs:subClassOf  edg:Construct .
+
+edg:usedByOrganization
+        rdfs:subPropertyOf  edg:usedBy .
+
+edg:EnvironmentType  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:isRequired  rdfs:range  xsd:boolean .
+
+dash:suggestionConfidence
+        rdfs:domain  dash:Suggestion ;
+        rdfs:range   xsd:decimal .
+
+sh:condition  rdfs:domain  sh:Rule ;
+        rdfs:range   sh:Shape .
+
+qudt:RealDoublePrecisionType
+        rdfs:subClassOf  qudt:RealDatatype , qudt:DoublePrecisionType .
+
+owl:annotatedTarget  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Resource .
+
+edg:Feedline  rdfs:subClassOf  edg:PhysicalFlow .
+
+edg:originatedBy  rdfs:range  edg:Organization .
+
+edg:Policy  rdfs:subClassOf  edg:GovernanceAsset , edg:GovernanceViewpoint , edg:ComplianceAspect .
+
+dash:SPARQLSelectTemplate
+        rdfs:subClassOf  sh:Parameterizable , sh:SPARQLSelectExecutable .
+
+sh:suggestedShapesGraph
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   owl:Ontology .
+
+edg:Metric  rdfs:subClassOf  edg:GovernanceViewpoint , edg:GovernanceAsset .
+
+xsd:maxExclusive  rdfs:range  rdfs:Literal .
+
+edg:Indicator  rdfs:subClassOf  edg:GovernanceViewpoint , edg:GovernanceAsset , edg:ComplianceAspect , edg:Traceable .
+
+rdf:type  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Class .
+
+rdfs:Container  rdfs:subClassOf  rdfs:Resource .
+
+xsd:unsignedInt  rdfs:subClassOf  rdfs:Literal .
+
+edg:url  rdfs:range  xsd:anyURI .
+
+edg:AgreementDocument
+        rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Document , edg:Governance .
+
+rdfs:domain  rdfs:domain  rdf:Property ;
+        rdfs:range   rdfs:Class .
+
+sh:shapesGraph  rdfs:domain  owl:Ontology ;
+        rdfs:range   owl:Ontology .
+
+edg:performsCapability
+        rdfs:subClassOf  edg:performs .
+
+edg:hideClass  rdfs:range  xsd:boolean .
+
+owl:DeprecatedProperty
+        rdfs:subClassOf  rdf:Property .
+
+dash:defaultLang  rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:string .
+
+edg:order  rdfs:range  xsd:integer .
+
+edg:EnterpriseEnabler
+        rdfs:subClassOf  edg:Aspect .
+
+qudt:odbcName  rdfs:subPropertyOf  qudt:id .
+
+edg:DatatypesProject  rdfs:subClassOf  teamwork:Vocabulary , edg:AssetCollection .
+
+edg:ScriptClass  rdfs:subClassOf  rdfs:Class .
+
+edg:CustomAssetClass  rdfs:subClassOf  edg:AssetClass .
+
+sh:path  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   rdfs:Resource .
+
+edg:RegulationsDocument
+        rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Document .
+
+qudt:baseCGSUnitDimensions
+        rdfs:subPropertyOf  qudt:baseUnitDimensions .
+
+metadata:transformedUsing
+        rdfs:domain  owl:Ontology .
+
+dash:actionGroup  rdfs:domain  dash:Action ;
+        rdfs:range   dash:ActionGroup .
+
+edg:Plan  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Governance , edg:Document .
+
+edg:DatabaseSynonym  rdfs:subClassOf  edg:PhysicalDataAsset .
+
+edg:FunctionalRequirement
+        rdfs:subClassOf  edg:Requirement .
+
+qudt:hasCoherentUnit  rdfs:subPropertyOf
+                qudt:hasDefinedUnit .
+
+edg:MetricType  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+rdf:Bag  rdfs:subClassOf  rdfs:Container .
+
+vaem:namespace  rdfs:range  xsd:anyURI .
+
+qudt:CountingUnit  rdfs:subClassOf  qudt:DimensionlessUnit .
+
+edg:USgovClassifiedInformationSystem
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+qudt:latexSymbol  rdfs:subPropertyOf  qudt:literal .
+
+qudt:hasAllowedUnit  rdfs:subPropertyOf
+                qudt:hasUnit .
+
+edg:equivalentTeamworkPermissionRole
+        rdfs:range  teamwork:PermissionRoleProperty .
+
+qudt:description  rdfs:subPropertyOf  dct:description .
+
+edg:ParticipationsAspect
+        rdfs:subClassOf  edg:Aspect .
+
+edg:GovernanceProcess
+        rdfs:subClassOf  edg:GovernanceViewpoint .
+
+vaem:comment  rdfs:range  xsd:string .
+
+edg:subjectArea  rdfs:domain  edg:AssetCollection ;
+        rdfs:range   edg:SubjectArea .
+
+tosh:viewWidget  rdfs:range  swa:ObjectViewerClass .
+
+sh:JSTargetType  rdfs:subClassOf  sh:TargetType , sh:JSExecutable .
+
+qudt:SignedIntegerType
+        rdfs:subClassOf  qudt:IntegerDatatype , qudt:SignedType .
+
+edg:OntologyVocabulary
+        rdfs:subClassOf  edg:OntologyGraph .
+
+qudt:derivedQuantityKindOfSystem
+        rdfs:subPropertyOf  qudt:isQuantityKindOf .
+
+qudt:BigIntegerType  rdfs:subClassOf  qudt:IntegerDatatype .
+
+rdf:object  rdfs:domain  rdf:Statement ;
+        rdfs:range   rdfs:Resource .
+
+edg:AccessControlGroup
+        rdfs:subClassOf  edg:Narratable , edg:AncillaryAsset , edg:Identifiable , edg:ComplianceAspect , edg:GovernanceViewpoint .
+
+edg:ImagesDataSet  rdfs:subClassOf  edg:DataSet .
+
+qudt:baseUnitOfSystem
+        rdfs:subPropertyOf  qudt:coherentUnitOfSystem .
+
+xsd:unsignedByte  rdfs:subClassOf  rdfs:Literal .
+
+qudt:dimensionlessExponent
+        rdfs:subPropertyOf  qudt:dimensionExponent .
+
+qudt:hasBaseUnit  rdfs:subPropertyOf  qudt:hasCoherentUnit .
+
+rdfs:Class  rdfs:subClassOf  rdfs:Resource .
+
+qudt:hasDerivedCoherentUnit
+        rdfs:subPropertyOf  qudt:hasDerivedUnit , qudt:hasCoherentUnit .
+
+owl:TransitiveProperty
+        rdfs:subClassOf  owl:ObjectProperty .
+
+edg:DataAssetViewFromTechnicalAssets
+        rdfs:subClassOf  edg:TechnicalViewpoint .
+
+edg:Consent  rdfs:subClassOf  edg:Event .
+
+metadata:status  rdfs:domain  owl:Ontology ;
+        rdfs:range   metadata:Status .
+
+sh:inversePath  rdfs:range  rdfs:Resource .
+
+edg:subsystem  rdfs:subPropertyOf  edg:system .
+
+edg:SoftwareProgram  rdfs:subClassOf  edg:EnterpriseSoftware , edg:SoftwareExecutable .
+
+edg:dependsOnDataFrom
+        rdfs:subPropertyOf  prov:wasDerivedFrom .
+
+xsd:decimal  rdfs:subClassOf  rdfs:Literal .
+
+dash:ExecutionPlatform
+        rdfs:subClassOf  rdfs:Resource .
+
+qudt:SinglePrecisionType
+        rdfs:subClassOf  qudt:NumericType .
+
+edg:DataQualityStatus
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:IdentificationLabel
+        rdfs:subClassOf  edg:DataExchangeable , edg:InformationAssetViewpoint , edg:InformationAsset .
+
+sh:not  rdfs:range  sh:Shape .
+
+edg:InformationRecord
+        rdfs:subClassOf  edg:InformationAsset , edg:Governance , edg:InformationAssetViewpoint .
+
+metadata:defaultStatus
+        rdfs:range  metadata:Status .
+
+edg:TechnicalViewpoint
+        rdfs:subClassOf  edg:Viewpoint .
+
+edg:flowConsumer  rdfs:subPropertyOf  edg:dependent .
+
+qudt:Scale  rdfs:subClassOf  qudt:Concept , qudt:DatatypeShape .
+
+qudt:ScalarDatatype  rdfs:subClassOf  edg:ScalarDatatypeUnion , qudt:Datatype .
+
+qudt:RatioScale  rdfs:subClassOf  qudt:Scale .
+
+qudt:mathMLdefinition
+        rdfs:subPropertyOf  qudt:mathDefinition .
+
+edg:ImpactAnalyzableClass
+        rdfs:subClassOf  edg:AssetClass .
+
+edg:EnumeratedValue  rdfs:subClassOf  edg:Construct , edg:StatusAspect , edg:Narratable .
+
+edg:derivedByFunction
+        rdfs:subPropertyOf  prov:wasDerivedFrom .
+
+edg:FileSystem  rdfs:subClassOf  edg:DataContainer .
+
+dtype:DerivedCodeList
+        rdfs:subClassOf  dtype:CodeList ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  .
+
+datastd:GeospatialDataLayerStandard
+        rdfs:subClassOf  datastd:DataStandard .
+
+edg:TechnicalTerm  rdfs:subClassOf  edg:GlossaryTerm .
+
+edg:ComplianceStatus  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:LineageModelProject
+        rdfs:subClassOf  edg:AssetCollection , teamwork:Vocabulary .
+
+edg:Record  rdfs:subClassOf  edg:DataQualityAspect , edg:DataExchangeable , edg:PhysicalDataAsset .
+
+edg:mapsToProperty  rdfs:subPropertyOf  edg:mapsTo .
+
+dash:hasValueWithClass
+        rdfs:range  rdfs:Class .
+
+sh:ask  rdfs:domain  sh:SPARQLAskExecutable ;
+        rdfs:range   xsd:string .
+
+qudt:UCUMcs  rdfs:subClassOf  rdfs:Resource .
+
+sh:Shape  rdfs:subClassOf  rdfs:Resource .
+
+sh:resultSeverity  rdfs:domain  sh:AbstractResult ;
+        rdfs:range   sh:Severity .
+
+owl:onProperties  rdfs:domain  owl:Restriction ;
+        rdfs:range   rdf:List .
+
+owl:OntologyProperty  rdfs:subClassOf  rdf:Property .
+
+qudt:integerPercentage
+        rdfs:subClassOf  xsd:integer .
+
+dash:TestCase  rdfs:subClassOf  rdfs:Resource .
+
+xsd:unsignedLong  rdfs:subClassOf  rdfs:Literal .
+
+edg:dataAssetSource  rdfs:subPropertyOf
+                edg:dependency .
+
+edg:UNKNOWN-TYPE  rdfs:subClassOf  edg:Construct .
+
+edg:ForeignKey  rdfs:subClassOf  edg:PhysicalDataAsset .
+
+dash:TestCaseResult  rdfs:subClassOf  sh:AbstractResult .
+
+dash:staticConstraint
+        rdfs:domain  sh:ConstraintComponent ;
+        rdfs:range   xsd:boolean .
+
+xsd:integer  rdfs:subClassOf  rdfs:Literal .
+
+edg:DatabaseSchema  rdfs:subClassOf  edg:Schema .
+
+qudt:microsoftSQLServerName
+        rdfs:subPropertyOf  qudt:id .
+
+edg:LineageProperty  rdfs:subClassOf  rdf:Property .
+
+vaem:Party  rdfs:subClassOf  owl:Thing .
+
+edg:isInformationAssetExchangesGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+edg:performsActivity  rdfs:subClassOf  edg:performs .
+
+qudt:UnsignedLongIntegerType
+        rdfs:subClassOf  qudt:LongIntegerType , qudt:UnsignedIntegerType .
+
+edg:isNullable  rdfs:domain  edg:DatabaseColumn , edg:LogicalAttribute ;
+        rdfs:range   xsd:boolean .
+
+dash:ChangeScript  rdfs:subClassOf  dash:Script .
+
+owl:assertionProperty
+        rdfs:domain  owl:NegativePropertyAssertion ;
+        rdfs:range   rdf:Property .
+
+qudt:EnumeratedValue  rdfs:subClassOf  qudt:Concept , dtype:EnumeratedValue , qudt:Datatype .
+
+edg:DataPackage  rdfs:subClassOf  edg:DataContainer , edg:PhysicalFlowPayloadable .
+
+sh:SPARQLRule  rdfs:subClassOf  sh:Rule , sh:SPARQLConstructExecutable .
+
+sh:severity  rdfs:domain  sh:Shape ;
+        rdfs:range   sh:Severity .
+
+edg:JobDescriptionDocument
+        rdfs:subClassOf  edg:Document , edg:Governance .
+
+dash:cachable  rdfs:domain  sh:Function ;
+        rdfs:range   xsd:boolean .
+
+sh:shapesGraphWellFormed
+        rdfs:domain  sh:ValidationReport ;
+        rdfs:range   xsd:boolean .
+
+vaem:releaseDate  rdfs:range  xsd:date ;
+        rdfs:subPropertyOf  vaem:date .
+
+edg:isDepictionType  rdfs:range  xsd:boolean .
+
+edg:usesPipeline  rdfs:subPropertyOf  prov:wasDerivedFrom , edg:usesSoftwareExecutable .
+
+sh:PropertyGroup  rdfs:subClassOf  rdfs:Resource .
+
+edg:instancesHeldInAssetCollectionType
+        rdfs:domain  edg:AssetClass ;
+        rdfs:range   teamwork:ProjectType .
+
+edg:Team  rdfs:subClassOf  edg:Organization .
+
+edg:isSummaryGadget  rdfs:subPropertyOf
+                edg:isGadget .
+
+edg:ApprovalStatus  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+xsd:positiveInteger  rdfs:subClassOf  rdfs:Literal .
+
+skos:exactMatch  rdfs:subPropertyOf  skos:closeMatch .
+
+datastd:DataElementStandard
+        rdfs:subClassOf  datastd:DataStandard .
+
+edg:GeoLocation  rdfs:subClassOf  edg:Location .
+
+edg:guidanceLink  rdfs:subPropertyOf  edg:link .
+
+edg:Processable  rdfs:subClassOf  edg:Aspect .
+
+metadata:standardizedBy
+        rdfs:domain  metadata:Standard ;
+        rdfs:range   edg:Organization .
+
+edg:reportingEndDate  rdfs:range  xsd:date .
+
+edg:EmptyAspect  rdfs:subClassOf  edg:Aspect .
+
+qudt:SystemOfQuantityKinds
+        rdfs:subClassOf  qudt:Concept .
+
+vaem:GraphRole  rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  .
+
+edg:CustomEnumerationViewpoint
+        rdfs:subClassOf  edg:Viewpoint , edg:EnumeratedValueViewpoint .
+
+edg:DataSubjectArea  rdfs:subClassOf  edg:AncillaryAsset , edg:StatusAspect , edg:SubjectArea .
+
+edg:approvalDate  rdfs:range  xsd:date .
+
+edg:logicalDatatype  rdfs:subPropertyOf
+                edg:datatype .
+
+edg:AccessSecurityAspect
+        rdfs:subClassOf  edg:Governance .
+
+rdf:Property  rdfs:subClassOf  rdfs:Resource .
+
+xsd:base64Binary  rdfs:subClassOf  rdfs:Literal .
+
+edg:Place  rdfs:subClassOf  edg:BusinessModelViewpoint , edg:EnterpriseAsset , geo:SpatialThing , edg:EnterpriseEnabler , edg:Locatable , edg:EnterpriseViewFromTechnicalAssets .
+
+edg:Device  rdfs:subClassOf  edg:Configurable , edg:Interoperable , edg:Locatable , edg:Asset .
+
+metadata:changeFrequency
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   metadata:ChangeFrequency .
+
+edg:PersonalDataCategory
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+dash:hasValueIn  rdfs:range  rdf:List .
+
+edg:startDate  rdfs:range  xsd:date .
+
+edg:LogicalFlowPayloadable
+        rdfs:subClassOf  edg:Payloadable .
+
+edg:LogicalDataModel  rdfs:subClassOf  edg:Model , edg:Provenance , edg:ComplianceAspect , edg:SemanticComplianceAspect , edg:Traceable , edg:LogicalDataAsset .
+
+metadata:PaymentType  rdfs:subClassOf  rdfs:Resource .
+
+edg:Resourceable  rdfs:subClassOf  edg:Aspect .
+
+edg:FormulaClass  rdfs:subClassOf  sh:NodeShape , edg:ConstructClass .
+
+edg:ZooKeeperStateType
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+qudt:ansiSQLName  rdfs:subPropertyOf  qudt:id .
+
+qudt:UnsignedIntegerType
+        rdfs:subClassOf  qudt:IntegerDatatype , qudt:UnsignedType .
+
+edg:KerasPipeline  rdfs:subClassOf  edg:MLpipeline .
+
+edg:Flow  rdfs:subClassOf  edg:Protectable , edg:SoftwareAsset .
+
+owl:onProperty  rdfs:domain  owl:Restriction ;
+        rdfs:range   rdf:Property .
+
+metadata:UpdateMethod
+        rdfs:subClassOf  rdfs:Resource .
+
+edg:CustomEnumerationClass
+        rdfs:subClassOf  edg:EnumerationClass , edg:EnumerationViewpoint , edg:Provenance .
+
+edg:Issue  rdfs:subClassOf  edg:GovernanceViewpoint , edg:RequirementsViewpoint .
+
+sh:alternativePath  rdfs:range  rdf:List .
+
+dash:composite  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   xsd:boolean .
+
+qudt:UCUMci  rdfs:subClassOf  rdfs:Resource .
+
+edg:ProcedureDocument
+        rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Document , edg:Governance .
+
+sh:Rule  rdfs:subClassOf  rdfs:Resource .
+
+qudt:isoNormativeReference
+        rdfs:subPropertyOf  qudt:normativeReference .
+
+edg:complianceWithOntology
+        rdfs:subPropertyOf  edg:complianceWithGovernedResource .
+
+edg:PhysicalDataAsset
+        rdfs:subClassOf  edg:DataAssetViewFromEnterpriseAssets , edg:DataAsset , edg:DataAssetViewFromTechnicalAssets .
+
+edg:LogicalFlow  rdfs:subClassOf  edg:TechnicalAssetViewFromEnterpriseAssets , edg:Flow .
+
+qudt:Enumeration  rdfs:subClassOf  qudt:Concept , dtype:Enumeration .
+
+metadata:onboardingProcedure
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   rdf:HTML .
+
+sh:targetObjectsOf  rdfs:domain  sh:Shape ;
+        rdfs:range   rdf:Property .
+
+edg:MetadataSource  rdfs:subClassOf  edg:Identifiable , edg:Construct .
+
+edg:CustomElement  rdfs:subClassOf  edg:DataQualityAspect , edg:DataElement , edg:DataProfileable .
+
+graphql:NonNullType  rdfs:subClassOf  graphql:InputType .
+
+wfitenum:ApplicationRole
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+dash:width  rdfs:range  xsd:integer .
+
+qudt:scalarValue  rdfs:subPropertyOf  qudt:value .
+
+prov:Entity  rdfs:subClassOf  rdfs:Resource .
+
+vaem:rdfxmlFileURL  rdfs:range  xsd:anyURI .
+
+edg:LogicalRelation  rdfs:subClassOf  edg:LogicalDataAsset .
+
+sh:NodeKind  rdfs:subClassOf  rdfs:Resource .
+
+wfglos:DataStandardTerm
+        rdfs:subClassOf  edg:BusinessTerm .
+
+edg:DataSetElement  rdfs:subClassOf  edg:DataProfileable , edg:AccessControllable , edg:DataElement , edg:DataQualityAspect .
+
+dash:suggestionGroup  rdfs:domain  dash:Suggestion .
+
+qudt:AlignmentType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+dtype:SimpleCodeList  rdfs:subClassOf  dtype:CodeList ;
+        rdfs:subClassOf  []  .
+
+edg:UIproperty  rdfs:subClassOf  rdf:Property .
+
+edg:CSVdatatype  rdfs:subClassOf  edg:PhysicalDatatype .
+
+owl:disjointUnionOf  rdfs:domain  owl:Class ;
+        rdfs:range   rdf:List .
+
+edg:timestamp  rdfs:range  xsd:dateTime .
+
+sh:sourceConstraint  rdfs:domain  sh:AbstractResult .
+
+edg:DataAssetsProject
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+skos:editorialNote  rdfs:subPropertyOf  skos:note .
+
+sh:object  rdfs:domain  sh:TripleRule .
+
+metadata:updateFileURL
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:anyURI .
+
+sh:AbstractResult  rdfs:subClassOf  rdfs:Resource .
+
+edg:variantOf  rdfs:subPropertyOf  prov:wasDerivedFrom .
+
+dash:ScriptSuggestionGenerator
+        rdfs:subClassOf  dash:SuggestionGenerator , dash:Script .
+
+edg:usedOnSchedule  rdfs:subPropertyOf  edg:compositionProperty .
+
+vaem:rationale  rdfs:range  xsd:string .
+
+dash:neverMaterialize
+        rdfs:domain  sh:PropertyShape ;
+        rdfs:range   xsd:boolean .
+
+edg:tableOf  rdfs:subPropertyOf  edg:partOf .
+
+edg:BusinessActivity  rdfs:subClassOf  edg:EnterpriseAsset , edg:ParticipationsAspect , edg:BusinessModelViewpoint , edg:Interoperable , edg:EnterpriseViewFromTechnicalAssets .
+
+edg:isServiceEndpointDataExchangeDetailsGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+metadata:statusAllowsEdits
+        rdfs:domain  metadata:Status ;
+        rdfs:range   xsd:boolean .
+
+qudt:rollRotationDefinition
+        rdfs:subPropertyOf  qudt:rotationDefinition .
+
+qudt:IntervalScale  rdfs:subClassOf  qudt:Scale .
+
+corpusprojects:CorpusProject
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+edg:ApacheNifiPipeline
+        rdfs:subClassOf  edg:ETLpipeline .
+
+metadata:Status  rdfs:subClassOf  rdfs:Resource .
+
+edg:BusinessTerm  rdfs:subClassOf  edg:GlossaryTerm .
+
+edg:KeyPerformanceIndicator
+        rdfs:subClassOf  edg:Indicator .
+
+qudt:ucumCaseSensitiveCode
+        rdfs:subPropertyOf  qudt:ucumCode .
+
+qudt:SystemOfUnits  rdfs:subClassOf  qudt:Concept .
+
+dash:dependencyPredicate
+        rdfs:range  rdf:Property .
+
+qudt:MultiDimensionalDataFormat
+        rdfs:subClassOf  owl:Thing .
+
+tosh:systemNamespace  rdfs:range  xsd:boolean .
+
+qudt:Symbol  rdfs:subClassOf  qudt:Concept .
+
+edg:Document  rdfs:subClassOf  edg:DataExchangeable , edg:InformationAssetViewpoint , edg:GovernanceViewpoint , edg:InformationAsset .
+
+owl:topDataProperty  rdfs:domain  owl:Thing ;
+        rdfs:range   rdfs:Literal .
+
+edg:notificationRole  rdfs:range  edg:WorkflowParticipantProperty .
+
+qudt:MathFunctionType
+        rdfs:subClassOf  qudt:Concept .
+
+owl:AllDifferent  rdfs:subClassOf  rdfs:Resource .
+
+sh:Function  rdfs:subClassOf  sh:Parameterizable .
+
+edg:DataContainer  rdfs:subClassOf  edg:ComplianceAspect , edg:Traceable , edg:Governance , edg:Provenance , edg:Locatable , edg:PhysicalDataAsset .
+
+edg:DatabaseTableReference
+        rdfs:subClassOf  edg:Construct .
+
+edg:nullOptions  rdfs:domain  edg:DatabaseColumn ;
+        rdfs:range   xsd:string .
+
+edg:GlossaryProject  rdfs:subClassOf  edg:AssetCollection , teamwork:Vocabulary .
+
+sh:prefixes  rdfs:domain  sh:SPARQLExecutable .
+
+wfglos:GeospatialTerm
+        rdfs:subClassOf  edg:BusinessTerm .
+
+dash:Suggestion  rdfs:subClassOf  rdfs:Resource .
+
+sh:resultMessage  rdfs:domain  sh:AbstractResult .
+
+dash:fixed  rdfs:domain  sh:ValidationResult ;
+        rdfs:range   xsd:boolean .
+
+edg:DataWarehouse  rdfs:subClassOf  edg:Database , edg:TechnicalAssetViewFromEnterpriseAssets .
+
+edg:usedByJobTitle  rdfs:subPropertyOf  edg:usedBy .
+
+qudt:BitField  rdfs:subClassOf  xsd:string .
+
+dtype:orderIndex  rdfs:range  xsd:nonNegativeInteger .
+
+edg:ReferenceDatasetValueSelector
+        rdfs:subClassOf  edg:PermissibleValuesAsset .
+
+edg:EnumerationViewpoint
+        rdfs:subClassOf  edg:Viewpoint .
+
+edg:complianceWithTaxonomy
+        rdfs:subPropertyOf  edg:complianceWithGovernedResource .
+
+edg:EnumeratedValueSelector
+        rdfs:subClassOf  edg:PermissibleValuesAsset .
+
+owl:Class  rdfs:subClassOf  rdfs:Class .
+
+layer:GeospatialDataLayer
+        rdfs:subClassOf  edg:ExternalDataSet .
+
+edg:scalability  rdfs:range  xsd:string .
+
+qudt:pythonName  rdfs:subPropertyOf  qudt:id .
+
+skos:narrowerTransitive
+        rdfs:subPropertyOf  skos:semanticRelation .
+
+owl:withRestrictions  rdfs:domain  rdfs:Datatype ;
+        rdfs:range   rdf:List .
+
+edg:LogicalDatatype  rdfs:subClassOf  edg:Datatype .
+
+dataenum:FuelTreatmentStatus
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+sh:select  rdfs:domain  sh:SPARQLSelectExecutable ;
+        rdfs:range   xsd:string .
+
+edg:QuantilesRecord  rdfs:subClassOf  edg:DataProfileViewpoint , edg:Statistics .
+
+xsd:nonNegativeInteger
+        rdfs:subClassOf  rdfs:Literal .
+
+edg:DatabaseView  rdfs:subClassOf  edg:View , edg:Table , edg:ComplianceAspect , edg:DatabaseSynonymable , edg:PhysicalFlowPayloadable .
+
+owl:qualifiedCardinality
+        rdfs:domain  owl:Restriction ;
+        rdfs:range   xsd:nonNegativeInteger .
+
+metadata:ChangeFrequency
+        rdfs:subClassOf  metadata:Frequency .
+
+edg:locationLink  rdfs:subPropertyOf  edg:link .
+
+edg:PhysicalDatabaseSchema
+        rdfs:subClassOf  edg:DatabaseSchema .
+
+edg:PolicyRequirement
+        rdfs:subClassOf  edg:Requirement .
+
+dash:APIStatus  rdfs:subClassOf  rdfs:Resource .
+
+qudt:EndianType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+edg:InformationPackage
+        rdfs:subClassOf  edg:InformationAssetViewpoint , edg:InformationAsset , edg:DataExchangeable .
+
+edg:SoftwareVendor  rdfs:subClassOf  edg:Vendor .
+
+edg:Dutiable  rdfs:subClassOf  edg:Aspect .
+
+owl:Nothing  rdfs:subClassOf  owl:Thing .
+
+edg:softwareProgramSource
+        rdfs:subPropertyOf  edg:dependency .
+
+qudt:SignedType  rdfs:subClassOf  qudt:NumericType .
+
+edg:ResearchPaper  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Document .
+
+nwcg_org:Subcommittee
+        rdfs:subClassOf  edg:Organization .
+
+prov:generatedAtTime  rdfs:range  xsd:dateTime .
+
+edg:usesDatabaseView  rdfs:subPropertyOf
+                edg:usesSoftwareExecutable .
+
+edg:DataRequirement  rdfs:subClassOf  edg:Requirement .
+
+edg:EnumeratedValueViewpoint
+        rdfs:subClassOf  edg:DataAssetsViewpoint , edg:Viewpoint .
+
+edg:AmazonSageMakerPipeline
+        rdfs:subClassOf  edg:MLpipeline .
+
+dash:editor  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   dash:Editor .
+
+qudt:UnsignedVariableLengthIntegerType
+        rdfs:subClassOf  qudt:UnsignedIntegerType , qudt:VariableLengthIntegerType .
+
+qudt:QuantityType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+nwcg_org:CourseSteeringCommittee
+        rdfs:subClassOf  edg:Organization .
+
+edg:GovernancePolicy  rdfs:subClassOf  edg:Policy .
+
+edg:tag  rdfs:range  xsd:string .
+
+dash:JSTestCase  rdfs:subClassOf  sh:JSFunction , dash:TestCase .
+
+xsd:minExclusive  rdfs:range  rdfs:Literal .
+
+qudt:Percentage  rdfs:subClassOf  qudt:NumericType .
+
+dtype:Enumeration  rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  .
+
+qudt:StructuredDatatype
+        rdfs:subClassOf  qudt:Datatype .
+
+dash:y  rdfs:range  xsd:integer .
+
+edg:SpreadsheetsWorkbook
+        rdfs:subClassOf  edg:DataSetCollection .
+
+edg:GraphStore  rdfs:subClassOf  edg:Database .
+
+qudt:mySQLName  rdfs:subPropertyOf  qudt:id .
+
+edg:CompositeProperty
+        rdfs:subClassOf  rdf:Property .
+
+edg:TechnicalAssetsProject
+        rdfs:subClassOf  teamwork:Vocabulary , edg:AssetCollection .
+
+sh:resultPath  rdfs:domain  sh:AbstractResult ;
+        rdfs:range   rdfs:Resource .
+
+edg:DataAccessPolicy  rdfs:subClassOf  edg:DataPolicy .
+
+edg:attributeOf  rdfs:domain  edg:LogicalAttribute ;
+        rdfs:range   edg:LogicalEntity .
+
+dash:PropertyRole  rdfs:subClassOf  rdfs:Resource .
+
+sh:conforms  rdfs:domain  sh:ValidationReport ;
+        rdfs:range   xsd:boolean .
+
+sh:minCount  rdfs:range  xsd:integer .
+
+dash:addedTriple  rdfs:domain  dash:GraphUpdate ;
+        rdfs:range   rdf:Statement .
+
+xsd:minLength  rdfs:range  xsd:nonNegativeInteger .
+
+xsd:gMonthDay  rdfs:subClassOf  rdfs:Literal .
+
+edg:Event  rdfs:subClassOf  edg:Construct .
+
+rdfs:range  rdfs:domain  rdf:Property ;
+        rdfs:range   rdfs:Class .
+
+edg:DataQualityPolicy
+        rdfs:subClassOf  edg:DataPolicy .
+
+owl:propertyDisjointWith
+        rdfs:domain  rdf:Property ;
+        rdfs:range   rdf:Property .
+
+skos:semanticRelation
+        rdfs:domain  skos:Concept ;
+        rdfs:range   skos:Concept .
+
+edg:PhysicalDatatype  rdfs:subClassOf  edg:Datatype .
+
+edg:performsFunction  rdfs:subClassOf  edg:performs .
+
+qudt:IntegerEncodingType
+        rdfs:subClassOf  qudt:Encoding .
+
+edg:PrivacyPolicy  rdfs:subClassOf  edg:Policy .
+
+qudt:SignedShortIntegerType
+        rdfs:subClassOf  qudt:SignedIntegerType , qudt:ShortIntegerType .
+
+edg:Council  rdfs:subClassOf  edg:Organization .
+
+dtype:code  rdfs:range  xsd:anySimpleType .
+
+edg:Responsibility  rdfs:subClassOf  edg:GovernanceViewpoint , edg:GovernanceAsset , edg:BusinessModelViewpoint .
+
+sh:SPARQLExecutable  rdfs:subClassOf  rdfs:Resource .
+
+edg:DirectMappingsCollection
+        rdfs:subClassOf  edg:SoftwareFunction .
+
+qudt:QuantityKindDimensionVector_CGS-LH
+        rdfs:subClassOf  qudt:QuantityKindDimensionVector_CGS .
+
+edg:WorkflowParticipant
+        rdfs:subClassOf  edg:Aspect .
+
+edg:dataAssetProducer
+        rdfs:subPropertyOf  edg:dependency .
+
+qudt:DoublePrecisionType
+        rdfs:subClassOf  qudt:NumericType .
+
+edg:DataQualityViewpoint
+        rdfs:subClassOf  edg:DataAssetsViewpoint .
+
+dct:title  rdfs:range  xsd:string .
+
+edg:Environment  rdfs:subClassOf  edg:Asset .
+
+wfitenum:applicationLifecycleStage
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+edg:usedOnForm  rdfs:subPropertyOf  edg:compositionProperty .
+
+dtype:isInvalid  rdfs:range  xsd:boolean .
+
+edg:DataAssetsViewpoint
+        rdfs:subClassOf  edg:Viewpoint .
+
+sh:ValidationResult  rdfs:subClassOf  sh:AbstractResult .
+
+edg:lastModifedByImport
+        rdfs:range  xsd:dateTime .
+
+edg:Configurable  rdfs:subClassOf  edg:Aspect .
+
+edg:API  rdfs:subClassOf  edg:TechnicalAsset .
+
+edg:SSISpipeline  rdfs:subClassOf  edg:ETLpipeline .
+
+edg:EnterpriseViewpoint
+        rdfs:subClassOf  edg:Viewpoint .
+
+owl:datatypeComplementOf
+        rdfs:domain  rdfs:Datatype ;
+        rdfs:range   rdfs:Datatype .
+
+dash:readOnly  rdfs:domain  sh:PropertyShape .
+
+edg:compliesWithPrivacyRequirement
+        rdfs:subPropertyOf  edg:compliesWithPolicyRequirement .
+
+edg:Location  rdfs:subClassOf  edg:Construct , edg:Narratable .
+
+graphql:Query  rdfs:subClassOf  rdfs:Resource .
+
+edg:FormatType  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:dataAssetTarget  rdfs:subPropertyOf
+                edg:dependent .
+
+sh:prefix  rdfs:domain  sh:PrefixDeclaration ;
+        rdfs:range   xsd:string .
+
+sh:SPARQLAskValidator
+        rdfs:subClassOf  sh:SPARQLAskExecutable , sh:Validator .
+
+metadata:subscriptionNote
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:string .
+
+qudt:SignednessType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+dash:ScriptValidator  rdfs:subClassOf  dash:Script , sh:Validator .
+
+nwcg_org:Unit  rdfs:subClassOf  edg:Organization .
+
+edg:Company  rdfs:subClassOf  edg:Enterprise .
+
+xsd:gYear  rdfs:subClassOf  rdfs:Literal .
+
+dash:coExistsWith  rdfs:range  rdf:Property .
+
+xsd:dateTimeStamp  rdfs:subClassOf  rdfs:Literal .
+
+qudt:QuantityKindDimensionVector
+        rdfs:subClassOf  qudt:Concept .
+
+edg:accessControlNotes
+        rdfs:range  rdf:HTML .
+
+edg:usesTransform  rdfs:subPropertyOf  edg:usesSoftwareProgram .
+
+edg:Report  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:InformationAssetViewpoint , edg:Document .
+
+skos:OrderedCollection
+        rdfs:subClassOf  skos:Collection .
+
+qudt:protocolBuffersName
+        rdfs:subPropertyOf  qudt:id .
+
+edg:Office  rdfs:subClassOf  edg:Organization .
+
+qudt:UserQuantityKind
+        rdfs:subClassOf  qudt:AbstractQuantityKind .
+
+edg:directMapping  rdfs:subPropertyOf  prov:wasDerivedFrom .
+
+rdf:value  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Resource .
+
+nwcg_org:Board  rdfs:subClassOf  edg:Organization .
+
+sh:parameter  rdfs:domain  sh:Parameterizable ;
+        rdfs:range   sh:Parameter .
+
+nwcg_org:ExecutiveBoard
+        rdfs:subClassOf  edg:Organization .
+
+qudt:OrdinalType  rdfs:subClassOf  qudt:ScalarDatatype .
+
+metadata:Standard  rdfs:subClassOf  rdfs:Resource .
+
+edg:BigDataPlatformType
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:DataContainerType
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+sh:equals  rdfs:range  rdf:Property .
+
+edg:Vendor  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+owl:deprecated  rdfs:domain  rdfs:Resource ;
+        rdfs:range   xsd:boolean .
+
+sh:declare  rdfs:range  sh:PrefixDeclaration .
+
+edg:SoftwareExecutableType
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+vaem:publishedDate  rdfs:range  xsd:date ;
+        rdfs:subPropertyOf  vaem:date .
+
+skos:inScheme  rdfs:range  skos:ConceptScheme .
+
+qudt:systemDerivedQuantityKind
+        rdfs:subPropertyOf  qudt:hasQuantityKind .
+
+qudt:NumericType  rdfs:subClassOf  qudt:ScalarDatatype , qudt:DatatypeShape .
+
+edg:complianceIndicator
+        rdfs:range          edg:ComplianceIndicator ;
+        rdfs:subPropertyOf  edg:indicator .
+
+edg:complianceWithMetadata
+        rdfs:subPropertyOf  edg:complianceWithGovernedResource .
+
+sh:annotationValue  rdfs:domain  sh:ResultAnnotation .
+
+rdfs:ContainerMembershipProperty
+        rdfs:subClassOf  rdf:Property .
+
+rdf:predicate  rdfs:domain  rdf:Statement ;
+        rdfs:range   rdf:Property .
+
+skos:broadMatch  rdfs:subPropertyOf  skos:broader , skos:mappingRelation .
+
+dtype:EnumeratedValue
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  .
+
+metadata:updateFrequency
+        rdfs:range  metadata:Frequency .
+
+edg:SystemAnnouncementsWidgetConfig
+        rdfs:subClassOf  edg:LandingPageWidgetConfig .
+
+dash:ShapeScript  rdfs:subClassOf  dash:Script .
+
+edg:BusinessApplication
+        rdfs:subClassOf  edg:Configurable , edg:Locatable , edg:Interoperable , edg:TechnicalAssetViewFromEnterpriseAssets , edg:SoftwareExecutable , edg:SemanticComplianceAspect , edg:AccessControllable , edg:ComplianceAspect , edg:EnterpriseSoftware , edg:EnterpriseEnabler .
+
+rdfs:label  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Literal .
+
+datastd:ExchangedIncidentDataElement
+        rdfs:subClassOf  datastd:ExchangedDataElement .
+
+edg:EnterpriseViewFromTechnicalAssets
+        rdfs:subClassOf  edg:TechnicalViewpoint , edg:Viewpoint .
+
+edg:class  rdfs:range  rdfs:Resource .
+
+dash:ShapeClass  rdfs:subClassOf  sh:NodeShape , rdfs:Class .
+
+dash:ScriptTestCase  rdfs:subClassOf  dash:TestCase , dash:Script .
+
+vaem:specificity  rdfs:range  xsd:nonNegativeInteger .
+
+skos:topConceptOf  rdfs:domain  skos:Concept ;
+        rdfs:range          skos:ConceptScheme ;
+        rdfs:subPropertyOf  skos:inScheme .
+
+sh:Severity  rdfs:subClassOf  rdfs:Resource .
+
+qudt:IntegerDatatype  rdfs:subClassOf  qudt:OrdinalType , qudt:NumericType .
+
+dash:IncludedScript  rdfs:subClassOf  dash:Script .
+
+vaem:filePrefix  rdfs:range  xsd:string .
+
+vaem:usesNonImportedResource
+        rdfs:range  rdfs:Resource .
+
+edg:isForeignKey  rdfs:range  xsd:boolean .
+
+graphql:WriterTestCase
+        rdfs:subClassOf  dash:TestCase .
+
+edg:DataExchangeFrequency
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+qudt:BooleanTypeEnumeratedValue
+        rdfs:subClassOf  qudt:EnumeratedValue .
+
+sh:construct  rdfs:domain  sh:SPARQLConstructExecutable ;
+        rdfs:range   xsd:string .
+
+edg:Viewpoint  rdfs:subClassOf  owl:Thing , edg:Aspect .
+
+sh:qualifiedValueShape
+        rdfs:range  sh:Shape .
+
+edg:mapsToTerm  rdfs:subPropertyOf  edg:mapsTo .
+
+qudt:DiscreteStateEnumeration
+        rdfs:subClassOf  dtype:Enumeration .
+
+edg:DataQualityRecord
+        rdfs:subClassOf  edg:AncillaryAsset , edg:DataQualityViewpoint .
+
+qudt:dimensionExponentForLength
+        rdfs:subPropertyOf  qudt:dimensionExponent .
+
+qudt:Prefix  rdfs:subClassOf  qudt:Concept , qudt:Verifiable .
+
+edg:resourceUsedBy  rdfs:range  edg:Process .
+
+qudt:dimensionExponentForAmountOfSubstance
+        rdfs:subPropertyOf  qudt:dimensionExponent .
+
+xsd:NMTOKEN  rdfs:subClassOf  rdfs:Literal .
+
+edg:softwareFunctionSource
+        rdfs:subPropertyOf  edg:dependency .
+
+sh:filterShape  rdfs:range  sh:Shape .
+
+graphql:isInterface  rdfs:range  xsd:boolean .
+
+sh:minLength  rdfs:range  xsd:integer .
+
+xsd:int  rdfs:subClassOf  rdfs:Literal .
+
+qudt:ShortIntegerType
+        rdfs:subClassOf  qudt:IntegerDatatype .
+
+dtype:order  rdfs:range  xsd:nonNegativeInteger .
+
+dataenum:ObstacleLighting
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+owl:allValuesFrom  rdfs:domain  owl:Restriction ;
+        rdfs:range   rdfs:Class .
+
+qudt:CRC32  rdfs:subClassOf  xsd:integer .
+
+vaem:hasGraphRole  rdfs:range  vaem:GraphRole .
+
+qudt:PhysicalConstant
+        rdfs:subClassOf  qudt:Quantity .
+
+sh:predicate  rdfs:domain  sh:TripleRule .
+
+dash:QueryTestCase  rdfs:subClassOf  sh:SPARQLSelectExecutable , dash:TestCase .
+
+qudt:QuantityKindDimensionVector_ISO
+        rdfs:subClassOf  qudt:QuantityKindDimensionVector .
+
+edg:AccessControlMethod
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:StatusAspect  rdfs:subClassOf  edg:Aspect .
+
+sh:SPARQLAskExecutable
+        rdfs:subClassOf  sh:SPARQLExecutable .
+
+dataenum:dataSensitivityLevel
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+skos:relatedMatch  rdfs:subPropertyOf  skos:related , skos:mappingRelation .
+
+xsd:language  rdfs:subClassOf  rdfs:Literal .
+
+owl:targetValue  rdfs:domain  owl:NegativePropertyAssertion ;
+        rdfs:range   rdfs:Literal .
+
+edg:DataKind  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+vaem:graphName  rdfs:range  xsd:string .
+
+dash:Editor  rdfs:subClassOf  dash:Widget .
+
+dash:Action  rdfs:subClassOf  dash:Script , sh:Parameterizable .
+
+rdf:JSON  rdfs:subClassOf  rdfs:Literal .
+
+dash:CommitScript  rdfs:subClassOf  dash:Script .
+
+dash:ResourceAction  rdfs:subClassOf  dash:Action .
+
+edg:faxNumber  rdfs:range  xsd:string .
+
+edg:EnvironmentsModelType
+        rdfs:subClassOf  rdfs:Resource , teamwork:Vocabulary .
+
+qudt:maxInclusive  rdfs:subPropertyOf  qudt:upperBound .
+
+edg:propertyOf  rdfs:domain  edg:BigDataProperty ;
+        rdfs:range   edg:BigDataTable .
+
+edg:PhysicalDataModelDatabaseColumn
+        rdfs:subClassOf  edg:ComplianceAspect , edg:Traceable , edg:PhysicalDataAsset .
+
+edg:compliesWithRegulatoryRequirement
+        rdfs:subPropertyOf  edg:compliesWithPolicyRequirement .
+
+edg:SpreadsheetDataSet
+        rdfs:subClassOf  edg:DataSet .
+
+dct:subject  rdfs:range  xsd:string .
+
+edg:Committee  rdfs:subClassOf  edg:Organization .
+
+edg:UseCase  rdfs:subClassOf  edg:Traceable , edg:StatusAspect , edg:Identifiable , edg:AncillaryAsset , edg:Narratable , edg:RequirementsViewpoint .
+
+metadata:accessPaymentType
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   metadata:PaymentType .
+
+sh:group  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   sh:PropertyGroup .
+
+edg:Model  rdfs:subClassOf  edg:AncillaryAsset , edg:Identifiable , edg:StatusAspect , edg:Narratable .
+
+edg:SoftwareAsset  rdfs:subClassOf  edg:TechnicalAsset .
+
+rdf:first  rdfs:domain  rdf:List ;
+        rdfs:range   rdfs:Resource .
+
+edg:goals  rdfs:range  rdf:HTML .
+
+wfitenum:applicationTier
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+xsd:negativeInteger  rdfs:subClassOf  rdfs:Literal .
+
+edg:GoogleCloudAIpipeline
+        rdfs:subClassOf  edg:MLpipeline .
+
+qudt:dimensionExponentForElectricCurrent
+        rdfs:subPropertyOf  qudt:dimensionExponent .
+
+xsd:fractionDigits  rdfs:range  xsd:nonNegativeInteger .
+
+edg:informationAssetConsumer
+        rdfs:subPropertyOf  edg:dependent .
+
+edg:endpointSource  rdfs:subPropertyOf  edg:dependency .
+
+edg:transfersPackage  rdfs:subPropertyOf
+                edg:transfersAsset .
+
+graphql:MutationTestCase
+        rdfs:subClassOf  graphql:Schema , dash:TestCase , graphql:Query .
+
+edg:governanceMeasure
+        rdfs:subPropertyOf  edg:indicator .
+
+qudt:hasBaseQuantityKind
+        rdfs:subPropertyOf  qudt:hasQuantityKind .
+
+dash:Viewer  rdfs:subClassOf  dash:Widget .
+
+sh:JSTarget  rdfs:subClassOf  sh:Target , sh:JSExecutable .
+
+qudt:isBaseQuantityKindOfSystem
+        rdfs:subPropertyOf  qudt:isQuantityKindOf .
+
+qudt:VariableLengthIntegerType
+        rdfs:subClassOf  qudt:IntegerDatatype .
+
+qudt:HexBinaryType  rdfs:subClassOf  qudt:TextStringType .
+
+edg:isLogicalEntityAttribuesGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+edg:effectiveStartDate
+        rdfs:range  xsd:date .
+
+owl:onDataRange  rdfs:domain  owl:Restriction ;
+        rdfs:range   rdfs:Datatype .
+
+edg:DataRequirementsSpecification
+        rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Specification .
+
+edg:HardwareVendor  rdfs:subClassOf  edg:Vendor .
+
+sh:closed  rdfs:range  xsd:boolean .
+
+xsd:Name  rdfs:subClassOf  rdfs:Literal .
+
+edg:ComplianceIndicator
+        rdfs:subClassOf  edg:Indicator .
+
+graphql:uriTemplate  rdfs:domain  sh:NodeShape ;
+        rdfs:range   xsd:string .
+
+dash:indexed  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   xsd:boolean .
+
+edg:GuidanceDocument  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Document , edg:Governance .
+
+edg:AmazonWebService  rdfs:subClassOf  edg:CloudComputingService .
+
+edg:InventoryDocument
+        rdfs:subClassOf  edg:Governance , edg:Document .
+
+dash:GraphStoreTestCase
+        rdfs:subClassOf  dash:TestCase .
+
+metadata:effectiveStartDate
+        rdfs:domain  edg:Governance , owl:Ontology ;
+        rdfs:range   xsd:date .
+
+metadata:version  rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:string .
+
+dtype:ValueReference  rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  .
+
+dash:propertySuggestionGenerator
+        rdfs:domain  sh:ConstraintComponent ;
+        rdfs:range   dash:SuggestionGenerator .
+
+sh:returnType  rdfs:domain  sh:Function ;
+        rdfs:range   rdfs:Class .
+
+xsd:time  rdfs:subClassOf  rdfs:Literal .
+
+dataenum:PerimeterExtant
+        rdfs:subClassOf  edg:CustomEnumeratedValue .
+
+dash:reifiableBy  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   sh:NodeShape .
+
+edg:Aspect  rdfs:subClassOf  owl:Thing .
+
+edg:SecurityRequirement
+        rdfs:subClassOf  edg:Requirement .
+
+sh:disjoint  rdfs:range  rdf:Property .
+
+sh:validator  rdfs:domain  sh:ConstraintComponent ;
+        rdfs:range   sh:Validator .
+
+owl:FunctionalProperty
+        rdfs:subClassOf  rdf:Property .
+
+dtype:numericUnion  rdfs:subClassOf  rdfs:Resource .
+
+owl:AllDisjointProperties
+        rdfs:subClassOf  rdfs:Resource .
+
+owl:intersectionOf  rdfs:domain  rdfs:Class ;
+        rdfs:range   rdf:List .
+
+edg:softwareProgramTarget
+        rdfs:subPropertyOf  edg:dependent .
+
+rdfs:Datatype  rdfs:subClassOf  rdfs:Class .
+
+edg:InformationAssetViewpoint
+        rdfs:subClassOf  edg:EnterpriseViewpoint , edg:Viewpoint , edg:EnterpriseViewFromTechnicalAssets .
+
+xsd:dateTime  rdfs:subClassOf  rdfs:Literal .
+
+owl:annotatedSource  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Resource .
+
+sh:TargetType  rdfs:subClassOf  rdfs:Class , sh:Parameterizable .
+
+edg:subDomainOf  rdfs:range  edg:DataSubjectArea .
+
+qudt:UTC-DayTime  rdfs:subClassOf  xsd:string .
+
+rdfs:subPropertyOf  rdfs:domain  rdf:Property ;
+        rdfs:range   rdf:Property .
+
+sh:lessThan  rdfs:range  rdf:Property .
+
+edg:AvroSchemaFile  rdfs:subClassOf  edg:FileAsset , edg:Schema .
+
+edg:AssetCollection  rdfs:subClassOf  owl:Ontology , graphql:Schema , edg:Stewardship , edg:StatusAspect .
+
+edg:View  rdfs:subClassOf  edg:Construct .
+
+dash:SPARQLMultiFunction
+        rdfs:subClassOf  dash:MultiFunction , sh:SPARQLSelectExecutable .
+
+vaem:todo  rdfs:range  xsd:string .
+
+sh:nodeKind  rdfs:range  sh:NodeKind .
+
+edg:PolicyDocument  rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Governance , edg:Document .
+
+owl:SymmetricProperty
+        rdfs:subClassOf  owl:ObjectProperty .
+
+owl:Restriction  rdfs:subClassOf  owl:Class .
+
+nwcg_org:CurriculumManagementUnit
+        rdfs:subClassOf  edg:Organization .
+
+edg:MLpipeline  rdfs:subClassOf  edg:SoftwarePipeline .
+
+rdfs:member  rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Resource .
+
+edg:usesSoftwareProgram
+        rdfs:subPropertyOf  edg:usesSoftwareExecutable .
+
+edg:Database  rdfs:subClassOf  edg:SemanticComplianceAspect , edg:ReferenceDataSource , edg:MetadataSource , edg:DataQualityAspect , edg:ProvenanceTimestamps , edg:SoftwareExecutable , edg:Processable , edg:Governance , edg:Provenance , edg:PhysicalDataAsset , edg:Interoperable .
+
+edg:isInteroperableDownstreamDependenciesGadget
+        rdfs:subPropertyOf  edg:isGadget .
+
+dash:ActionGroup  rdfs:subClassOf  rdfs:Resource .
+
+graphql:NamedType  rdfs:subClassOf  graphql:InputType .
+
+rdfs:Literal  rdfs:subClassOf  rdfs:Resource .
+
+sh:flags  rdfs:range  xsd:string .
+
+dash:mimeTypes  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   xsd:string .
+
+edg:graph  rdfs:range  rdfs:Resource .
+
+dash:hidden  rdfs:domain  sh:PropertyShape ;
+        rdfs:range   xsd:boolean .
+
+edg:PermissionGovernanceRoleProperty
+        rdfs:subClassOf  rdf:Property .
+
+dash:apiStatus  rdfs:range  dash:APIStatus .
+
+xsd:unsignedShort  rdfs:subClassOf  rdfs:Literal .
+
+qudt:RuleType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+taggerprojects:ContentTagSet
+        rdfs:subClassOf  edg:AssetCollection .
+
+owl:annotatedProperty
+        rdfs:domain  rdfs:Resource ;
+        rdfs:range   rdfs:Resource .
+
+qudt:Aspect  rdfs:subClassOf  owl:Thing , edg:Aspect .
+
+edg:created  rdfs:range  xsd:dateTime .
+
+sh:targetClass  rdfs:domain  sh:Shape ;
+        rdfs:range   rdfs:Class .
+
+metadata:purpose  rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:string .
+
+edg:Approvable  rdfs:subClassOf  edg:Aspect .
+
+edg:Interoperable  rdfs:subClassOf  edg:Aspect .
+
+sh:SPARQLFunction  rdfs:subClassOf  sh:SPARQLSelectExecutable , sh:SPARQLAskExecutable , sh:Function .
+
+edg:SoftwarePlatform  rdfs:subClassOf  edg:TechnicalAsset .
+
+edg:Invoice  rdfs:subClassOf  edg:Form , edg:Document .
+
+xsd:boolean  rdfs:subClassOf  rdfs:Literal .
+
+sh:and  rdfs:range  rdf:List .
+
+edg:IssueStatus  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:SubjectArea  rdfs:subClassOf  edg:Narratable , edg:Category , edg:GovernanceViewpoint , edg:Stewardship , edg:Identifiable , edg:RequirementsViewpoint .
+
+qudt:AspectClass  rdfs:subClassOf  rdfs:Class .
+
+owl:NegativePropertyAssertion
+        rdfs:subClassOf  rdfs:Resource .
+
+qudt:Figure  rdfs:subClassOf  qudt:Concept .
+
+edg:OntologyGraph  rdfs:subClassOf  edg:OntologyAsset .
+
+skos:closeMatch  rdfs:subPropertyOf  skos:mappingRelation .
+
+owl:imports  rdfs:domain  owl:Ontology ;
+        rdfs:range   owl:Ontology .
+
+edg:ANSICdatatype  rdfs:subClassOf  edg:PhysicalDatatype .
+
+qudt:Organization  rdfs:subClassOf  qudt:Concept .
+
+edg:Enterprise  rdfs:subClassOf  edg:Organization .
+
+owl:versionInfo  rdfs:domain  rdfs:Resource .
+
+edg:supportsBusinessActivity
+        rdfs:subPropertyOf  edg:supports .
+
+vaem:revision  rdfs:range  xsd:string .
+
+edg:subScheduleOf  rdfs:subPropertyOf  edg:compositionProperty .
+
+edg:transfersData  rdfs:subPropertyOf  edg:transfersAsset .
+
+graphql:ScalarType  rdfs:subClassOf  rdfs:Resource .
+
+edg:AuthenticationMethod
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:hostsApplication  rdfs:subPropertyOf
+                edg:hosts .
+
+edg:Formula  rdfs:subClassOf  edg:Construct , edg:Narratable .
+
+dash:SuggestionResult
+        rdfs:subClassOf  sh:AbstractResult .
+
+edg:usesStoredProcedure
+        rdfs:subPropertyOf  edg:usesSoftwareExecutable .
+
+edg:mapsToColumn  rdfs:subPropertyOf  prov:wasDerivedFrom .
+
+dash:x  rdfs:range  xsd:integer .
+
+edg:BigDataSourceType
+        rdfs:subClassOf  edg:EDGenumeratedValue .
+
+sh:JSValidator  rdfs:subClassOf  sh:Validator , sh:JSExecutable .
+
+qudt:Quantifiable  rdfs:subClassOf  qudt:Aspect .
+
+xsd:gMonth  rdfs:subClassOf  rdfs:Literal .
+
+qudt:Quantity  rdfs:subClassOf  qudt:Quantifiable , qudt:Concept .
+
+edg:ExternalDataSet  rdfs:subClassOf  edg:DataSet , layer:GeospatialDataLayerViewpoint .
+
+sh:Parameter  rdfs:subClassOf  sh:PropertyShape .
+
+qudt:timeDatatype  rdfs:subPropertyOf  qudt:type .
+
+edg:DockerAsset  rdfs:subClassOf  edg:ConfigurationAsset .
+
+crosswalkprojects:Crosswalk
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+edg:BigDataAssetsProject
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+sh:node  rdfs:range  sh:NodeShape .
+
+edg:DataProfileViewpoint
+        rdfs:subClassOf  edg:Viewpoint .
+
+dash:Widget  rdfs:subClassOf  rdfs:Resource .
+
+metadata:officialName
+        rdfs:domain  owl:Ontology ;
+        rdfs:range   xsd:string .
+
+edg:OntologyAsset  rdfs:subClassOf  edg:AncillaryAsset , edg:Governance , edg:Traceable .
+
+edg:viewOf  rdfs:subPropertyOf  edg:partOf .
+
+edg:ImpactScale  rdfs:subClassOf  edg:OrdinalScale .
+
+edg:mapsToClass  rdfs:subPropertyOf  edg:mapsTo .
+
+qudt:Discipline  rdfs:subClassOf  qudt:Concept .
+
+owl:onDatatype  rdfs:domain  rdfs:Datatype ;
+        rdfs:range   rdfs:Datatype .
+
+edg:DataPolicy  rdfs:subClassOf  edg:GovernancePolicy .
+
+dash:singleLine  rdfs:range  xsd:boolean .
+
+xsd:date  rdfs:subClassOf  rdfs:Literal .
+
+edg:lastImported  rdfs:range  xsd:dateTime .
+
+edg:DataValueRule  rdfs:subClassOf  edg:DataQualityViewpoint , edg:AncillaryAsset , sh:NodeShape .
+
+edg:AssetManagementPlan
+        rdfs:subClassOf  edg:EnterpriseViewpointFromDataAssets , edg:Plan .
+
+sh:name  rdfs:domain  sh:PropertyShape .
+
+owl:Axiom  rdfs:subClassOf  rdfs:Resource .
+
+edg:Payloadable  rdfs:subClassOf  edg:Processable , edg:Traceable , edg:DataAssetViewFromTechnicalAssets .
+
+sh:defaultValue  rdfs:domain  sh:PropertyShape .
+
+qudt:OrderedType  rdfs:subClassOf  qudt:EnumeratedValue .
+
+qudt:LogarithmicUnit  rdfs:subClassOf  qudt:DimensionlessUnit .
+
+edg:LineageAnalyzableClass
+        rdfs:subClassOf  edg:AssetClass .
+
+dash:MultiFunction  rdfs:subClassOf  sh:Parameterizable .
+
+qudt:definedUnitOfSystem
+        rdfs:subPropertyOf  qudt:unitOfSystem .
+
+sh:jsFunctionName  rdfs:domain  sh:JSExecutable ;
+        rdfs:range   xsd:string .
+
+edg:ReportType  rdfs:subClassOf  edg:EDGenumeratedValue .
+
+edg:supportsActivity  rdfs:subPropertyOf
+                edg:supports .
+
+graphql:rootQueryFieldName
+        rdfs:domain  sh:NodeShape ;
+        rdfs:range   xsd:string .
+
+edg:XMLschemaFile  rdfs:subClassOf  edg:Schema , edg:FileAsset .
+
+qudt:QuantityKindDimensionVector_SI
+        rdfs:subClassOf  qudt:QuantityKindDimensionVector .
+
+edg:JDBCdatatype  rdfs:subClassOf  edg:PhysicalDatatype .
+
+sh:nodeValidator  rdfs:domain  sh:ConstraintComponent ;
+        rdfs:range   sh:Validator .
+
+dash:MultiEditor  rdfs:subClassOf  dash:Editor .
+
+vaem:graphTitle  rdfs:range  xsd:string .
+
+edg:DatatypeViewpoint
+        rdfs:subClassOf  edg:Viewpoint , edg:DataAssetsViewpoint .
+
+edg:mapsToLogicalAttribute
+        rdfs:subPropertyOf  edg:mapsTo .
+
+edg:FlowStatement  rdfs:subClassOf  rdf:Statement .
+
+edg:Controlflow  rdfs:subClassOf  edg:Flow .
+
+edg:hosts  rdfs:subPropertyOf  edg:hostedOn .
+
+edg:DirectMapping  rdfs:subClassOf  edg:SoftwareFunction .
+
+qudt:literal  rdfs:subPropertyOf  dtype:literal .
+
+edg:sameAs  rdfs:subPropertyOf  prov:wasDerivedFrom .
+
+dash:Constructor  rdfs:subClassOf  dash:Script , sh:Parameterizable .
+
+sh:oneOrMorePath  rdfs:range  rdfs:Resource .
+
+qudt:allowedUnitOfSystem
+        rdfs:subPropertyOf  qudt:unitOfSystem .
+
+rdf:subject  rdfs:domain  rdf:Statement ;
+        rdfs:range   rdfs:Resource .
+
+qudt:SignedBigIntegerType
+        rdfs:subClassOf  qudt:BigIntegerType , qudt:SignedIntegerType .
+
+sh:TripleRule  rdfs:subClassOf  sh:Rule .
+
+dash:requiredExecutionPlatform
+        rdfs:domain  sh:SPARQLExecutable ;
+        rdfs:range   dash:ExecutionPlatform .
+
+dash:shapeScript  rdfs:domain  sh:NodeShape .
+
+qudt:TimeInterval  rdfs:subClassOf  qudt:Value .
+
+edg:Board  rdfs:subClassOf  edg:Organization .

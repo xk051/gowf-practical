@@ -1,0 +1,460 @@
+﻿@prefix a:    <http://www.w3.org/2005/Atom> . 
+@prefix atom: <http://www.w3.org/2005/Atom/> . 
+@prefix atomowl: <http://bblfish.net/work/atom-owl/2006-06-06/#> . 
+@prefix content: <http://purl.org/rss/1.0/modules/content/> . 
+@prefix dc:      <http://purl.org/dc/elements/1.1/> . 
+@prefix dcterms: <http://purl.org/dc/terms/> . 
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> . 
+@prefix g:       <http://base.google.com/ns/1.0> . 
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> . 
+@prefix georss:  <http://www.georss.org/georss> . 
+@prefix gml:     <http://www.opengis.net/gml> . 
+@prefix gphoto:  <http://schemas.google.com/photos/2007> . 
+@prefix media:   <http://search.yahoo.com/mrss/> . 
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix rss:     <http://purl.org/rss/1.0/> . 
+@prefix schema:  <http://schema.org/> . 
+@prefix sioc:   <http://rdfs.org/sioc/ns#> . 
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> . 
+@prefix terms:  <http://purl.org/dc/terms/> . 
+@prefix owl:    <http://www.w3.org/2002/07/owl#> . 
+@prefix wfw:    <http://wellformedweb.org/CommentAPI/> . 
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> . 
+@prefix : <#> . 
+
+:this schema:mainEntity <http://inciweb.nwcg.gov/feeds/rss/incidents/> .
+
+<http://inciweb.nwcg.gov/feeds/rss/incidents/> a schema:DataFeed;
+    schema:url <http://inciweb.nwcg.gov/feeds/rss/incidents/> ;
+    schema:title "InciWeb National Incidents" ;
+    rdfs:label "InciWeb National Incidents"  ;
+    schema:text "Latest incident updates nationally"  ;
+    schema:datePublished "2022-05-25T19:36:37.000Z"^^xsd:dateTime  ;
+    schema:relatedLink <http://inciweb.nwcg.gov/feeds/rss/incidents/>  ;
+    schema:inLanguage "en-us"  ;
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Hermits Peak Fire (Wildfire)" ;
+    rdfs:label "Hermits Peak Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8049/>  ;
+        schema:datePublished "2022-05-25T19:26:49.000Z"^^xsd:dateTime  ;
+        geo:lat 35.718055555556 ; geo:long -105.39944444444  ;
+        schema:text "Quick Links:     Daily Update (pdf)     |     Smoke Outlook     |     Actualización diaria     |     Fire Map (pdf)     |       Evacuation Status MapSummary:  The Hermits Peak Fire began April 6 as a result of the Las Dispensas prescribed fire on the Pecos/Las Vegas Ranger District of the Santa Fe National Forest.   Although forecasted weather conditions were within parameters for the prescribed fire, unexpected erratic winds in the late afternoon caused multiple spot fires that spread outside the project boundary.  It was declared a wildfire at approximately 4:30 p.m. on April 6, 2022. Named the Hermits Peak Fire, the wildfire began approximately 12 miles northwest of Las Vegas, NM at the base of Hermits Peak in the Pecos Wilderness. The Hermits Peak Fire is burning through mixed conifer in steep, rugged terrain that poses challenges for firefighter access. On May 15 the fire was divided into three zones and an IMT was assigned to each..."  ;
+        schema:contentSnippet "Quick Links: Daily Update (pdf) | Smoke Outlook | Actualización diaria | Fire Map (pdf) | Evacuation Status MapSummary: The Hermits Peak Fire began April 6 as a result of the Las Dispensas prescribed fire on the Pecos/Las Vegas Ranger District of the Santa Fe National Forest. Although forecasted weather conditions were within parameters for the prescribed fire, unexpected erratic winds in the late afternoon caused multiple spot fires that spread outside the project boundary. It was declared a wildfire at approximately 4:30 p.m. on April 6, 2022. Named the Hermits Peak Fire, the wildfire began approximately 12 miles northwest of Las Vegas, NM at the base of Hermits Peak in the Pecos Wilderness. The Hermits Peak Fire is burning through mixed conifer in steep, rugged terrain that poses challenges for firefighter access. On May 15 the fire was divided into three zones and an IMT was assigned to each..."  ;
+        schema:dateCreated "2022-05-25T19:26:49.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Calf Canyon (Wildfire)" ;
+    rdfs:label "Calf Canyon (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8069/>  ;
+        schema:datePublished "2022-05-25T19:23:41.000Z"^^xsd:dateTime  ;
+        geo:lat 35.759444444444 ; geo:long -105.50333333333  ;
+        schema:text "Quick Links:     Daily Update (pdf)      |     Actualización diaria     |     Smoke Outlook     |      Fire Map (pdf)     |     Evacuation Status MapSummary:  The Hermits Peak Fire began April 6 as a result of the Las Dispensas prescribed fire on the Pecos/Las Vegas Ranger District of the Santa Fe National Forest.   Although forecasted weather conditions were within parameters for the prescribed fire, unexpected erratic winds in the late afternoon caused multiple spot fires that spread outside the project boundary.  It was declared a wildfire at approximately 4:30 p.m. on April 6, 2022. Named the Hermits Peak Fire, the wildfire began approximately 12 miles northwest of Las Vegas, NM at the base of Hermits Peak in the Pecos Wilderness. The Hermits Peak Fire is burning through mixed conifer in steep, rugged terrain that poses challenges for firefighter access. On May 15 the fire was divided into three zones and an IMT was assigned to each..."  ;
+        schema:contentSnippet "Quick Links: Daily Update (pdf) | Actualización diaria | Smoke Outlook | Fire Map (pdf) | Evacuation Status MapSummary: The Hermits Peak Fire began April 6 as a result of the Las Dispensas prescribed fire on the Pecos/Las Vegas Ranger District of the Santa Fe National Forest. Although forecasted weather conditions were within parameters for the prescribed fire, unexpected erratic winds in the late afternoon caused multiple spot fires that spread outside the project boundary. It was declared a wildfire at approximately 4:30 p.m. on April 6, 2022. Named the Hermits Peak Fire, the wildfire began approximately 12 miles northwest of Las Vegas, NM at the base of Hermits Peak in the Pecos Wilderness. The Hermits Peak Fire is burning through mixed conifer in steep, rugged terrain that poses challenges for firefighter access. On May 15 the fire was divided into three zones and an IMT was assigned to each..."  ;
+        schema:dateCreated "2022-05-25T19:23:41.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Bear Trap Fire (Wildfire)" ;
+    rdfs:label "Bear Trap Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8093/>  ;
+        schema:datePublished "2022-05-25T19:18:48.000Z"^^xsd:dateTime  ;
+        geo:lat 33.850277777778 ; geo:long -107.53277777778  ;
+        schema:text "The Bear Trap Fire was reported as 100 acres on May 1, 2022 at 1200 hours in Bear Trap Canyon, San Mateo Mountains, Magdalena Ranger District, Cibola National Forest & National Grasslands. The fire is approximately 22 miles southwest of Magdalena, New Mexico.On May 3, the Albuquerque Zone Type 3 Team assumed command of the fire. The Southwest Type 2 Incident Management Team 4 transitioned with the previous team on May 14. California Incident Management Team 10 accepted transfer of command of the Fire on May 24. The Bear Trap Fire is burning actively and increasing temperatures and historically dry conditions continue to challenge firefighters. The strategy for the Bear Trap Fire is to fully contain the fire while protecting valuable resources in the area, including natural and cultural resources and infrastructure. Crews have been successful in limiting fire spread to the north, east, and west along previous prescribed fire scars. Fire activity is now concentrated on the southern..."  ;
+        schema:contentSnippet "The Bear Trap Fire was reported as 100 acres on May 1, 2022 at 1200 hours in Bear Trap Canyon, San Mateo Mountains, Magdalena Ranger District, Cibola National Forest & National Grasslands. The fire is approximately 22 miles southwest of Magdalena, New Mexico.On May 3, the Albuquerque Zone Type 3 Team assumed command of the fire. The Southwest Type 2 Incident Management Team 4 transitioned with the previous team on May 14. California Incident Management Team 10 accepted transfer of command of the Fire on May 24. The Bear Trap Fire is burning actively and increasing temperatures and historically dry conditions continue to challenge firefighters. The strategy for the Bear Trap Fire is to fully contain the fire while protecting valuable resources in the area, including natural and cultural resources and infrastructure. Crews have been successful in limiting fire spread to the north, east, and west along previous prescribed fire scars. Fire activity is now concentrated on the southern..."  ;
+        schema:dateCreated "2022-05-25T19:18:48.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Perins Peak Fire (Wildfire)" ;
+    rdfs:label "Perins Peak Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8120/>  ;
+        schema:datePublished "2022-05-25T19:18:22.000Z"^^xsd:dateTime  ;
+        geo:lat 37.298611111111 ; geo:long -107.90472222222  ;
+        schema:text "The Perins Peak Fire is burning west of Durango, Colorado on Bureau of Land Management and Colorado Parks and Wildlife land. The San Juan Type III Incident Management Team is in command of the fire, which was mapped Tuesday evening at 105 acres.The fire has burned from the bottom of the Rock Ridge Trail to the top of Perins Peak, and has reached the Lightner Creek Fire scar from 2017. The cause is under investigation."  ;
+        schema:contentSnippet "The Perins Peak Fire is burning west of Durango, Colorado on Bureau of Land Management and Colorado Parks and Wildlife land. The San Juan Type III Incident Management Team is in command of the fire, which was mapped Tuesday evening at 105 acres.The fire has burned from the bottom of the Rock Ridge Trail to the top of Perins Peak, and has reached the Lightner Creek Fire scar from 2017. The cause is under investigation."  ;
+        schema:dateCreated "2022-05-25T19:18:22.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Black Fire (Wildfire)" ;
+    rdfs:label "Black Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8103/>  ;
+        schema:datePublished "2022-05-25T19:17:23.000Z"^^xsd:dateTime  ;
+        geo:lat 33.203611111111 ; geo:long -108.05916666667  ;
+        schema:text "Evacuations updated as containment steadily increases; Warming trend will bring active fire behavior Daily Update 5/25/2022 Acres: 167,378 acresLocation: 31 miles NW of Truth or ConsequencesContainment: 14%Personnel: 747Start Date: Friday, May 13, 2022Cause: Human caused, under investigationFuels: Timber and tall grassStructures Lost: 2Evacuation Update: Effective at 10 pm, Wednesday, May 25, 2022, additional evacuations have been implemented because of fire activity on the Black Fire. In coordination with Grant, Catron, and Sierra counties, the following areas are under a level of evacuation status:GO – Area 1:  New:  The Area 1 Go has expanded north.  The area runs from Burnt Cabin Flat west along the south side of NM Highway 59 to the junction with FS Rd 150, then south along the east side of FS Rd 150 back to where it connects back to Area 2.  GO – Area 2:  No Change: Existing area 2 evacuations remain in place.   GO – Area 4: No Change: Areas in Sierra County,..."  ;
+        schema:contentSnippet "Evacuations updated as containment steadily increases; Warming trend will bring active fire behavior Daily Update 5/25/2022 Acres: 167,378 acresLocation: 31 miles NW of Truth or ConsequencesContainment: 14%Personnel: 747Start Date: Friday, May 13, 2022Cause: Human caused, under investigationFuels: Timber and tall grassStructures Lost: 2Evacuation Update: Effective at 10 pm, Wednesday, May 25, 2022, additional evacuations have been implemented because of fire activity on the Black Fire. In coordination with Grant, Catron, and Sierra counties, the following areas are under a level of evacuation status:GO – Area 1: New: The Area 1 Go has expanded north. The area runs from Burnt Cabin Flat west along the south side of NM Highway 59 to the junction with FS Rd 150, then south along the east side of FS Rd 150 back to where it connects back to Area 2. GO – Area 2: No Change: Existing area 2 evacuations remain in place. GO – Area 4: No Change: Areas in Sierra County,..."  ;
+        schema:dateCreated "2022-05-25T19:17:23.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Simms (Wildfire)" ;
+    rdfs:label "Simms (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8117/>  ;
+        schema:datePublished "2022-05-25T17:40:46.000Z"^^xsd:dateTime  ;
+        geo:lat 38.286111111111 ; geo:long -107.93805555556  ;
+        schema:text "The Simms Fire was reported at approximately 3:45 p.m. on May 19, 2022. Fire started near USFS managed lands and private land. Fire was wind driven and burned to the northeast on to BLM managed lands and is approximately 15 miles southwest of Montrose, Colorado. Fire is burning in Ouray County. USFS is managing the fire as a full-suppression fire. Strong winds in the afternoon created active fire behavior with running, multiple tree torching and spotting in pinyon/juniper, Gambel oak brush and grasslands. Fire Incident Management Team has been ordered and will arrive on May 20, 2022. Fire is under investigation.  Visit https://montrosecountysheriffsoffice.com and https://ouraycountyco.gov to learn about evacuations"  ;
+        schema:contentSnippet "The Simms Fire was reported at approximately 3:45 p.m. on May 19, 2022. Fire started near USFS managed lands and private land. Fire was wind driven and burned to the northeast on to BLM managed lands and is approximately 15 miles southwest of Montrose, Colorado. Fire is burning in Ouray County. USFS is managing the fire as a full-suppression fire. Strong winds in the afternoon created active fire behavior with running, multiple tree torching and spotting in pinyon/juniper, Gambel oak brush and grasslands. Fire Incident Management Team has been ordered and will arrive on May 20, 2022. Fire is under investigation. Visit https://montrosecountysheriffsoffice.com and https://ouraycountyco.gov to learn about evacuations"  ;
+        schema:dateCreated "2022-05-25T17:40:46.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Cerro Pelado Post-Fire BAER (Burned Area Emergency Response)" ;
+    rdfs:label "Cerro Pelado Post-Fire BAER (Burned Area Emergency Response)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8118/>  ;
+        schema:datePublished "2022-05-25T17:25:01.000Z"^^xsd:dateTime  ;
+        geo:lat 35.675 ; geo:long -106.50111111111  ;
+        schema:text "THREE PHASES OF WILDFIRE RECOVERY There are three phases of recovery following wildfires on federal lands: -       Fire Suppression Repair -       Emergency Stabilization-Burned Area Emergency Response (BAER) -       Long-Term Recovery and Restoration o   Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o   Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural resources on National Forest System..."  ;
+        schema:contentSnippet "THREE PHASES OF WILDFIRE RECOVERY There are three phases of recovery following wildfires on federal lands: - Fire Suppression Repair - Emergency Stabilization-Burned Area Emergency Response (BAER) - Long-Term Recovery and Restoration o Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural resources on National Forest System..."  ;
+        schema:dateCreated "2022-05-25T17:25:01.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Hermits Peak &amp; Calf Canyon BAER (Burned Area Emergency Response)" ;
+    rdfs:label "Hermits Peak &amp; Calf Canyon BAER (Burned Area Emergency Response)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8104/>  ;
+        schema:datePublished "2022-05-25T17:14:44.000Z"^^xsd:dateTime  ;
+        geo:lat 35.738888888889 ; geo:long -105.44166666667  ;
+        schema:text " THREE PHASES OF WILDFIRE RECOVERY   There are three phases of recovery following wildfires on federal lands: -       Fire Suppression Repair -       Emergency Stabilization-Burned Area Emergency Response (BAER) -       Long-Term Recovery and Restoration o   Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o   Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural resources on National Forest..."  ;
+        schema:contentSnippet "THREE PHASES OF WILDFIRE RECOVERY There are three phases of recovery following wildfires on federal lands: - Fire Suppression Repair - Emergency Stabilization-Burned Area Emergency Response (BAER) - Long-Term Recovery and Restoration o Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural resources on National Forest..."  ;
+        schema:dateCreated "2022-05-25T17:14:44.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Cerro Pelado (Wildfire)" ;
+    rdfs:label "Cerro Pelado (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8075/>  ;
+        schema:datePublished "2022-05-25T16:50:38.000Z"^^xsd:dateTime  ;
+        geo:lat 35.775 ; geo:long -106.58444444444  ;
+        schema:text "Hwy 4 is open to local traffic only so please drive carefully. By reducing speeds you can help protect firefighters working in the area.Los Alamos County has dropped a level to the READY phase of  \"Ready, Set, Go\" .For Sandoval County evacuation status, please refer to the county website: Sandoval County Fire AlertsPublic ResourcesDaily Fire Updates can be accessed here or through the News tab in the blue bar located in the upper portion of this page.A variety of maps are added daily to the Maps section in the blue bar in the upper portion of this page or via this direct link.Smoke reports are now being attached to the bottom of the Daily Fire Update as a PDF. As noted above, the Daily Fire Updates are posted on the News tab of this web site. The smoke reports rate the air quality index and provide suggested actions for individuals, especially those who are smoke sensitive.Public information Officers post updates and maps on community fire information displays in..."  ;
+        schema:contentSnippet "Hwy 4 is open to local traffic only so please drive carefully. By reducing speeds you can help protect firefighters working in the area.Los Alamos County has dropped a level to the READY phase of \"Ready, Set, Go\" .For Sandoval County evacuation status, please refer to the county website: Sandoval County Fire AlertsPublic ResourcesDaily Fire Updates can be accessed here or through the News tab in the blue bar located in the upper portion of this page.A variety of maps are added daily to the Maps section in the blue bar in the upper portion of this page or via this direct link.Smoke reports are now being attached to the bottom of the Daily Fire Update as a PDF. As noted above, the Daily Fire Updates are posted on the News tab of this web site. The smoke reports rate the air quality index and provide suggested actions for individuals, especially those who are smoke sensitive.Public information Officers post updates and maps on community fire information displays in..."  ;
+        schema:dateCreated "2022-05-25T16:50:38.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Mesquite Heat Fire (Wildfire)" ;
+    rdfs:label "Mesquite Heat Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8108/>  ;
+        schema:datePublished "2022-05-25T16:25:22.000Z"^^xsd:dateTime  ;
+        geo:lat 32.265833333333 ; geo:long -99.963611111111  ;
+        schema:text "The Mesquite Heat Fire started along HWY 277 about 20 miles southwest of Abilene on May 17, 2022. The Southern Area Gold Incident Management Team is managing the fire in unified command with the Taylor County Sheriff''s Office under a delegation of authority from the Texas A&M Forest"  ;
+        schema:contentSnippet "The Mesquite Heat Fire started along HWY 277 about 20 miles southwest of Abilene on May 17, 2022. The Southern Area Gold Incident Management Team is managing the fire in unified command with the Taylor County Sheriff''s Office under a delegation of authority from the Texas A&M Forest"  ;
+        schema:dateCreated "2022-05-25T16:25:22.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Plumtaw Fire (Wildfire)" ;
+    rdfs:label "Plumtaw Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8113/>  ;
+        schema:datePublished "2022-05-25T14:45:02.000Z"^^xsd:dateTime  ;
+        geo:lat 37.365555555556 ; geo:long -107.075  ;
+        schema:text " The Plumtaw fire was first reported at around 1pm on May 17th roughly 7 miles north of the town of Pagosa Springs, Colorado. The fire was mapped at 727 acres on Thursday afternoon, which shows a reduction in acreage based on more accurate mapping. Fire personnel have focused efforts on the northeast corner near Fourmile Road (NFSR 634), protecting the Fourmile Creek watershed and Lost Valley Subdivision and keeping the fire north of Plumtaw Road (NFSR 634). The fire is burning in Ponderosa pine, Gambel oak, and mixed conifer.An evacuation notice remains in effect for the Lost Valley of the San Juans neighborhood. Firefighters are working in the neighborhood developing and implementing structure protections plans. For evacuation information, contact the Archuleta County Emergency Operations Call Center at 970-422-7084.The fire area is closed to the public, including Fourmile Road (NFSR 645) at the forest boundary, and Plumtaw Road (NFSR 634) from the junction of McManus Road..."  ;
+        schema:contentSnippet "The Plumtaw fire was first reported at around 1pm on May 17th roughly 7 miles north of the town of Pagosa Springs, Colorado. The fire was mapped at 727 acres on Thursday afternoon, which shows a reduction in acreage based on more accurate mapping. Fire personnel have focused efforts on the northeast corner near Fourmile Road (NFSR 634), protecting the Fourmile Creek watershed and Lost Valley Subdivision and keeping the fire north of Plumtaw Road (NFSR 634). The fire is burning in Ponderosa pine, Gambel oak, and mixed conifer.An evacuation notice remains in effect for the Lost Valley of the San Juans neighborhood. Firefighters are working in the neighborhood developing and implementing structure protections plans. For evacuation information, contact the Archuleta County Emergency Operations Call Center at 970-422-7084.The fire area is closed to the public, including Fourmile Road (NFSR 645) at the forest boundary, and Plumtaw Road (NFSR 634) from the junction of McManus Road..."  ;
+        schema:dateCreated "2022-05-25T14:45:02.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Elgin Bridge Fire (Wildfire)" ;
+    rdfs:label "Elgin Bridge Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8119/>  ;
+        schema:datePublished "2022-05-25T14:33:08.000Z"^^xsd:dateTime  ;
+        geo:lat 31.662777777778 ; geo:long -110.52166666667  ;
+        schema:text " Elgin, AZ (5/25/22) – Nearly 200 personnel remain assigned to the Elgin Bridge Fire and continue to work to establish containment line around the fire. Fifteen percent of the fire is contained on the western flank near the community of Elgin, but the fire remains active at the head. The fire remains situated within the Mustang Mountain range, just south of State Route 82 and west of Babacomari Ranch Road. When safe, firefighters continue to go direct with the fire by utilizing firing operations to clear out unburned fuel ahead of the fire. This tactic allows the fire to hit the burned operational area with the goal of slowing its growth and movement. Crews are trying to get ahead of the fire and establish direct line construction to keep the fire from progressing toward the highway and scattered ranch houses ahead of the fire. Overnight, the fire was mapped at 2,149. The decrease in acreage is due to more accurate mapping.To the east of the fire, the threat to the kilovolt (kV)..."  ;
+        schema:contentSnippet "Elgin, AZ (5/25/22) – Nearly 200 personnel remain assigned to the Elgin Bridge Fire and continue to work to establish containment line around the fire. Fifteen percent of the fire is contained on the western flank near the community of Elgin, but the fire remains active at the head. The fire remains situated within the Mustang Mountain range, just south of State Route 82 and west of Babacomari Ranch Road. When safe, firefighters continue to go direct with the fire by utilizing firing operations to clear out unburned fuel ahead of the fire. This tactic allows the fire to hit the burned operational area with the goal of slowing its growth and movement. Crews are trying to get ahead of the fire and establish direct line construction to keep the fire from progressing toward the highway and scattered ranch houses ahead of the fire. Overnight, the fire was mapped at 2,149. The decrease in acreage is due to more accurate mapping.To the east of the fire, the threat to the kilovolt (kV)..."  ;
+        schema:dateCreated "2022-05-25T14:33:08.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Nogal Canyon Post-Fire BAER (Burned Area Emergency Response)" ;
+    rdfs:label "Nogal Canyon Post-Fire BAER (Burned Area Emergency Response)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8072/>  ;
+        schema:datePublished "2022-05-24T23:41:36.000Z"^^xsd:dateTime  ;
+        geo:lat 33.577222222222 ; geo:long -105.68  ;
+        schema:text "Burned Area Emergency Response (BAER) THREE PHASES OF WILDFIRE RECOVERY There are three phases of recovery following wildfires on federal lands: -       Fire Suppression Repair -       Emergency Stabilization-Burned Area Emergency Response (BAER) -       Long-Term Recovery and Restoration o   Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o   Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural..."  ;
+        schema:contentSnippet "Burned Area Emergency Response (BAER) THREE PHASES OF WILDFIRE RECOVERY There are three phases of recovery following wildfires on federal lands: - Fire Suppression Repair - Emergency Stabilization-Burned Area Emergency Response (BAER) - Long-Term Recovery and Restoration o Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural..."  ;
+        schema:dateCreated "2022-05-24T23:41:36.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "McBride Post-Fire BAER (Burned Area Emergency Response)" ;
+    rdfs:label "McBride Post-Fire BAER (Burned Area Emergency Response)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8080/>  ;
+        schema:datePublished "2022-05-24T23:41:09.000Z"^^xsd:dateTime  ;
+        geo:lat 33.4 ; geo:long -105.56805555556  ;
+        schema:text "Burned Area Emergency Response (BAER)  THREE PHASES OF WILDFIRE RECOVERY There are three phases of recovery following wildfires on federal lands: -       Fire Suppression Repair -       Emergency Stabilization-Burned Area Emergency Response (BAER) -       Long-Term Recovery and Restoration o   Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o   Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural..."  ;
+        schema:contentSnippet "Burned Area Emergency Response (BAER) THREE PHASES OF WILDFIRE RECOVERY There are three phases of recovery following wildfires on federal lands: - Fire Suppression Repair - Emergency Stabilization-Burned Area Emergency Response (BAER) - Long-Term Recovery and Restoration o Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural..."  ;
+        schema:dateCreated "2022-05-24T23:41:09.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Tunnel Fire (Wildfire)" ;
+    rdfs:label "Tunnel Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8068/>  ;
+        schema:datePublished "2022-05-24T18:50:51.000Z"^^xsd:dateTime  ;
+        geo:lat 35.304166666667 ; geo:long -111.58861111111  ;
+        schema:text "The Tunnel Fire is currently 98% contained. Firefighters continue to patrol and monitor and are working toward 100% containment. No structures or communities are"  ;
+        schema:contentSnippet "The Tunnel Fire is currently 98% contained. Firefighters continue to patrol and monitor and are working toward 100% containment. No structures or communities are"  ;
+        schema:dateCreated "2022-05-24T18:50:51.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Coconut Fire (Wildfire)" ;
+    rdfs:label "Coconut Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8109/>  ;
+        schema:datePublished "2022-05-23T01:20:07.000Z"^^xsd:dateTime  ;
+        geo:lat 33.861944444444 ; geo:long -99.339722222222  ;
+        schema:text "The Coconut Fire started 18 miles south of Vernon, on May 17 at approximately 4:30pm. Elevated fire conditions contributed to a rapid spread and significant fire behavior. Texas A&M Forest Service received a request for assistance from local fire department and is currently working in unified command with local responders.Fire activity has been extreme with rapid spread and crowning in the mesquite brush. Crews are focused on operations related to life safety and will continue with structure protection and line"  ;
+        schema:contentSnippet "The Coconut Fire started 18 miles south of Vernon, on May 17 at approximately 4:30pm. Elevated fire conditions contributed to a rapid spread and significant fire behavior. Texas A&M Forest Service received a request for assistance from local fire department and is currently working in unified command with local responders.Fire activity has been extreme with rapid spread and crowning in the mesquite brush. Crews are focused on operations related to life safety and will continue with structure protection and line"  ;
+        schema:dateCreated "2022-05-23T01:20:07.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Mayfield Fire (Wildfire)" ;
+    rdfs:label "Mayfield Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8112/>  ;
+        schema:datePublished "2022-05-22T02:50:51.000Z"^^xsd:dateTime  ;
+        geo:lat 31.039166666667 ; geo:long -99.075277777778  ;
+        schema:text "At approximately 5 07 pm on May 12th, a wildfire started in San Saba County near the border of San Saba and McCulloch County. approximately 23 miles SW of the town of San Saba. Local fire departments were the first resources on scene and called for assistance from the Texas A&M Forest Service (TAMFS). TAMFS and the Local IC are working in unified command, The fire has been resistant to control and holding heat. The area has experienced above normal temperatures, low relative humidity and drying winds.  On May 17th at approximately 8:30 pm a wind shift occurred and blew the fire across a two track road moving the fire to  the NW toward the river,  Torching and crowning was observed in the junipers and fire is making runs in the grass. The fire potential for additional growth is moderate to high. Mechanized equipment is constructing containment lines areas they can access due to hazards. Engines are working the fire in areas they can access and mopping up along the fireline. ..."  ;
+        schema:contentSnippet "At approximately 5 07 pm on May 12th, a wildfire started in San Saba County near the border of San Saba and McCulloch County. approximately 23 miles SW of the town of San Saba. Local fire departments were the first resources on scene and called for assistance from the Texas A&M Forest Service (TAMFS). TAMFS and the Local IC are working in unified command, The fire has been resistant to control and holding heat. The area has experienced above normal temperatures, low relative humidity and drying winds. On May 17th at approximately 8:30 pm a wind shift occurred and blew the fire across a two track road moving the fire to the NW toward the river, Torching and crowning was observed in the junipers and fire is making runs in the grass. The fire potential for additional growth is moderate to high. Mechanized equipment is constructing containment lines areas they can access due to hazards. Engines are working the fire in areas they can access and mopping up along the fireline. ..."  ;
+        schema:dateCreated "2022-05-22T02:50:51.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Dry Branch Fire (Wildfire)" ;
+    rdfs:label "Dry Branch Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8115/>  ;
+        schema:datePublished "2022-05-22T02:43:47.000Z"^^xsd:dateTime  ;
+        geo:lat 31.509166666667 ; geo:long -98.283333333333  ;
+        schema:text "The Dry Branch Fire started on May 18 at approximately 3:30pm. Local fire departments requested assistance from Texas A&M Forest Service after 4pm. The fire is burning north of Star in Hamilton County.Initial reports of structures threatened has quickly evolved into mandatory evacuations throughout the area. Evacuations are currently ongoing on FM 2005 between 1047 and CR 511.Crews are focused on operations related to life safety and structure protection, and containment line creation where possible. State resources are working in unified command with local responders. Update May 20th 11:30 am- Mechanized equipment continues to improve containment lines, engines are patrolling lines and mopping up heat.  Weather concerns are high temperatures, low relative humidity and higher winds over the"  ;
+        schema:contentSnippet "The Dry Branch Fire started on May 18 at approximately 3:30pm. Local fire departments requested assistance from Texas A&M Forest Service after 4pm. The fire is burning north of Star in Hamilton County.Initial reports of structures threatened has quickly evolved into mandatory evacuations throughout the area. Evacuations are currently ongoing on FM 2005 between 1047 and CR 511.Crews are focused on operations related to life safety and structure protection, and containment line creation where possible. State resources are working in unified command with local responders. Update May 20th 11:30 am- Mechanized equipment continues to improve containment lines, engines are patrolling lines and mopping up heat. Weather concerns are high temperatures, low relative humidity and higher winds over the"  ;
+        schema:dateCreated "2022-05-22T02:43:47.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Pope 2 Fire (Wildfire)" ;
+    rdfs:label "Pope 2 Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8106/>  ;
+        schema:datePublished "2022-05-22T02:42:17.000Z"^^xsd:dateTime  ;
+        geo:lat 30.728888888889 ; geo:long -100.23444444444  ;
+        schema:text " At approximately 6:53 pm, a wildfire started at the Schleicher/Sutton County line located near the original Pope Fire (fire that started several days ago) on the Pope Ranch. Local fire departments were the first resources on scene and called for assistance from the Texas A&M Forest Service (TAMFS). TAMFS and the Local IC are working in unified command, Fire crews are currently constructing containment line around the fire with heavy equipment with the support of engines. Aircraft was utilized on the fire. Update May 18th 11:00- mechanized equipment is continuing to build and improve containment lines, engine are mopping up, patrolling line and working areas of concern. A helicopter has been assigned to the fire for bucket work. Fire Behavior observed yesterday- crown runs in the junipers and short range spotting (800'').  Today''s weather is of concern with continued high temperatures, low relative humidity and drying winds. Update May 19th 8:25 pm- containment lines established..."  ;
+        schema:contentSnippet "At approximately 6:53 pm, a wildfire started at the Schleicher/Sutton County line located near the original Pope Fire (fire that started several days ago) on the Pope Ranch. Local fire departments were the first resources on scene and called for assistance from the Texas A&M Forest Service (TAMFS). TAMFS and the Local IC are working in unified command, Fire crews are currently constructing containment line around the fire with heavy equipment with the support of engines. Aircraft was utilized on the fire. Update May 18th 11:00- mechanized equipment is continuing to build and improve containment lines, engine are mopping up, patrolling line and working areas of concern. A helicopter has been assigned to the fire for bucket work. Fire Behavior observed yesterday- crown runs in the junipers and short range spotting (800''). Today''s weather is of concern with continued high temperatures, low relative humidity and drying winds. Update May 19th 8:25 pm- containment lines established..."  ;
+        schema:dateCreated "2022-05-22T02:42:17.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Twin Starts Fire (Wildfire)" ;
+    rdfs:label "Twin Starts Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8116/>  ;
+        schema:datePublished "2022-05-21T22:05:10.000Z"^^xsd:dateTime  ;
+        geo:lat 30.649166666667 ; geo:long -98.543611111111  ;
+        schema:text "The Texas A&M Forest Service received a new request in Llano County on Highway 71 in between County Road 308 and 309 at approximately 2:00pm on May 19th. TAMFS crews arrived on scene shortly after and found 2 fires, one that had been stopped by local resources, and one uncontained fire actively spreading. TAMFS is in unified command with local resources to reach full containment. Aviation resources are being used in tandem with TAMFS bulldozers and county motor graders to build containment lines. Engines are being used to mop up hotspots, patrol the fire perimeter, and provide structure protection. Elevated to near critical fire weather is expected in the area of the Twin Starts Fire through Friday 5/20. This fire is in close proximity to the Sandstone Mountain and Slab Road Fires which began on May"  ;
+        schema:contentSnippet "The Texas A&M Forest Service received a new request in Llano County on Highway 71 in between County Road 308 and 309 at approximately 2:00pm on May 19th. TAMFS crews arrived on scene shortly after and found 2 fires, one that had been stopped by local resources, and one uncontained fire actively spreading. TAMFS is in unified command with local resources to reach full containment. Aviation resources are being used in tandem with TAMFS bulldozers and county motor graders to build containment lines. Engines are being used to mop up hotspots, patrol the fire perimeter, and provide structure protection. Elevated to near critical fire weather is expected in the area of the Twin Starts Fire through Friday 5/20. This fire is in close proximity to the Sandstone Mountain and Slab Road Fires which began on May"  ;
+        schema:dateCreated "2022-05-21T22:05:10.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "High Park Fire (Wildfire)" ;
+    rdfs:label "High Park Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8102/>  ;
+        schema:datePublished "2022-05-20T23:50:38.000Z"^^xsd:dateTime  ;
+        geo:lat 38.739166666667 ; geo:long -105.28111111111  ;
+        schema:text " The High Park Fire was reported at 4:16 p.m. May 12, 2022 and is burning in pinyon/juniper, ponderosa pine, and grassland on private and BLM lands approximately 5.5 miles west of Cripple Creek in Teller County, Colorado. It is approximately 25 miles north of the Canon City wild horse holding facility. BLM and Teller County are managing the fire as a full-suppression fire under Unified Command. Visit http://tiny.cc/HighParkFire2022_TellerCo to learn about evacuations and pre-evacuation notices.  The May 17 Town Hall Meeting Video can be viewed at: https://youtu.be/WNuV4vE50bMSee today''s operations briefing video at: https://youtu.be/IoTUcSSgX2oThe Fire Behavior Comparison Video is at : https://youtu.be/6oyXY74Twis See past operations briefing videos"  ;
+        schema:contentSnippet "The High Park Fire was reported at 4:16 p.m. May 12, 2022 and is burning in pinyon/juniper, ponderosa pine, and grassland on private and BLM lands approximately 5.5 miles west of Cripple Creek in Teller County, Colorado. It is approximately 25 miles north of the Canon City wild horse holding facility. BLM and Teller County are managing the fire as a full-suppression fire under Unified Command. Visit http://tiny.cc/HighParkFire2022_TellerCo to learn about evacuations and pre-evacuation notices. The May 17 Town Hall Meeting Video can be viewed at: https://youtu.be/WNuV4vE50bMSee today''s operations briefing video at: https://youtu.be/IoTUcSSgX2oThe Fire Behavior Comparison Video is at : https://youtu.be/6oyXY74Twis See past operations briefing videos"  ;
+        schema:dateCreated "2022-05-20T23:50:38.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Sandstone Mountain Fire (Wildfire)" ;
+    rdfs:label "Sandstone Mountain Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8114/>  ;
+        schema:datePublished "2022-05-20T23:45:43.000Z"^^xsd:dateTime  ;
+        geo:lat 30.723888888889 ; geo:long -98.636111111111  ;
+        schema:text "The Sandstone Mountain Fire began on the afternoon of May 17th. Multiple fires were caused in the area by a roadside start along State Highway 71, southeast of Llano, TX, including the Slab Road Fire. Local resources transitioned to unified command with Texas A&M Forest Service on the morning of May 18th. One structure was immediately threatened and saved by local resources. TAMFS heavy equipment and county motor graders are on scene building and improving containment line. Aviation resources were requested for reconicance on the Sandstone Mountain and Slab Road fires. Elevated to near critical fire weather is forecasted in the area through Friday."  ;
+        schema:contentSnippet "The Sandstone Mountain Fire began on the afternoon of May 17th. Multiple fires were caused in the area by a roadside start along State Highway 71, southeast of Llano, TX, including the Slab Road Fire. Local resources transitioned to unified command with Texas A&M Forest Service on the morning of May 18th. One structure was immediately threatened and saved by local resources. TAMFS heavy equipment and county motor graders are on scene building and improving containment line. Aviation resources were requested for reconicance on the Sandstone Mountain and Slab Road fires. Elevated to near critical fire weather is forecasted in the area through Friday."  ;
+        schema:dateCreated "2022-05-20T23:45:43.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Slab Road Fire (Wildfire)" ;
+    rdfs:label "Slab Road Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8111/>  ;
+        schema:datePublished "2022-05-20T23:45:33.000Z"^^xsd:dateTime  ;
+        geo:lat 30.693888888889 ; geo:long -98.5625  ;
+        schema:text "The Slab Fire started on May 17th, 2022. Multiple fires started near the intersection of State Highway 71 at FM 2233 due to a roadside start along the highway. TAMFS is in unified command with local resources who are managing the Sandstone Mountain Fire estimated at 100 acres, with a local incident commander. Air resources were immediately requested but all aviation resources were committed to active fires in the state. One air-attack platform was able to fly the fire en route from working another fire to give ground resources an update at 8:00pm.Upon arrival the TAMFS Lost Pines Task Force found the Slab Fire to be approximately 50 acres with no containment, and minimal fire activity. TAMFS heavy equipment will work to build containment perimeter along the fire, and work with local engines to hold containment lines. Elevated to near critical fire weather is expected to remain in the fire area this"  ;
+        schema:contentSnippet "The Slab Fire started on May 17th, 2022. Multiple fires started near the intersection of State Highway 71 at FM 2233 due to a roadside start along the highway. TAMFS is in unified command with local resources who are managing the Sandstone Mountain Fire estimated at 100 acres, with a local incident commander. Air resources were immediately requested but all aviation resources were committed to active fires in the state. One air-attack platform was able to fly the fire en route from working another fire to give ground resources an update at 8:00pm.Upon arrival the TAMFS Lost Pines Task Force found the Slab Fire to be approximately 50 acres with no containment, and minimal fire activity. TAMFS heavy equipment will work to build containment perimeter along the fire, and work with local engines to hold containment lines. Elevated to near critical fire weather is expected to remain in the fire area this"  ;
+        schema:dateCreated "2022-05-20T23:45:33.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Johnson Fork Fire (Wildfire)" ;
+    rdfs:label "Johnson Fork Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8107/>  ;
+        schema:datePublished "2022-05-20T19:21:14.000Z"^^xsd:dateTime  ;
+        geo:lat 29.120277777778 ; geo:long -98.840833333333  ;
+        schema:text "At approximately 5:00 pm on May 11th, the Johnson Fork Fire ignited in Kimble County. Local fire departments were the first resources on scene and requested assistance from the Texas A&M Forest Service (TAMFS). TAMFS and the Local IC worked in unified command, Fire crews constructed containment line around the fire with heavy equipment with the support of engines. Aircraft was utilized on the fire.  Interior pockets holding heat were of concern.  With critical fire weather in the region today, the fire became active and made a run outside the containment lines on the North end of the fire at 4:26pm.  Local department returned to fire and requested support of the Texas A&M Forest Service.  Crews are on scene and working to contain the escape.  TAMFS IC and Local IC are working in unified command.  Heavy equipment is constructing line with the support of engines.  Aircraft was utilized on this fire. Update May 20th @11:30 am- Crews continue to staff the fire.  Engines are..."  ;
+        schema:contentSnippet "At approximately 5:00 pm on May 11th, the Johnson Fork Fire ignited in Kimble County. Local fire departments were the first resources on scene and requested assistance from the Texas A&M Forest Service (TAMFS). TAMFS and the Local IC worked in unified command, Fire crews constructed containment line around the fire with heavy equipment with the support of engines. Aircraft was utilized on the fire. Interior pockets holding heat were of concern. With critical fire weather in the region today, the fire became active and made a run outside the containment lines on the North end of the fire at 4:26pm. Local department returned to fire and requested support of the Texas A&M Forest Service. Crews are on scene and working to contain the escape. TAMFS IC and Local IC are working in unified command. Heavy equipment is constructing line with the support of engines. Aircraft was utilized on this fire. Update May 20th @11:30 am- Crews continue to staff the fire. Engines are..."  ;
+        schema:dateCreated "2022-05-20T19:21:14.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Bowman Fire (Wildfire)" ;
+    rdfs:label "Bowman Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8110/>  ;
+        schema:datePublished "2022-05-20T16:46:06.000Z"^^xsd:dateTime  ;
+        geo:lat 28.507777777778 ; geo:long -99.693888888889  ;
+        schema:text " At approximately 4:52 pm, a wildfire started in Dimmitt County, approximately 20 miles east of Carrizo Springs, Tx.  Local fire departments were the first resources on scene and called for assistance from the Texas A&M Forest Service (TAMFS). TAMFS and the Local IC are working in unified command, Fire is estimated at 100 acres in heavy brush and grass.  Access to the fire was hampered by terrain and vegetation.  Fire is currently burning in Oak timber near the Nueces River.   The fire behavior has moderated as the relative humidity begins to recover overnight, Crews constructed containment line around the fire with heavy equipment and burning out pockets of fuel with the support of engines.  Aircraft was utilized on the"  ;
+        schema:contentSnippet "At approximately 4:52 pm, a wildfire started in Dimmitt County, approximately 20 miles east of Carrizo Springs, Tx. Local fire departments were the first resources on scene and called for assistance from the Texas A&M Forest Service (TAMFS). TAMFS and the Local IC are working in unified command, Fire is estimated at 100 acres in heavy brush and grass. Access to the fire was hampered by terrain and vegetation. Fire is currently burning in Oak timber near the Nueces River. The fire behavior has moderated as the relative humidity begins to recover overnight, Crews constructed containment line around the fire with heavy equipment and burning out pockets of fuel with the support of engines. Aircraft was utilized on the"  ;
+        schema:dateCreated "2022-05-20T16:46:06.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Crooks Fire (Wildfire)" ;
+    rdfs:label "Crooks Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8067/>  ;
+        schema:datePublished "2022-05-18T16:29:22.000Z"^^xsd:dateTime  ;
+        geo:lat 34.402777777778 ; geo:long -112.42611111111  ;
+        schema:text "The Crooks Fire began on April 18, 2022 about 10 miles south of the Prescott-Bradshaw Ranger District near Mt. Union. California Interagency Incident Management Team 4 assumed command of the Crooks Fires at 6:00 pm on April 20.   The fire is burning in continuous thick, dry, dead, and down fuels in very rugged terrain.  Erratic winds and fire behavior is making conditions hazardous for firefighters.  Firefighter and public safety is the number one objective.SMOKE INFORMATION:  Arizona Smoke Forecasting system information can be located at https://azdeq.gov/wildfireforecast?fire=crooksfire  EVACUATIONS:  There is no change to the evacuation status.  Information about the current evacuation status can be found on the Yavapai County Sheriff’s Department Facebook page at: https://www.facebook.com/YavapaiCountySheriff/ FOREST CLOSURE: To provide public health and safety due to firefighting operations and fire dangerassociated with the uncontrolled Crooks Fire the Prescott..."  ;
+        schema:contentSnippet "The Crooks Fire began on April 18, 2022 about 10 miles south of the Prescott-Bradshaw Ranger District near Mt. Union. California Interagency Incident Management Team 4 assumed command of the Crooks Fires at 6:00 pm on April 20. The fire is burning in continuous thick, dry, dead, and down fuels in very rugged terrain. Erratic winds and fire behavior is making conditions hazardous for firefighters. Firefighter and public safety is the number one objective.SMOKE INFORMATION: Arizona Smoke Forecasting system information can be located at https://azdeq.gov/wildfireforecast?fire=crooksfire EVACUATIONS: There is no change to the evacuation status. Information about the current evacuation status can be found on the Yavapai County Sheriff’s Department Facebook page at: https://www.facebook.com/YavapaiCountySheriff/ FOREST CLOSURE: To provide public health and safety due to firefighting operations and fire dangerassociated with the uncontrolled Crooks Fire the Prescott..."  ;
+        schema:dateCreated "2022-05-18T16:29:22.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "2022 Humboldt-Toiyabe Prescribed Fire (Prescribed Fire)" ;
+    rdfs:label "2022 Humboldt-Toiyabe Prescribed Fire (Prescribed Fire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/7310/>  ;
+        schema:datePublished "2022-05-17T15:53:59.000Z"^^xsd:dateTime  ;
+        geo:lat 39.523611111111 ; geo:long -119.76916666667  ;
+        schema:text "Planned Projects | Current Projects | Current PhotosAs part of Humboldt-Toiyabe National Forest’s hazardous fuels reduction efforts, crews will conduct prescribed fire across pre-planned locations across the forest as weather and fuel conditions permit. Prescribed fire is a proactive tool used to achieve a number of purposes, including the reduction of hazardous fuels, which decreases the threat of high intensity, high-severity wildfires. It also reduces the risk of insect and disease outbreak, recycles nutrients that increase soil productivity and improves wildlife habitat. The actual days of ignition for prescribed burning will depend on several factors including appropriate humidity levels, wind speed and direction, temperature, and fuel moisture. Burns only occur on days when weather conditions exist for good smoke dispersal. Residents and visitors are asked to avoid areas where prescribed burns are being conducted. Smoke may be visible, but these fires are all..."  ;
+        schema:contentSnippet "Planned Projects | Current Projects | Current PhotosAs part of Humboldt-Toiyabe National Forest’s hazardous fuels reduction efforts, crews will conduct prescribed fire across pre-planned locations across the forest as weather and fuel conditions permit. Prescribed fire is a proactive tool used to achieve a number of purposes, including the reduction of hazardous fuels, which decreases the threat of high intensity, high-severity wildfires. It also reduces the risk of insect and disease outbreak, recycles nutrients that increase soil productivity and improves wildlife habitat. The actual days of ignition for prescribed burning will depend on several factors including appropriate humidity levels, wind speed and direction, temperature, and fuel moisture. Burns only occur on days when weather conditions exist for good smoke dispersal. Residents and visitors are asked to avoid areas where prescribed burns are being conducted. Smoke may be visible, but these fires are all..."  ;
+        schema:dateCreated "2022-05-17T15:53:59.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "San Rafael Fire (Wildfire)" ;
+    rdfs:label "San Rafael Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8100/>  ;
+        schema:datePublished "2022-05-15T16:14:52.000Z"^^xsd:dateTime  ;
+        geo:lat 31.353333333333 ; geo:long -110.61388888889  ;
+        schema:text "As of 9am on Saturday, 5/15, 2022 the San Rafael is 100% contained at 11,620 acres. The fire is in patrol status at this time. All resources will be released by end of shift Sunday.  The Arizona Trail at Parker Lake to Harshaw Road remains closed until Monday afternoon, 5/16."  ;
+        schema:contentSnippet "As of 9am on Saturday, 5/15, 2022 the San Rafael is 100% contained at 11,620 acres. The fire is in patrol status at this time. All resources will be released by end of shift Sunday. The Arizona Trail at Parker Lake to Harshaw Road remains closed until Monday afternoon, 5/16."  ;
+        schema:dateCreated "2022-05-15T16:14:52.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Jim Post-Fire BAER (Burned Area Emergency Response)" ;
+    rdfs:label "Jim Post-Fire BAER (Burned Area Emergency Response)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8000/>  ;
+        schema:datePublished "2022-05-13T00:12:43.000Z"^^xsd:dateTime  ;
+        geo:lat 33.740555555556 ; geo:long -117.46166666667  ;
+        schema:text " THREE PHASES OF WILDFIRE RECOVERY  There are three phases of recovery following wildfires on federal lands: -       Fire Suppression Repair -       Emergency Stabilization-Burned Area Emergency Response (BAER) -       Long-Term Recovery and Restoration o   Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o   Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural resources on National Forest System..."  ;
+        schema:contentSnippet "THREE PHASES OF WILDFIRE RECOVERY There are three phases of recovery following wildfires on federal lands: - Fire Suppression Repair - Emergency Stabilization-Burned Area Emergency Response (BAER) - Long-Term Recovery and Restoration o Fire Suppression Repair is a series of immediate post-fire actions taken to repair damages and minimize potential soil erosion and impacts resulting from fire suppression activities and usually begins before the fire is contained, and before the demobilization of an Incident Management Team. This work repairs the hand and dozer fire lines, roads, trails, staging areas, safety zones, and drop points used during fire suppression efforts. o Emergency Stabilization-Burned Area Emergency Response (BAER) is a rapid assessment of burned watersheds by a BAER team to identify imminent post-wildfire threats to human life and safety, property, and critical natural or cultural resources on National Forest System..."  ;
+        schema:dateCreated "2022-05-13T00:12:43.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Hoosier National Forest Prescribed Fire (Prescribed Fire)" ;
+    rdfs:label "Hoosier National Forest Prescribed Fire (Prescribed Fire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/7887/>  ;
+        schema:datePublished "2022-05-12T20:54:26.000Z"^^xsd:dateTime  ;
+        geo:lat 38.556111111111 ; geo:long -86.468333333333  ;
+        schema:text "Bedford, Indiana. October 22, 2021 — The U.S. Forest Service plans to conduct seasonal prescribed burning to maintain, restore or improve early successional habitat, maintain wetlands, restore and maintain unique barren ecosystems, regenerate oak and hickory tree species and improve soil health by naturally returning nutrients to the soil.  Historical data shows that throughout history natural occurring fire played a vital and necessary role in sustaining the eastern deciduous forest ecosystem. Scientific research supports the use of prescribed burning to reintroduce low intensity fire to its natural role within the ecosystem. Prescribed burning also reduces fuel loading, thereby lowering the risk of catastrophic wildfire.  Approximately 4,500 - 5,000 acres are planned to receive treatment with prescribed fire in the fall of 2021 on National Forest System lands in the following counties:  Brown, Crawford, Jackson, Martin, Monroe, Lawrence, and Perry. U.S. Forest Service fire..."  ;
+        schema:contentSnippet "Bedford, Indiana. October 22, 2021 — The U.S. Forest Service plans to conduct seasonal prescribed burning to maintain, restore or improve early successional habitat, maintain wetlands, restore and maintain unique barren ecosystems, regenerate oak and hickory tree species and improve soil health by naturally returning nutrients to the soil. Historical data shows that throughout history natural occurring fire played a vital and necessary role in sustaining the eastern deciduous forest ecosystem. Scientific research supports the use of prescribed burning to reintroduce low intensity fire to its natural role within the ecosystem. Prescribed burning also reduces fuel loading, thereby lowering the risk of catastrophic wildfire. Approximately 4,500 - 5,000 acres are planned to receive treatment with prescribed fire in the fall of 2021 on National Forest System lands in the following counties: Brown, Crawford, Jackson, Martin, Monroe, Lawrence, and Perry. U.S. Forest Service fire..."  ;
+        schema:dateCreated "2022-05-12T20:54:26.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "McBride Fire (Wildfire)" ;
+    rdfs:label "McBride Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8061/>  ;
+        schema:datePublished "2022-05-09T21:47:11.000Z"^^xsd:dateTime  ;
+        geo:lat 33.333333333333 ; geo:long -105.63472222222  ;
+        schema:text "The McBride Fire started on April 12, 2022 around 2:30 pm on Warrior Rd in Ruidoso, NM. The fire quickly spread into neighboring residential areas and continued to move northeast. There are 2 confirmed fatalities and over 200 homes have been lost. The fire is now 89% contained. All evacuations for this fire have now been lifted. Fire crews are continuing to mop-up"  ;
+        schema:contentSnippet "The McBride Fire started on April 12, 2022 around 2:30 pm on Warrior Rd in Ruidoso, NM. The fire quickly spread into neighboring residential areas and continued to move northeast. There are 2 confirmed fatalities and over 200 homes have been lost. The fire is now 89% contained. All evacuations for this fire have now been lifted. Fire crews are continuing to mop-up"  ;
+        schema:dateCreated "2022-05-09T21:47:11.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Water Fire (Wildfire)" ;
+    rdfs:label "Water Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8089/>  ;
+        schema:datePublished "2022-05-07T19:39:16.000Z"^^xsd:dateTime  ;
+        geo:lat 32.9325 ; geo:long -107.96416666667  ;
+        schema:text "Today''s update - May 2, 2022 - will be the FINAL UPDATE for the Water Fire unless there is a significant change to report.  The Water Fire was detected on April 28th at 2:30 in the afternoon. It is on the Gila National Forest and is located about 3 miles east of the Wilderness Ranger Station and 6 miles north of Mimbres, NM. The area that the fire is burning in has minimal road access, however ground forces are being staged at strategic locations as the fire slowly progresses up East Canyon. Winds out of the southwest, accompanied by hot, dry weather, and drought-stressed vegetation (heavy to moderate loads of dead, dry grass with Piñon Juniper trees scattered throughout the area). On April 28th, when the fire was detected, aerial resources were committed to the incident and have been the primary resource for reconnaissance and suppression tactics. Air tankers were utilized to help hinder the fire''s growth by strategically dropping fire retardant, so that it would slow the fire''s..."  ;
+        schema:contentSnippet "Today''s update - May 2, 2022 - will be the FINAL UPDATE for the Water Fire unless there is a significant change to report. The Water Fire was detected on April 28th at 2:30 in the afternoon. It is on the Gila National Forest and is located about 3 miles east of the Wilderness Ranger Station and 6 miles north of Mimbres, NM. The area that the fire is burning in has minimal road access, however ground forces are being staged at strategic locations as the fire slowly progresses up East Canyon. Winds out of the southwest, accompanied by hot, dry weather, and drought-stressed vegetation (heavy to moderate loads of dead, dry grass with Piñon Juniper trees scattered throughout the area). On April 28th, when the fire was detected, aerial resources were committed to the incident and have been the primary resource for reconnaissance and suppression tactics. Air tankers were utilized to help hinder the fire''s growth by strategically dropping fire retardant, so that it would slow the fire''s..."  ;
+        schema:dateCreated "2022-05-07T19:39:16.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Tunnel Fire BAER (Burned Area Emergency Response)" ;
+    rdfs:label "Tunnel Fire BAER (Burned Area Emergency Response)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8088/>  ;
+        schema:datePublished "2022-05-07T13:00:34.000Z"^^xsd:dateTime  ;
+        geo:lat 35.386944444444 ; geo:long -111.53305555556  ;
+        schema:text " The Tunnel Fire Burned Area Emergency Response (BAER) team has completed the Soil Burn Severity (SBS) map and is undertaking the next stage of the BAER process—namely completing risk assessments to critical BAER values on National Forest System lands, proposing possible post-fire emergency stabilization actions, and completing the Burned Area Report.  Critical BAER values for the Tunnel Fire include the following: Human Life and Safety; Forest Service owned property such as campgrounds roads, and trails; Natural resources such as soil productivity and hydrologic function, threatened and endangered species habitat, and native plant communities; Cultural resources. Yesterday, the BAER Team completed the risk assessment matrix and developed post-fire emergency stabilization actions to mitigate identified risks that could reduce post-fire risks to the critical BAER values and began writing the BAER assessment report. In the coming days, the Tunnel BAER team will present these..."  ;
+        schema:contentSnippet "The Tunnel Fire Burned Area Emergency Response (BAER) team has completed the Soil Burn Severity (SBS) map and is undertaking the next stage of the BAER process—namely completing risk assessments to critical BAER values on National Forest System lands, proposing possible post-fire emergency stabilization actions, and completing the Burned Area Report. Critical BAER values for the Tunnel Fire include the following: Human Life and Safety; Forest Service owned property such as campgrounds roads, and trails; Natural resources such as soil productivity and hydrologic function, threatened and endangered species habitat, and native plant communities; Cultural resources. Yesterday, the BAER Team completed the risk assessment matrix and developed post-fire emergency stabilization actions to mitigate identified risks that could reduce post-fire risks to the critical BAER values and began writing the BAER assessment report. In the coming days, the Tunnel BAER team will present these..."  ;
+        schema:dateCreated "2022-05-07T13:00:34.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Southwest District BLM Prescribed Fire (Prescribed Fire)" ;
+    rdfs:label "Southwest District BLM Prescribed Fire (Prescribed Fire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/7852/>  ;
+        schema:datePublished "2022-05-05T15:20:40.000Z"^^xsd:dateTime  ;
+        geo:lat 37.9025 ; geo:long -108.82555555556  ;
+        schema:text "The Bureau of Land Management Southwest District plans to conduct several prescribed burns beginning early October or as conditions allow. The prescribed burn projects will be on the Gunnison, Tres Rios and Uncompahgre Field Offices. The planned burns are part of larger projects to reduce hazardous fuels; protect wildland-urban interface communities; improve big game habitat, sage grouse habitat, and range conditions; and reintroduce fire to a fire-adapted ecosystem to restore healthy forests and species diversity.  While no road closures are expected during the projects, camping near the units is discouraged due to increased traffic and likelihood of smoke in the area, particularly at night. Multiple days of burning may occur throughout the fall into the winter, as fuel conditions and weather permit. Project areas will be monitored once completed to ensure public safety. While smoke may be visible in the burn area at times, most of the smoke will lift and dissipate during the..."  ;
+        schema:contentSnippet "The Bureau of Land Management Southwest District plans to conduct several prescribed burns beginning early October or as conditions allow. The prescribed burn projects will be on the Gunnison, Tres Rios and Uncompahgre Field Offices. The planned burns are part of larger projects to reduce hazardous fuels; protect wildland-urban interface communities; improve big game habitat, sage grouse habitat, and range conditions; and reintroduce fire to a fire-adapted ecosystem to restore healthy forests and species diversity. While no road closures are expected during the projects, camping near the units is discouraged due to increased traffic and likelihood of smoke in the area, particularly at night. Multiple days of burning may occur throughout the fall into the winter, as fuel conditions and weather permit. Project areas will be monitored once completed to ensure public safety. While smoke may be visible in the burn area at times, most of the smoke will lift and dissipate during the..."  ;
+        schema:dateCreated "2022-05-05T15:20:40.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "GWJ National Forest Prescribed Burns (Prescribed Fire)" ;
+    rdfs:label "GWJ National Forest Prescribed Burns (Prescribed Fire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/7945/>  ;
+        schema:datePublished "2022-05-04T23:27:04.000Z"^^xsd:dateTime  ;
+        geo:lat 37.671388888889 ; geo:long -79.861388888889  ;
+        schema:text "The George Washington and Jefferson National Forests will conduct prescribed burns in multiple counties this spring. Prescribed burns improve wildlife habitat by restoring open woodlands and grasslands to the forest landscape. Safety is the Forest Service’s top priority, and Forest fire managers will conduct prescribed burns only under appropriate weather conditions. Experienced fire managers will closely monitor local weather conditions, such as wind and humidity, and adjust the schedule as needed to ensure the safety of both crewmembers and local residents. Prior to lighting the burn, crews construct and designate firebreaks to ensure the fire does not leave the burn area. The burn will mimic historic natural fire as much as possible. Some individual trees will burn, but the fire should travel mostly across the forest floor. For thousands of years, fire shaped our forests and wildlife and our lands need fire to be healthy. Low intensity prescribed burns create open areas where a..."  ;
+        schema:contentSnippet "The George Washington and Jefferson National Forests will conduct prescribed burns in multiple counties this spring. Prescribed burns improve wildlife habitat by restoring open woodlands and grasslands to the forest landscape. Safety is the Forest Service’s top priority, and Forest fire managers will conduct prescribed burns only under appropriate weather conditions. Experienced fire managers will closely monitor local weather conditions, such as wind and humidity, and adjust the schedule as needed to ensure the safety of both crewmembers and local residents. Prior to lighting the burn, crews construct and designate firebreaks to ensure the fire does not leave the burn area. The burn will mimic historic natural fire as much as possible. Some individual trees will burn, but the fire should travel mostly across the forest floor. For thousands of years, fire shaped our forests and wildlife and our lands need fire to be healthy. Low intensity prescribed burns create open areas where a..."  ;
+        schema:dateCreated "2022-05-04T23:27:04.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Nogal Canyon Fire (Wildfire)" ;
+    rdfs:label "Nogal Canyon Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8062/>  ;
+        schema:datePublished "2022-05-02T20:11:57.000Z"^^xsd:dateTime  ;
+        geo:lat 33.510555555556 ; geo:long -105.74666666667  ;
+        schema:text "The Nogal Canyon Fire that started on April 12, 2022, burned 6 primary residences and 8 outbuildings. The fire was located about 12 miles west of Capitan, NM. Evacuations have now been lifted for this fire. The fire has burned 412 acres of grass, brush and trees. Firefighters continue to identify and put out hot spots on the"  ;
+        schema:contentSnippet "The Nogal Canyon Fire that started on April 12, 2022, burned 6 primary residences and 8 outbuildings. The fire was located about 12 miles west of Capitan, NM. Evacuations have now been lifted for this fire. The fire has burned 412 acres of grass, brush and trees. Firefighters continue to identify and put out hot spots on the"  ;
+        schema:dateCreated "2022-05-02T20:11:57.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Locklin Fire (Wildfire)" ;
+    rdfs:label "Locklin Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8083/>  ;
+        schema:datePublished "2022-04-30T23:08:18.000Z"^^xsd:dateTime  ;
+        geo:lat 31.452777777778 ; geo:long -109.93  ;
+        schema:text "4/30/22 evening update:  Fire 100% contained.4/30/22 morning update:  Fire remains at 90% containment, crews released, two BLM engines remain in mop-up operations today.4/29/22 evening update: Change in containment, fire now at 90% containment.Change in containment, fire now at 68% containment.Change in containment, fire now at 50% containment. There was no change in acreage or level of containment overnight.The fire was mapped at 112 acres, 30% containment. No visible smoke at this time. Crews will continue to monitor fire and work to secure the fire line completely, address hotspots, and toward full containment. Gusty winds, 30-40 mph expected today.  BACKGROUND: Fire reported near Bisbee, AZ at approximately 11 p.m. on April 25. Local fire departments, BLM, Cochise County Emergency Management, Department of Forestry and Fire Management, and Forest Service responding. Southeastern Arizona Type 3 Incident Management Team takes over fire at 1700, 4/26. Fire is human caused - the..."  ;
+        schema:contentSnippet "4/30/22 evening update: Fire 100% contained.4/30/22 morning update: Fire remains at 90% containment, crews released, two BLM engines remain in mop-up operations today.4/29/22 evening update: Change in containment, fire now at 90% containment.Change in containment, fire now at 68% containment.Change in containment, fire now at 50% containment. There was no change in acreage or level of containment overnight.The fire was mapped at 112 acres, 30% containment. No visible smoke at this time. Crews will continue to monitor fire and work to secure the fire line completely, address hotspots, and toward full containment. Gusty winds, 30-40 mph expected today. BACKGROUND: Fire reported near Bisbee, AZ at approximately 11 p.m. on April 25. Local fire departments, BLM, Cochise County Emergency Management, Department of Forestry and Fire Management, and Forest Service responding. Southeastern Arizona Type 3 Incident Management Team takes over fire at 1700, 4/26. Fire is human caused - the..."  ;
+        schema:dateCreated "2022-04-30T23:08:18.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Road 702 Fire (Wildfire)" ;
+    rdfs:label "Road 702 Fire (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8081/>  ;
+        schema:datePublished "2022-04-29T02:58:11.000Z"^^xsd:dateTime  ;
+        geo:lat 40.173888888889 ; geo:long -100.23083333333  ;
+        schema:text "The Road 702 Fire began in Kansas on April 22, 2022 and grew in a relatively narrow strip to the north up to the Republican River in Nebraska, covering approximately 28 miles rapidly. Multiple communities were evacuated along the path of the wildfire. The Road 702 Fire is estimated to be 44,024 acres. Inactive fire edge is currently limiting fire spread but spotting potential is moderate, flareups or spot fires will spread with moderate rates of spread across all fuels. Firefighters will continue to secure existing firelines by mopping up and multiple helicopters are supporting the crews by providing water to cool hotspots.  The Nebraska Type III Team will assume command of the Fire on Friday April 29, 2022.  VIDEO LINKS:A \"Thank You\" from the Road 702 Fire - YouTubePlease view the Operations Briefing Video for April 28, 2022 at:  Road 702 Fire Operational Update for April 28, 2022 - YouTube(Please note the date on the map in the video is incorrect.)If you wish to view..."  ;
+        schema:contentSnippet "The Road 702 Fire began in Kansas on April 22, 2022 and grew in a relatively narrow strip to the north up to the Republican River in Nebraska, covering approximately 28 miles rapidly. Multiple communities were evacuated along the path of the wildfire. The Road 702 Fire is estimated to be 44,024 acres. Inactive fire edge is currently limiting fire spread but spotting potential is moderate, flareups or spot fires will spread with moderate rates of spread across all fuels. Firefighters will continue to secure existing firelines by mopping up and multiple helicopters are supporting the crews by providing water to cool hotspots. The Nebraska Type III Team will assume command of the Fire on Friday April 29, 2022. VIDEO LINKS:A \"Thank You\" from the Road 702 Fire - YouTubePlease view the Operations Briefing Video for April 28, 2022 at: Road 702 Fire Operational Update for April 28, 2022 - YouTube(Please note the date on the map in the video is incorrect.)If you wish to view..."  ;
+        schema:dateCreated "2022-04-29T02:58:11.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "South Rim Too (Wildfire)" ;
+    rdfs:label "South Rim Too (Wildfire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8070/>  ;
+        schema:datePublished "2022-04-25T14:37:13.000Z"^^xsd:dateTime  ;
+        geo:lat 29.233333333333 ; geo:long -103.30611111111  ;
+        schema:text "This fire location is across the South Rim trail from the SR-4 campsite that burned one year ago, in the Chisos Mountains. Crews worked the fire overnight to contain the fire. High overnight humidity levels and cool morning temperatures allowed firefighters to conduct an early morning attack on the north flank before day time temperatures heated up. The fire is now contained, but there is still much work to be done. A type 6 engine arrived yesterday from Big Thicket National Preserve, they are available for operations and any new starts. The operation is also supported by the park mule team- carrying much needed supplies like water, food, and equipment to the remote location of the"  ;
+        schema:contentSnippet "This fire location is across the South Rim trail from the SR-4 campsite that burned one year ago, in the Chisos Mountains. Crews worked the fire overnight to contain the fire. High overnight humidity levels and cool morning temperatures allowed firefighters to conduct an early morning attack on the north flank before day time temperatures heated up. The fire is now contained, but there is still much work to be done. A type 6 engine arrived yesterday from Big Thicket National Preserve, they are available for operations and any new starts. The operation is also supported by the park mule team- carrying much needed supplies like water, food, and equipment to the remote location of the"  ;
+        schema:dateCreated "2022-04-25T14:37:13.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Kaibab NF South Zone Rx Fire (Prescribed Fire)" ;
+    rdfs:label "Kaibab NF South Zone Rx Fire (Prescribed Fire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/5922/>  ;
+        schema:datePublished "2022-04-01T22:18:52.000Z"^^xsd:dateTime  ;
+        geo:lat 35.186111111111 ; geo:long -112.21722222222  ;
+        schema:text "The Spring 2022 prescribed fire season is upon us. Fire managers will be looking for windows of opportunity to conduct broadcast burns (applying fire across the forest floor) through the month of April and maybe into May, depending on what conditions will allow. Crews are planning to work on the following projects this season: Greenbase Project:  Just north of the City Williams; 3500 acres; Smoke likely noticeable around Williams, Highway 64, and Interstate 40.Reed Project: Just south and northeast of Tusayan; 3300 acres; Overnight smoke generally settles around Forest Road 302, Tusayan, and south toward Red Butte.Blue Stem Project: Remote corner of Tusayan District 15-20 miles east northeast of State Route 64 and Red Butte; Total of approx. 6000 acres; Limited smoke on local roads; minimal impacts to populated areas. Fire plays a critical role in maintaining a healthy forest and reducing risks of uncharacteristic wildfires that threaten public health and safety.  A healthy forest..."  ;
+        schema:contentSnippet "The Spring 2022 prescribed fire season is upon us. Fire managers will be looking for windows of opportunity to conduct broadcast burns (applying fire across the forest floor) through the month of April and maybe into May, depending on what conditions will allow. Crews are planning to work on the following projects this season: Greenbase Project: Just north of the City Williams; 3500 acres; Smoke likely noticeable around Williams, Highway 64, and Interstate 40.Reed Project: Just south and northeast of Tusayan; 3300 acres; Overnight smoke generally settles around Forest Road 302, Tusayan, and south toward Red Butte.Blue Stem Project: Remote corner of Tusayan District 15-20 miles east northeast of State Route 64 and Red Butte; Total of approx. 6000 acres; Limited smoke on local roads; minimal impacts to populated areas. Fire plays a critical role in maintaining a healthy forest and reducing risks of uncharacteristic wildfires that threaten public health and safety. A healthy forest..."  ;
+        schema:dateCreated "2022-04-01T22:18:52.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Cleveland RX Burning 2022 (Prescribed Fire)" ;
+    rdfs:label "Cleveland RX Burning 2022 (Prescribed Fire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/7317/>  ;
+        schema:datePublished "2022-03-28T22:24:27.000Z"^^xsd:dateTime  ;
+        geo:lat 33.3 ; geo:long -116.80083333333  ;
+        schema:text "Each year the Cleveland National Forest conducts prescribed burns from January to May 2022, if weather and fuel moisture conditions permit. The objectives of the projects are to reduce the risk of catastrophic wildfire to people and communities, create conditions which offer a safer and more effective wildfire response, foster more resilient ecosystems, and minimize the effects of large wildfires on the landscape. In fiscal year 2022, the Forest''s target for fuels reduction is 3,500 acres. 2,000 acres of planned prescribed fire, and 1,500 acres of mechanical treatments which is a combination of mastication, cut and pile with chainsaws.When implementing these projects, fire managers follow a burn plan that outlines the “prescription” or environmental conditions such as temperature, wind, fuel moisture, ventilation and relative humidity that need to be present before the project begins. When the criteria are met, crews implement, monitor, and patrol each burn to ensure it meets the..."  ;
+        schema:contentSnippet "Each year the Cleveland National Forest conducts prescribed burns from January to May 2022, if weather and fuel moisture conditions permit. The objectives of the projects are to reduce the risk of catastrophic wildfire to people and communities, create conditions which offer a safer and more effective wildfire response, foster more resilient ecosystems, and minimize the effects of large wildfires on the landscape. In fiscal year 2022, the Forest''s target for fuels reduction is 3,500 acres. 2,000 acres of planned prescribed fire, and 1,500 acres of mechanical treatments which is a combination of mastication, cut and pile with chainsaws.When implementing these projects, fire managers follow a burn plan that outlines the “prescription” or environmental conditions such as temperature, wind, fuel moisture, ventilation and relative humidity that need to be present before the project begins. When the criteria are met, crews implement, monitor, and patrol each burn to ensure it meets the..."  ;
+        schema:dateCreated "2022-03-28T22:24:27.000Z"^^xsd:dateTime  ];
+
+    schema:dataFeedElement [ a schema:DataFeedItem  ;
+        schema:title "Indiana Dunes NP Spring 2022 (Prescribed Fire)" ;
+    rdfs:label "Indiana Dunes NP Spring 2022 (Prescribed Fire)"  ;
+        schema:relatedLink <http://inciweb.nwcg.gov/incident/8001/>  ;
+        schema:datePublished "2022-03-17T16:14:52.000Z"^^xsd:dateTime  ;
+        geo:lat 41.616944444444 ; geo:long -87.189722222222  ;
+        schema:text " Indiana Dunes National Park is planning 6 prescribed fires for the Spring of"  ;
+        schema:contentSnippet "Indiana Dunes National Park is planning 6 prescribed fires for the Spring of"  ;
+        schema:dateCreated "2022-03-17T16:14:52.000Z"^^xsd:dateTime  ] .
+
+
+
+
+
