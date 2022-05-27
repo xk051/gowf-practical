@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+	<head>
+		<variable name='subject'/>
+	</head>
+	<results>
+		<result>
+			<binding name='subject'>
+				<uri>http://stko-kwg.geog.ucsb.edu/lod/resource/fire.2014-MSMNF-000003</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='subject'>
+				<uri>http://stko-kwg.geog.ucsb.edu/lod/resource/fire.2014-MSMSS-000004</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='subject'>
+				<uri>http://stko-kwg.geog.ucsb.edu/lod/resource/fire.2014-MSMSS-014062</uri>
+			</binding>
+		</result>
+	</results>
+</sparql>

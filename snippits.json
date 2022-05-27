@@ -1,0 +1,29 @@
+{
+  "head" : {
+    "vars" : [
+      "subject"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "subject" : {
+          "type" : "uri",
+          "value" : "http://stko-kwg.geog.ucsb.edu/lod/resource/fire.2014-MSMNF-000003"
+        }
+      },
+      {
+        "subject" : {
+          "type" : "uri",
+          "value" : "http://stko-kwg.geog.ucsb.edu/lod/resource/fire.2014-MSMSS-000004"
+        }
+      },
+      {
+        "subject" : {
+          "type" : "uri",
+          "value" : "http://stko-kwg.geog.ucsb.edu/lod/resource/fire.2014-MSMSS-014062"
+        }
+      }
+    ]
+  }
+}
